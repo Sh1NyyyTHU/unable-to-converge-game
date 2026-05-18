@@ -1,0 +1,80 @@
+:root {
+  color-scheme: dark;
+  --bg: #1b1220;
+  --panel: #3a2417;
+  --text: #fff1c7;
+  --muted: #d9b979;
+  --line: #6d4a2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    linear-gradient(45deg, rgba(89, 62, 38, 0.22) 25%, transparent 25%) 0 0 / 32px 32px,
+    linear-gradient(-45deg, rgba(39, 83, 54, 0.16) 25%, transparent 25%) 0 0 / 32px 32px,
+    linear-gradient(160deg, #2b1a28 0%, #3f2a1b 48%, #162f22 100%);
+  color: var(--text);
+  font-family:
+    "Microsoft YaHei",
+    "PingFang SC",
+    "Noto Sans CJK SC",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.page {
+  width: min(100%, 1000px);
+}
+
+#gameCanvas {
+  display: block;
+  width: min(100%, 960px);
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border: 6px solid var(--line);
+  border-radius: 0;
+  background: var(--panel);
+  box-shadow:
+    0 0 0 4px #2a1a12,
+    0 18px 0 rgba(42, 26, 18, 0.36),
+    0 30px 70px rgba(0, 0, 0, 0.48);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.hint {
+  width: min(100%, 960px);
+  margin: 12px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 12px;
+  }
+
+  .hint {
+    font-size: 12px;
+  }
+}
