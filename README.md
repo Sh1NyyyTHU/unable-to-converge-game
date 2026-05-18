@@ -15,6 +15,7 @@ unable-to-converge-game/
 └── assets/
     ├── audio/
     │   ├── day.m4a
+    │   ├── ending.m4a
     │   └── night.m4a
     └── README.md
 ```
@@ -24,6 +25,7 @@ unable-to-converge-game/
 - `script.js`：游戏主逻辑，包括状态管理、场景绘制、按钮点击、数值系统和结局判断。
 - `assets/audio/day.m4a`：白天场景背景音乐。
 - `assets/audio/night.m4a`：夜晚场景背景音乐。
+- `assets/audio/ending.m4a`：结局页面背景音乐。
 - `assets/README.md`：后续素材目录说明。
 
 ## 用 VS Code 打开

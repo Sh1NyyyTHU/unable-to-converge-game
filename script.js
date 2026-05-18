@@ -28,6 +28,7 @@ const BACKGROUND_SOURCES = {
 const AUDIO_SOURCES = {
   day: "assets/audio/day.m4a",
   night: "assets/audio/night.m4a",
+  ending: "assets/audio/ending.m4a",
 };
 
 const BackgroundImages = Object.fromEntries(
@@ -103,6 +104,11 @@ const AudioManager = {
 
     if (GameState.scene === "night" || GameState.scene === "nightResult") {
       this.play("night");
+      return;
+    }
+
+    if (GameState.scene === "ending") {
+      this.play("ending");
       return;
     }
 
