@@ -9,6 +9,7 @@ const ctx = canvas.getContext("2d");
 let dpr = 1;
 let mouse = { x: -1, y: -1 };
 let buttons = [];
+let hotspots = [];
 let jitterTick = 0;
 let animationStarted = false;
 
@@ -171,6 +172,230 @@ const NIGHT_PORTRAITS = {
     accent: "#f1b17c",
     bg: "#9b789c",
   },
+};
+
+const DAY_SCENE_AREA = { x: 50, y: 92, w: 860, h: 274 };
+
+const DAY_HOTSPOTS = {
+  1: [
+    {
+      id: "computer",
+      label: "断网电脑",
+      action: "检查网络",
+      step: 0,
+      x: 356,
+      y: 132,
+      w: 222,
+      h: 112,
+      feedback: "你点击了电脑。网络图标是灰色，网页和消息都无法连接。",
+    },
+    {
+      id: "router",
+      label: "路由器",
+      action: "重启路由器",
+      step: 1,
+      x: 646,
+      y: 176,
+      w: 128,
+      h: 68,
+      feedback: "你长按路由器电源，等待指示灯重新稳定亮起。",
+    },
+    {
+      id: "wifi",
+      label: "重新连接",
+      action: "重新连接",
+      step: 2,
+      x: 452,
+      y: 160,
+      w: 84,
+      h: 64,
+      feedback: "你在电脑上重新连接网络，页面终于刷新出来。",
+    },
+    {
+      id: "lamp",
+      label: "台灯",
+      wrong: "台灯照亮了桌面，但网络不会因此恢复。",
+      x: 210,
+      y: 138,
+      w: 92,
+      h: 118,
+    },
+  ],
+  2: [
+    {
+      id: "paragraphs",
+      label: "长段落",
+      action: "拆分段落",
+      step: 0,
+      x: 298,
+      y: 126,
+      w: 176,
+      h: 150,
+      feedback: "你把长段落拆开，阅读阻力明显下降。",
+    },
+    {
+      id: "arrows",
+      label: "顺序箭头",
+      action: "调整顺序",
+      step: 1,
+      x: 492,
+      y: 138,
+      w: 160,
+      h: 130,
+      feedback: "你按原因、过程、结论重新排列内容。",
+    },
+    {
+      id: "conclusion",
+      label: "结论标记",
+      action: "突出结论",
+      step: 2,
+      x: 662,
+      y: 154,
+      w: 138,
+      h: 104,
+      feedback: "你把结论放到最容易看见的位置，审核人终于抓住重点。",
+    },
+    {
+      id: "font-color",
+      label: "字体颜色",
+      wrong: "换颜色只能制造新的噪声，不能修正逻辑顺序。",
+      x: 160,
+      y: 144,
+      w: 96,
+      h: 86,
+    },
+  ],
+  3: [
+    {
+      id: "shirt",
+      label: "床上的衣服",
+      action: "分类物品",
+      step: 0,
+      group: "clothes",
+      required: 3,
+      x: 248,
+      y: 164,
+      w: 118,
+      h: 60,
+      feedback: "衣服被先放进待收纳的一堆。",
+    },
+    {
+      id: "socks",
+      label: "地上的袜子",
+      action: "分类物品",
+      step: 0,
+      group: "clothes",
+      required: 3,
+      x: 450,
+      y: 238,
+      w: 96,
+      h: 54,
+      feedback: "袜子被拣出来，和衣物放到一起。",
+    },
+    {
+      id: "pants",
+      label: "椅边裤子",
+      action: "分类物品",
+      step: 0,
+      group: "clothes",
+      required: 3,
+      x: 594,
+      y: 194,
+      w: 118,
+      h: 70,
+      feedback: "最后一件散落衣物也被分类好了。",
+    },
+    {
+      id: "bottle",
+      label: "空瓶",
+      action: "丢弃垃圾",
+      step: 1,
+      group: "trash",
+      required: 2,
+      x: 318,
+      y: 246,
+      w: 56,
+      h: 72,
+      feedback: "空瓶被丢进垃圾袋，地面露出一小块。",
+    },
+    {
+      id: "wrapper",
+      label: "旧包装",
+      action: "丢弃垃圾",
+      step: 1,
+      group: "trash",
+      required: 2,
+      x: 730,
+      y: 244,
+      w: 84,
+      h: 56,
+      feedback: "旧包装被清走，房间的噪声少了一层。",
+    },
+    {
+      id: "wardrobe",
+      label: "收纳柜",
+      action: "归位收纳",
+      step: 2,
+      x: 662,
+      y: 118,
+      w: 128,
+      h: 132,
+      feedback: "衣物和杂物被放回合适的位置，空间恢复秩序。",
+    },
+    {
+      id: "phone",
+      label: "手机",
+      wrong: "刷手机会让房间保持原状。先处理眼前的物品。",
+      x: 548,
+      y: 292,
+      w: 74,
+      h: 36,
+    },
+  ],
+  4: [
+    {
+      id: "outline",
+      label: "提纲便签",
+      action: "整理提纲",
+      step: 0,
+      x: 264,
+      y: 142,
+      w: 138,
+      h: 120,
+      feedback: "汇报提纲确定：背景、问题、方案、结论。",
+    },
+    {
+      id: "slides",
+      label: "幻灯片",
+      action: "制作幻灯片",
+      step: 1,
+      x: 438,
+      y: 120,
+      w: 202,
+      h: 146,
+      feedback: "幻灯片只保留必要信息，每页对应一个重点。",
+    },
+    {
+      id: "mic",
+      label: "练习表达",
+      action: "练习表达",
+      step: 2,
+      x: 676,
+      y: 154,
+      w: 120,
+      h: 108,
+      feedback: "你练习了一遍，把卡顿的地方重新改顺。",
+    },
+    {
+      id: "cover-only",
+      label: "封面",
+      wrong: "只做封面会让内容继续散着。先把骨架搭起来。",
+      x: 146,
+      y: 156,
+      w: 92,
+      h: 118,
+    },
+  ],
 };
 
 const DAY_TASKS = [
@@ -550,6 +775,7 @@ function resetGame() {
     cost: 0,
     self: 100,
     dayStep: 0,
+    dayObjectState: {},
     feedback: "",
     nightChoice: null,
     nightRound: 0,
@@ -563,7 +789,8 @@ function startGame() {
     day: 1,
     phase: "day",
     dayStep: 0,
-    feedback: "观察问题，按合理顺序处理。",
+    dayObjectState: {},
+    feedback: "点击场景里的物件，按合理顺序处理问题。",
     nightChoice: null,
     nightRound: 0,
   });
@@ -601,7 +828,66 @@ function getCurrentNightResponse(choice) {
   return GameState.nightRound === 0 ? dialogue.responses[choice] : dialogue.responses2[choice];
 }
 
-function handleDayOption(label) {
+function getDayState() {
+  const key = String(GameState.day);
+  if (!GameState.dayObjectState[key]) {
+    GameState.dayObjectState[key] = { clicked: {}, groups: {} };
+  }
+  return GameState.dayObjectState[key];
+}
+
+function completeDayStep(feedback) {
+  const task = getCurrentDayTask();
+  GameState.feedback = feedback || task.progress[GameState.dayStep];
+  GameState.dayStep += 1;
+
+  if (GameState.dayStep >= task.steps.length) {
+    applyStats({ clarity: 5, self: 5 });
+    GameState.scene = "dayResult";
+    GameState.feedback = task.solved;
+  }
+}
+
+class Hotspot {
+  constructor(config) {
+    Object.assign(this, config);
+  }
+
+  contains(px, py) {
+    return px >= this.x && px <= this.x + this.w && py >= this.y && py <= this.y + this.h;
+  }
+
+  draw(context) {
+    const hovering = this.contains(mouse.x, mouse.y);
+    const current = this.step === GameState.dayStep && !this.wrong;
+    const done = isHotspotDone(this);
+
+    if (done && this.group) {
+      drawCollectedMarker(context, this);
+      return;
+    }
+
+    context.save();
+    context.globalAlpha = current ? 1 : 0.58;
+
+    if (current || hovering) {
+      const pulse = 0.45 + Math.sin(jitterTick * 0.08) * 0.16;
+      context.fillStyle = hovering ? "rgba(255, 220, 116, 0.16)" : `rgba(159, 213, 111, ${pulse * 0.18})`;
+      roundRect(context, this.x, this.y, this.w, this.h, 6);
+      context.fill();
+      context.lineWidth = hovering ? 4 : 3;
+      context.strokeStyle = hovering ? "#fff0a6" : "#9fd56f";
+      context.stroke();
+    }
+
+    if (hovering || current) {
+      drawHotspotTag(context, this);
+    }
+    context.restore();
+  }
+}
+
+function handleDayAction(label, feedback) {
   const task = getCurrentDayTask();
   const expected = task.steps[GameState.dayStep];
 
@@ -610,14 +896,41 @@ function handleDayOption(label) {
     return;
   }
 
-  GameState.feedback = task.progress[GameState.dayStep];
-  GameState.dayStep += 1;
+  completeDayStep(feedback);
+}
 
-  if (GameState.dayStep >= task.steps.length) {
-    applyStats({ clarity: 5, self: 5 });
-    GameState.scene = "dayResult";
-    GameState.feedback = task.solved;
+function handleDayHotspot(hotspot) {
+  const task = getCurrentDayTask();
+  const expected = task.steps[GameState.dayStep];
+  const state = getDayState();
+
+  if (hotspot.wrong) {
+    GameState.feedback = hotspot.wrong;
+    return;
   }
+
+  if (hotspot.step !== GameState.dayStep || hotspot.action !== expected) {
+    GameState.feedback = `现在需要“${expected}”。“${hotspot.label}”还不是当前关键点。`;
+    return;
+  }
+
+  if (hotspot.group) {
+    const group = state.groups[hotspot.group] || [];
+    if (!group.includes(hotspot.id)) {
+      group.push(hotspot.id);
+      state.groups[hotspot.group] = group;
+    }
+    state.clicked[hotspot.id] = true;
+
+    const remaining = hotspot.required - group.length;
+    if (remaining > 0) {
+      GameState.feedback = `${hotspot.feedback} 还剩 ${remaining} 个相关物件。`;
+      return;
+    }
+  }
+
+  state.clicked[hotspot.id] = true;
+  completeDayStep(hotspot.feedback);
 }
 
 function handleNightChoice(choice) {
@@ -653,9 +966,10 @@ function goToNextDayOrEnding() {
   GameState.phase = "day";
   GameState.scene = "day";
   GameState.dayStep = 0;
+  GameState.dayObjectState = {};
   GameState.nightChoice = null;
   GameState.nightRound = 0;
-  GameState.feedback = "新的一天开始。具体问题仍然可以一步步处理。";
+  GameState.feedback = "新的一天开始。点击场景中的物件，一步步处理具体问题。";
 }
 
 function resolveEnding() {
@@ -697,6 +1011,9 @@ function getPointerPosition(event) {
 
 canvas.addEventListener("mousemove", (event) => {
   mouse = getPointerPosition(event);
+  const hoveringButton = buttons.some((button) => !button.disabled && button.contains(mouse.x, mouse.y));
+  const hoveringHotspot = hotspots.some((hotspot) => hotspot.contains(mouse.x, mouse.y));
+  canvas.style.cursor = hoveringButton || hoveringHotspot ? "pointer" : "default";
 });
 
 canvas.addEventListener("mouseleave", () => {
@@ -709,6 +1026,13 @@ canvas.addEventListener("click", (event) => {
   const hit = buttons.find((button) => !button.disabled && button.contains(mouse.x, mouse.y));
   if (hit) {
     hit.onClick();
+    AudioManager.syncWithScene();
+    return;
+  }
+
+  const hotspot = findHotspotAt(mouse.x, mouse.y);
+  if (hotspot) {
+    hotspot.onClick();
     AudioManager.syncWithScene();
   }
 });
@@ -725,8 +1049,10 @@ function startRenderLoop() {
 
 function draw() {
   buttons = [];
+  hotspots = [];
   jitterTick += 1;
   ctx.imageSmoothingEnabled = false;
+  resetTextState(ctx);
 
   if (GameState.scene === "start") {
     drawStart();
@@ -776,35 +1102,24 @@ function drawDay() {
   drawStatusBars();
   drawDayScene(task);
 
-  drawPanel(42, 300, 876, 198, "rgba(83, 48, 26, 0.86)", "#d6a65b");
+  drawPanel(42, 386, 876, 118, "rgba(83, 48, 26, 0.88)", "#d6a65b");
 
   ctx.fillStyle = "#fff1bd";
   ctx.font = "700 24px Microsoft YaHei, sans-serif";
-  ctx.fillText(task.title, 68, 334);
+  ctx.fillText(task.title, 68, 422);
 
   ctx.fillStyle = "#ead0a0";
   ctx.font = "16px Microsoft YaHei, sans-serif";
-  wrapText(ctx, task.problem, 68, 365, 500, 25);
+  wrapText(ctx, task.problem, 68, 452, 560, 23);
 
   ctx.fillStyle = "#c8e082";
   ctx.font = "15px Microsoft YaHei, sans-serif";
-  ctx.fillText(`当前步骤：${GameState.dayStep + 1} / ${task.steps.length}`, 68, 432);
+  ctx.fillText(`当前目标：${task.steps[GameState.dayStep]}（${GameState.dayStep + 1} / ${task.steps.length}）`, 650, 422);
 
   ctx.fillStyle = "#ffe8aa";
   ctx.font = "15px Microsoft YaHei, sans-serif";
-  wrapText(ctx, GameState.feedback, 68, 458, 500, 22);
-
-  const options = getDayOptions(task);
-  options.forEach((label, index) => {
-    const y = 326 + index * 56;
-    const isDoneStep = task.steps.slice(0, GameState.dayStep).includes(label);
-    buttons.push(
-      new Button(640, y, 230, 44, label, () => handleDayOption(label), {
-        kind: isDoneStep ? "ghost" : "primary",
-        disabled: isDoneStep,
-      })
-    );
-  });
+  wrapText(ctx, GameState.feedback, 650, 452, 230, 22);
+  drawDayProgressTrail(task);
 }
 
 function drawDayResult() {
@@ -1093,15 +1408,18 @@ function drawWarningMessages() {
 function drawDayScene(task, solved = false) {
   const day = task.day;
   ctx.save();
-  drawPanel(50, 105, 860, 160, "rgba(92, 64, 37, 0.26)", "rgba(237, 190, 91, 0.32)");
+  drawPanel(
+    DAY_SCENE_AREA.x,
+    DAY_SCENE_AREA.y,
+    DAY_SCENE_AREA.w,
+    DAY_SCENE_AREA.h,
+    "rgba(92, 64, 37, 0.18)",
+    "rgba(237, 190, 91, 0.32)"
+  );
 
   if (imageIsReady(`day${day}`)) {
     drawAmbientScanLines("day");
-    ctx.restore();
-    return;
-  }
-
-  if (day === 1) {
+  } else if (day === 1) {
     drawDeskComputer(solved);
   } else if (day === 2) {
     drawDocumentScene(solved);
@@ -1111,7 +1429,45 @@ function drawDayScene(task, solved = false) {
     drawPresentationScene(solved);
   }
 
+  drawDayInteractiveLayer(task, solved);
   ctx.restore();
+}
+
+function drawDayInteractiveLayer(task, solved) {
+  drawDayInteractiveObjects(task.day, solved);
+
+  if (solved) {
+    return;
+  }
+
+  const configs = DAY_HOTSPOTS[task.day] || [];
+  configs.forEach((config) => {
+    if (isHotspotDone(config)) {
+      drawCollectedMarker(ctx, config);
+      return;
+    }
+
+    const hotspot = new Hotspot({
+      ...config,
+      onClick: () => handleDayHotspot(config),
+    });
+    hotspots.push(hotspot);
+    hotspot.draw(ctx);
+  });
+
+  drawMouseActionHint();
+}
+
+function drawDayInteractiveObjects(day, solved) {
+  if (day === 1) {
+    drawNetworkObjects(solved);
+  } else if (day === 2) {
+    drawDocumentObjects(solved);
+  } else if (day === 3) {
+    drawRoomObjects(solved);
+  } else {
+    drawPresentationObjects(solved);
+  }
 }
 
 function drawDeskComputer(solved) {
@@ -1153,6 +1509,197 @@ function drawRouter(x, y, solved) {
     ctx.fillStyle = solved || i === 0 ? "#a6e45f" : "#3d3328";
     ctx.fillRect(x + 22 + i * 22, y + 18, 8, 8);
   }
+}
+
+function drawNetworkObjects(solved) {
+  const checkedComputer = isHotspotDone({ id: "computer" });
+  const restartedRouter = isHotspotDone({ id: "router" });
+  const reconnected = solved || isHotspotDone({ id: "wifi" });
+
+  ctx.save();
+  ctx.globalAlpha = 0.95;
+  ctx.fillStyle = "rgba(44, 25, 13, 0.84)";
+  ctx.fillRect(220, 270, 560, 18);
+  drawScreen(356, 132, 222, 112, reconnected ? "#2d6659" : "#26252f");
+  ctx.fillStyle = reconnected ? "#bde66f" : checkedComputer ? "#ffd46b" : "#f18b70";
+  ctx.font = "700 16px Microsoft YaHei, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText(reconnected ? "CONNECTED" : checkedComputer ? "NETWORK FOUND" : "OFFLINE", 467, 190);
+  ctx.fillStyle = "#b8793f";
+  ctx.fillRect(452, 244, 36, 32);
+  ctx.fillRect(404, 274, 136, 12);
+
+  drawRouter(646, 188, restartedRouter || reconnected);
+  ctx.strokeStyle = restartedRouter || reconnected ? "#9fd56f" : "#674637";
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(646, 210);
+  ctx.lineTo(578, 198);
+  ctx.stroke();
+
+  ctx.fillStyle = reconnected ? "#9fd56f" : "#ba4d55";
+  ctx.fillRect(484, 162, 10, 10);
+  ctx.fillRect(506, 162, 10, 10);
+  ctx.fillRect(528, 162, 10, 10);
+
+  ctx.fillStyle = "rgba(255, 214, 120, 0.42)";
+  ctx.fillRect(220, 138, 70, 96);
+  ctx.fillStyle = "#ffd36c";
+  ctx.fillRect(244, 170, 22, 42);
+  ctx.restore();
+}
+
+function drawDocumentObjects(solved) {
+  const split = solved || isHotspotDone({ id: "paragraphs" });
+  const ordered = solved || isHotspotDone({ id: "arrows" });
+  const highlighted = solved || isHotspotDone({ id: "conclusion" });
+
+  ctx.save();
+  drawPaper(298, 126, 176, 150, split);
+  drawPaper(492, 138, 160, 130, ordered);
+  drawPaper(662, 154, 138, 104, highlighted);
+
+  ctx.strokeStyle = ordered ? "#9fd56f" : "#d6a65b";
+  ctx.lineWidth = 4;
+  ctx.beginPath();
+  ctx.moveTo(506, 194);
+  ctx.lineTo(632, 194);
+  ctx.lineTo(616, 180);
+  ctx.moveTo(632, 194);
+  ctx.lineTo(616, 208);
+  ctx.stroke();
+
+  ctx.fillStyle = highlighted ? "#ffd36c" : "rgba(216, 156, 85, 0.68)";
+  ctx.fillRect(684, 174, 92, 16);
+  ctx.fillRect(684, 198, 72, 10);
+
+  ctx.fillStyle = "#9b5a4d";
+  ctx.fillRect(172, 164, 54, 46);
+  ctx.fillStyle = "#f3c26f";
+  ctx.fillRect(184, 176, 30, 8);
+  ctx.restore();
+}
+
+function drawRoomObjects(solved) {
+  const state = getDayState();
+  const clicked = state.clicked || {};
+  const clothingDone = solved || GameState.dayStep > 0;
+  const trashDone = solved || GameState.dayStep > 1;
+
+  ctx.save();
+  ctx.fillStyle = "rgba(74, 43, 25, 0.5)";
+  ctx.fillRect(196, 252, 640, 62);
+  ctx.fillStyle = "#8c5a31";
+  ctx.fillRect(218, 150, 182, 74);
+  ctx.fillStyle = "#b0703c";
+  ctx.fillRect(242, 128, 160, 42);
+  ctx.fillStyle = "#5b3926";
+  ctx.fillRect(662, 118, 128, 132);
+  ctx.fillStyle = "#35251b";
+  ctx.fillRect(684, 142, 84, 12);
+  ctx.fillRect(684, 172, 84, 12);
+  ctx.fillRect(684, 202, 84, 12);
+
+  if (!clicked.shirt && !clothingDone) drawCloth(248, 164, "#d87973", "shirt");
+  if (!clicked.socks && !clothingDone) drawSockPair(454, 242);
+  if (!clicked.pants && !clothingDone) drawCloth(600, 198, "#5f7d9a", "pants");
+  if (clothingDone && !solved) {
+    drawBox(438, 238, "#c9964b");
+    ctx.fillStyle = "#d87973";
+    ctx.fillRect(448, 230, 38, 14);
+  }
+
+  if (!clicked.bottle && !trashDone) drawBottle(328, 254);
+  if (!clicked.wrapper && !trashDone) drawWrapper(732, 250);
+  if (trashDone && !solved) {
+    ctx.fillStyle = "#9fd56f";
+    ctx.fillRect(298, 278, 120, 10);
+  }
+
+  if (solved) {
+    drawBox(452, 238, "#d8b35a");
+    ctx.fillStyle = "#9fd56f";
+    ctx.fillRect(278, 206, 90, 12);
+  }
+
+  ctx.fillStyle = "#263040";
+  ctx.fillRect(552, 300, 58, 22);
+  ctx.fillStyle = "#7ecbff";
+  ctx.fillRect(562, 306, 34, 4);
+  ctx.restore();
+}
+
+function drawPresentationObjects(solved) {
+  const outlined = solved || isHotspotDone({ id: "outline" });
+  const slidesReady = solved || isHotspotDone({ id: "slides" });
+
+  ctx.save();
+  ctx.fillStyle = "#6c4526";
+  ctx.fillRect(224, 274, 600, 16);
+  drawPaper(264, 142, 138, 120, outlined);
+  drawScreen(438, 120, 202, 146, slidesReady ? "#344f35" : "#34412c");
+  ctx.fillStyle = slidesReady ? "#d6f28b" : "#ffe1a0";
+  ctx.font = "16px Microsoft YaHei, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText(slidesReady ? "重点幻灯片" : "明天汇报", 539, 158);
+  ctx.fillStyle = "#9fcf63";
+  ctx.fillRect(476, 182, 126, 7);
+  ctx.fillRect(476, 204, slidesReady ? 96 : 148, 7);
+  ctx.fillRect(476, 226, slidesReady ? 74 : 54, 7);
+
+  ctx.fillStyle = "#384050";
+  ctx.fillRect(712, 170, 18, 86);
+  ctx.fillStyle = solved ? "#9fd56f" : "#ffd36c";
+  ctx.fillRect(692, 154, 58, 44);
+  ctx.fillStyle = "#2c1a10";
+  ctx.fillRect(684, 256, 72, 10);
+
+  ctx.fillStyle = "#9b5a4d";
+  ctx.fillRect(160, 164, 60, 88);
+  ctx.fillStyle = "#ffd36c";
+  ctx.fillRect(172, 178, 36, 10);
+  ctx.restore();
+}
+
+function drawCloth(x, y, color, type) {
+  ctx.fillStyle = color;
+  if (type === "pants") {
+    ctx.fillRect(x, y, 38, 18);
+    ctx.fillRect(x + 8, y + 18, 14, 42);
+    ctx.fillRect(x + 30, y + 18, 14, 42);
+  } else {
+    ctx.fillRect(x + 18, y, 62, 38);
+    ctx.fillRect(x, y + 10, 24, 24);
+    ctx.fillRect(x + 74, y + 10, 24, 24);
+  }
+  ctx.strokeStyle = "#3d2416";
+  ctx.strokeRect(x + 8, y + 4, 86, 48);
+}
+
+function drawSockPair(x, y) {
+  ctx.fillStyle = "#e6d6a6";
+  ctx.fillRect(x, y, 42, 14);
+  ctx.fillRect(x + 28, y + 16, 42, 14);
+  ctx.fillStyle = "#d87973";
+  ctx.fillRect(x + 26, y, 12, 14);
+  ctx.fillRect(x + 54, y + 16, 12, 14);
+}
+
+function drawBottle(x, y) {
+  ctx.fillStyle = "#78a8b8";
+  ctx.fillRect(x + 14, y, 18, 12);
+  ctx.fillRect(x + 8, y + 12, 30, 50);
+  ctx.fillStyle = "rgba(255,255,255,0.35)";
+  ctx.fillRect(x + 14, y + 20, 8, 32);
+}
+
+function drawWrapper(x, y) {
+  ctx.fillStyle = "#d6a65b";
+  ctx.fillRect(x, y + 12, 74, 30);
+  ctx.fillStyle = "#9b5a4d";
+  ctx.fillRect(x + 10, y + 20, 50, 8);
+  ctx.strokeStyle = "#3d2416";
+  ctx.strokeRect(x, y + 12, 74, 30);
 }
 
 function drawDocumentScene(solved) {
@@ -1236,24 +1783,25 @@ function drawCharacterDialogueBox({ dialogue, heading, goal, playerText, otherTe
   drawPixelPortraitCard(678, 292, 238, 204, portrait);
 
   ctx.save();
+  resetTextState(ctx);
   ctx.fillStyle = "#3f2113";
   ctx.font = "700 22px Microsoft YaHei, sans-serif";
-  ctx.fillText(heading, 64, 324);
+  wrapText(ctx, heading, 64, 324, 520, 25);
 
   if (goal) {
     ctx.fillStyle = "#5f351d";
     ctx.font = "15px Microsoft YaHei, sans-serif";
-    wrapText(ctx, goal, 64, 350, 540, 22);
+    wrapText(ctx, goal, 64, 352, 540, 21);
   }
 
-  const firstLineY = goal ? 382 : 360;
-  drawDialogueLine("你", playerText, 64, firstLineY, "#477337", 520);
-  drawGlitchLine(portrait.name, otherText, 64, firstLineY + 34, 520);
+  let currentY = goal ? 386 : 360;
+  currentY += drawDialogueLine("你", playerText, 64, currentY, "#477337", 500) + 8;
+  currentY += drawGlitchLine(portrait.name, otherText, 64, currentY, 500) + 8;
 
   if (note) {
     ctx.fillStyle = "#56301b";
     ctx.font = "14px Microsoft YaHei, sans-serif";
-    wrapText(ctx, note, 64, 426, 365, 18);
+    wrapText(ctx, note, 64, Math.min(currentY + 4, 438), 360, 18);
   }
 
   ctx.restore();
@@ -1529,25 +2077,29 @@ function drawPhoneWindow(result) {
 
 function drawDialogueLine(speaker, text, x, y, color, maxWidth = 500) {
   ctx.save();
+  resetTextState(ctx);
   ctx.fillStyle = color;
   ctx.font = "700 16px Microsoft YaHei, sans-serif";
   ctx.fillText(`${speaker}：`, x, y);
   ctx.fillStyle = "#4a2a18";
   ctx.font = "600 16px Microsoft YaHei, sans-serif";
-  wrapText(ctx, text, x + 52, y, maxWidth, 22);
+  const lineCount = wrapText(ctx, text, x + 52, y, maxWidth, 22);
   ctx.restore();
+  return lineCount * 22;
 }
 
 function drawGlitchLine(speaker, text, x, y, maxWidth = 500) {
   ctx.save();
+  resetTextState(ctx);
   const offset = Math.round(Math.sin(jitterTick * 0.2) * 2);
   ctx.fillStyle = "#8a3b2e";
   ctx.font = "700 16px Microsoft YaHei, sans-serif";
   ctx.fillText(`${speaker}：`, x + offset, y);
   ctx.fillStyle = "#5c2b22";
   ctx.font = "600 16px Microsoft YaHei, sans-serif";
-  wrapText(ctx, text, x + 52 + offset, y, maxWidth, 22);
+  const lineCount = wrapText(ctx, text, x + 52 + offset, y, maxWidth, 22);
   ctx.restore();
+  return lineCount * 22;
 }
 
 function drawConvergenceDiagram(x, y) {
@@ -1587,6 +2139,116 @@ function drawPanel(x, y, w, h, fill, stroke) {
   ctx.lineWidth = 2;
   ctx.strokeRect(x + 8, y + 8, w - 16, h - 16);
   ctx.restore();
+}
+
+function isHotspotDone(hotspot) {
+  const state = getDayState();
+  if (state.clicked && state.clicked[hotspot.id]) {
+    return true;
+  }
+  if (Number.isInteger(hotspot.step) && GameState.dayStep > hotspot.step) {
+    return true;
+  }
+  return false;
+}
+
+function drawCollectedMarker(context, hotspot) {
+  context.save();
+  context.fillStyle = "rgba(48, 112, 56, 0.82)";
+  roundRect(context, hotspot.x + hotspot.w - 28, hotspot.y + 6, 22, 22, 4);
+  context.fill();
+  context.strokeStyle = "#d8f28b";
+  context.lineWidth = 2;
+  context.beginPath();
+  context.moveTo(hotspot.x + hotspot.w - 23, hotspot.y + 18);
+  context.lineTo(hotspot.x + hotspot.w - 16, hotspot.y + 25);
+  context.lineTo(hotspot.x + hotspot.w - 7, hotspot.y + 11);
+  context.stroke();
+  context.restore();
+}
+
+function drawHotspotTag(context, hotspot) {
+  const label = hotspot.wrong ? hotspot.label : `${hotspot.label}`;
+  context.save();
+  context.font = "700 13px Microsoft YaHei, sans-serif";
+  const width = Math.min(160, Math.max(58, context.measureText(label).width + 22));
+  const x = Math.max(DAY_SCENE_AREA.x + 12, Math.min(hotspot.x + hotspot.w / 2 - width / 2, DAY_SCENE_AREA.x + DAY_SCENE_AREA.w - width - 12));
+  const y = Math.max(DAY_SCENE_AREA.y + 10, hotspot.y - 30);
+  context.fillStyle = hotspot.wrong ? "rgba(91, 49, 39, 0.9)" : "rgba(44, 32, 18, 0.92)";
+  roundRect(context, x, y, width, 24, 4);
+  context.fill();
+  context.strokeStyle = hotspot.wrong ? "#d8897b" : "#ffd36c";
+  context.lineWidth = 2;
+  context.stroke();
+  context.fillStyle = hotspot.wrong ? "#ffc7a4" : "#fff1bd";
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillText(label, x + width / 2, y + 13);
+  context.restore();
+}
+
+function findHotspotAt(x, y) {
+  const hits = hotspots.filter((hotspot) => hotspot.contains(x, y));
+  if (hits.length === 0) {
+    return null;
+  }
+
+  const currentHit = hits.find((hotspot) => hotspot.step === GameState.dayStep && !hotspot.wrong);
+  return currentHit || hits[0];
+}
+
+function drawMouseActionHint() {
+  const hotspot = findHotspotAt(mouse.x, mouse.y);
+  if (!hotspot || hotspot.wrong) {
+    return;
+  }
+
+  const label = hotspot.action || hotspot.label;
+  ctx.save();
+  ctx.font = "700 14px Microsoft YaHei, sans-serif";
+  const width = Math.max(92, ctx.measureText(label).width + 28);
+  const height = 30;
+  const x = Math.min(mouse.x + 16, BASE_WIDTH - width - 18);
+  const y = Math.max(mouse.y - 44, 86);
+  ctx.fillStyle = "rgba(30, 22, 13, 0.94)";
+  roundRect(ctx, x, y, width, height, 5);
+  ctx.fill();
+  ctx.strokeStyle = "#ffd36c";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = "#fff1bd";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(label, x + width / 2, y + height / 2 + 1);
+  ctx.restore();
+}
+
+function drawDayProgressTrail(task) {
+  ctx.save();
+  const startX = 642;
+  const y = 492;
+  task.steps.forEach((step, index) => {
+    const done = index < GameState.dayStep;
+    const current = index === GameState.dayStep;
+    const x = startX + index * 64;
+    if (index > 0) {
+      ctx.fillStyle = index <= GameState.dayStep ? "#9fd56f" : "#6d4a2d";
+      ctx.fillRect(x - 44, y + 6, 38, 4);
+    }
+    ctx.fillStyle = done ? "#9fd56f" : current ? "#ffd36c" : "#6d4a2d";
+    roundRect(ctx, x, y, 18, 18, 4);
+    ctx.fill();
+    ctx.fillStyle = done ? "#24441f" : current ? "#4c2b16" : "#d0ad74";
+    ctx.font = "700 11px Microsoft YaHei, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText(String(index + 1), x + 9, y + 13);
+  });
+  ctx.restore();
+}
+
+function resetTextState(context) {
+  context.textAlign = "left";
+  context.textBaseline = "alphabetic";
 }
 
 function getDayOptions(task) {
@@ -1633,6 +2295,7 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, align = "left") {
   const words = Array.from(text);
   let line = "";
   let currentY = y;
+  let lineCount = 1;
 
   context.textAlign = align;
   for (let i = 0; i < words.length; i += 1) {
@@ -1642,11 +2305,13 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, align = "left") {
       context.fillText(line, x, currentY);
       line = words[i];
       currentY += lineHeight;
+      lineCount += 1;
     } else {
       line = testLine;
     }
   }
   context.fillText(line, x, currentY);
+  return lineCount;
 }
 
 function drawButtonText(context, text, x, centerY, maxWidth, lineHeight, maxLines) {
