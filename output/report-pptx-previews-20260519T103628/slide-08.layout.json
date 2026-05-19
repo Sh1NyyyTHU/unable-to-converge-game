@@ -1,0 +1,776 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/fu18jqh0",
+    "id": "fu18jqh0",
+    "slide": 9,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/e1w7mp0b",
+      "id": "29",
+      "name": "bg-night1-family.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image19.png",
+        "contentType": "image/png",
+        "byteLength": 1441262
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image19.png",
+        "contentType": "image/png",
+        "byteLength": 1441262
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u9knih4b",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(14, 12, 25, 0.76)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/judg7ads",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        112,
+        84,
+        1696,
+        28
+      ],
+      "geometry": "rect",
+      "text": "07 / AUDIO & RHYTHM",
+      "textPreview": "07 / AUDIO & RHYTHM",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07 / AUDIO & RHYTHM"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07 / AUDIO & RHYTHM",
+          "runs": [
+            {
+              "index": 1,
+              "text": "07 / AUDIO & RHYTHM",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7u54zid",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        112,
+        134,
+        1696,
+        88
+      ],
+      "geometry": "rect",
+      "text": "声音与节奏：让玩家在昼夜之间换气",
+      "textPreview": "声音与节奏：让玩家在昼夜之间换气",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "声音与节奏：让玩家在昼夜之间换气"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "声音与节奏：让玩家在昼夜之间换气",
+          "runs": [
+            {
+              "index": 1,
+              "text": "声音与节奏：让玩家在昼夜之间换气",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orytsvu",
+      "id": "5",
+      "bbox": [
+        112,
+        242,
+        1,
+        1
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u18jqh0f",
+      "id": "6",
+      "bbox": [
+        112,
+        490,
+        808,
+        64
+      ],
+      "geometry": "rect",
+      "text": "三段 BGM",
+      "textPreview": "三段 BGM",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "三段 BGM"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "三段 BGM",
+          "runs": [
+            {
+              "index": 1,
+              "text": "三段 BGM",
+              "fontSize": 52,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jm1cfa9w",
+      "id": "7",
+      "bbox": [
+        112,
+        580,
+        808,
+        130
+      ],
+      "geometry": "rect",
+      "text": "day.m4a：白天行动\nnight.m4a：夜晚压力\nending.m4a：结局回声",
+      "textPreview": "day.m4a：白天行动 | night.m4a：夜晚压力 | ending.m4a：结局回声",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "day.m4a：白天行动"
+          },
+          {
+            "index": 2,
+            "text": "night.m4a：夜晚压力"
+          },
+          {
+            "index": 3,
+            "text": "ending.m4a：结局回声"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "day.m4a：白天行动",
+          "runs": [
+            {
+              "index": 1,
+              "text": "day.m4a：白天行动",
+              "fontSize": 36,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "night.m4a：夜晚压力",
+          "runs": [
+            {
+              "index": 1,
+              "text": "night.m4a：夜晚压力",
+              "fontSize": 36,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "ending.m4a：结局回声",
+          "runs": [
+            {
+              "index": 1,
+              "text": "ending.m4a：结局回声",
+              "fontSize": 36,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "8",
+      "bbox": [
+        112,
+        738,
+        808,
+        66
+      ],
+      "geometry": "rect",
+      "text": "音乐随场景自动切换，开始页保持静默，避免在玩家未交互前打破浏览器播放规则。",
+      "textPreview": "音乐随场景自动切换，开始页保持静默，避免在玩家未交互前打破浏览器播放规则。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "音乐随场景自动切换，开始页保持静默，避免在玩家未交互前打破"
+          },
+          {
+            "index": 2,
+            "text": "浏览器播放规则。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "音乐随场景自动切换，开始页保持静默，避免在玩家未交互前打破浏览器播放规则。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "音乐随场景自动切换，开始页保持静默，避免在玩家未交互前打破浏览器播放规则。",
+              "fontSize": 27,
+              "color": "rgba(255, 232, 190, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "9",
+      "bbox": [
+        1000,
+        568,
+        36,
+        26
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "10",
+      "bbox": [
+        1044,
+        552,
+        36,
+        43
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EF8AA8"
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "11",
+      "bbox": [
+        1092,
+        536,
+        36,
+        60
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j2t83itg",
+      "id": "12",
+      "bbox": [
+        1136,
+        516,
+        36,
+        77
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh0fepkz",
+      "id": "13",
+      "bbox": [
+        1180,
+        556,
+        36,
+        39
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EF8AA8"
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w7mp0bi",
+      "id": "14",
+      "bbox": [
+        1228,
+        540,
+        36,
+        56
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bat47y1",
+      "id": "15",
+      "bbox": [
+        1272,
+        520,
+        36,
+        73
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqh0fepk",
+      "id": "16",
+      "bbox": [
+        1320,
+        560,
+        36,
+        35
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EF8AA8"
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5o7qpg3",
+      "id": "17",
+      "bbox": [
+        1364,
+        544,
+        36,
+        52
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1kre1w7m",
+      "id": "18",
+      "bbox": [
+        1408,
+        524,
+        36,
+        69
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3ylc7u5",
+      "id": "19",
+      "bbox": [
+        1456,
+        564,
+        36,
+        31
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EF8AA8"
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/orytsvu9",
+      "id": "20",
+      "bbox": [
+        1500,
+        548,
+        36,
+        48
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "21",
+      "bbox": [
+        1544,
+        528,
+        36,
+        65
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al87ed8b",
+      "id": "22",
+      "bbox": [
+        1592,
+        568,
+        36,
+        27
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EF8AA8"
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z61032ls",
+      "id": "23",
+      "bbox": [
+        1636,
+        552,
+        36,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfil0rqd",
+      "id": "24",
+      "bbox": [
+        1680,
+        532,
+        36,
+        61
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0fepkzu",
+      "id": "25",
+      "bbox": [
+        1728,
+        516,
+        36,
+        78
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EF8AA8"
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9w3m94f",
+      "id": "26",
+      "bbox": [
+        1772,
+        556,
+        36,
+        40
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zupwb2hw",
+      "id": "27",
+      "bbox": [
+        1000,
+        624,
+        808,
+        54
+      ],
+      "geometry": "rect",
+      "text": "交互节奏",
+      "textPreview": "交互节奏",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "交互节奏"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "交互节奏",
+          "runs": [
+            {
+              "index": 1,
+              "text": "交互节奏",
+              "fontSize": 44,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obm58z25",
+      "id": "28",
+      "bbox": [
+        1000,
+        706,
+        808,
+        76
+      ],
+      "geometry": "rect",
+      "text": "白天：点击正确步骤，得到反馈。\n夜晚：每个按钮都是一种表达策略，也是一种损耗方式。",
+      "textPreview": "白天：点击正确步骤，得到反馈。 | 夜晚：每个按钮都是一种表达策略，也是一种损耗方式。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "白天：点击正确步骤，得到反馈。"
+          },
+          {
+            "index": 2,
+            "text": "夜晚：每个按钮都是一种表达策略，也是一种损耗方式。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "白天：点击正确步骤，得到反馈。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "白天：点击正确步骤，得到反馈。",
+              "fontSize": 31,
+              "color": "#FFF2C2"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "夜晚：每个按钮都是一种表达策略，也是一种损耗方式。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "夜晚：每个按钮都是一种表达策略，也是一种损耗方式。",
+              "fontSize": 31,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,602 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/val87ed8",
+    "id": "val87ed8",
+    "slide": 5,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/gn29gr2p",
+      "id": "12",
+      "name": "bg-night2-friend.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image13.png",
+        "contentType": "image/png"
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image13.png",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(15, 12, 24, 0.72)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je9cvixc",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        108,
+        82,
+        1704,
+        28
+      ],
+      "geometry": "rect",
+      "text": "03 / STORY",
+      "textPreview": "03 / STORY",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03 / STORY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03 / STORY",
+          "runs": [
+            {
+              "index": 1,
+              "text": "03 / STORY",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87ed8bat",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        108,
+        132,
+        1704,
+        88
+      ],
+      "geometry": "rect",
+      "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+      "textPreview": "故事内容：不是寻找真相，而是观察解释如何失效",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "故事内容：不是寻找真相，而是观察解释如何失效"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+          "runs": [
+            {
+              "index": 1,
+              "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xs72x4na",
+      "id": "5",
+      "bbox": [
+        108,
+        240,
+        1,
+        1
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q1orytsv",
+      "id": "6",
+      "bbox": [
+        108,
+        288,
+        742,
+        52
+      ],
+      "geometry": "rect",
+      "text": "白天的四个问题",
+      "textPreview": "白天的四个问题",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "白天的四个问题"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "白天的四个问题",
+          "runs": [
+            {
+              "index": 1,
+              "text": "白天的四个问题",
+              "fontSize": 42,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmlkjm1c",
+      "id": "7",
+      "bbox": [
+        108,
+        366,
+        742,
+        192
+      ],
+      "geometry": "rect",
+      "text": "网络断开\n文档混乱\n房间失序\n汇报未成形",
+      "textPreview": "网络断开 | 文档混乱 | 房间失序 | 汇报未成形",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "网络断开"
+          },
+          {
+            "index": 2,
+            "text": "文档混乱"
+          },
+          {
+            "index": 3,
+            "text": "房间失序"
+          },
+          {
+            "index": 4,
+            "text": "汇报未成形"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "网络断开",
+          "runs": [
+            {
+              "index": 1,
+              "text": "网络断开",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "文档混乱",
+          "runs": [
+            {
+              "index": 1,
+              "text": "文档混乱",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "房间失序",
+          "runs": [
+            {
+              "index": 1,
+              "text": "房间失序",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "汇报未成形",
+          "runs": [
+            {
+              "index": 1,
+              "text": "汇报未成形",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jqh0fep",
+      "id": "8",
+      "bbox": [
+        108,
+        586,
+        742,
+        66
+      ],
+      "geometry": "rect",
+      "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+      "textPreview": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界"
+          },
+          {
+            "index": 2,
+            "text": "变稳定。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+              "fontSize": 27,
+              "color": "rgba(255, 230, 185, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4nap4r6",
+      "id": "9",
+      "bbox": [
+        940,
+        288,
+        872,
+        52
+      ],
+      "geometry": "rect",
+      "text": "夜晚的四段关系",
+      "textPreview": "夜晚的四段关系",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "夜晚的四段关系"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "夜晚的四段关系",
+          "runs": [
+            {
+              "index": 1,
+              "text": "夜晚的四段关系",
+              "fontSize": 42,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w7mp0bi",
+      "id": "10",
+      "bbox": [
+        940,
+        366,
+        872,
+        164
+      ],
+      "geometry": "rect",
+      "text": "家人把疲惫听成指责\n朋友把休息听成疏远\n同事把风险听成否定\n亲密关系把边界听成冷淡",
+      "textPreview": "家人把疲惫听成指责 | 朋友把休息听成疏远 | 同事把风险听成否定 | 亲密关系把边界听成冷淡",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "家人把疲惫听成指责"
+          },
+          {
+            "index": 2,
+            "text": "朋友把休息听成疏远"
+          },
+          {
+            "index": 3,
+            "text": "同事把风险听成否定"
+          },
+          {
+            "index": 4,
+            "text": "亲密关系把边界听成冷淡"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "家人把疲惫听成指责",
+          "runs": [
+            {
+              "index": 1,
+              "text": "家人把疲惫听成指责",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "朋友把休息听成疏远",
+          "runs": [
+            {
+              "index": 1,
+              "text": "朋友把休息听成疏远",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "同事把风险听成否定",
+          "runs": [
+            {
+              "index": 1,
+              "text": "同事把风险听成否定",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "亲密关系把边界听成冷淡",
+          "runs": [
+            {
+              "index": 1,
+              "text": "亲密关系把边界听成冷淡",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bat47y1",
+      "id": "11",
+      "bbox": [
+        940,
+        556,
+        872,
+        34
+      ],
+      "geometry": "rect",
+      "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+      "textPreview": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+              "fontSize": 27,
+              "color": "rgba(255, 230, 185, 0.88)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

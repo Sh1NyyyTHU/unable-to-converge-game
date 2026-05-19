@@ -1,0 +1,1721 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/pt1rim",
+    "id": "pt1rim",
+    "slide": 10,
+    "layoutId": "39a16af9-c7e4-4e80-84c7-6458acfb6973",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "7d3a601a-72cb-4f4f-a767-37070804ab1c",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "39a16af9-c7e4-4e80-84c7-6458acfb6973",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "7d3a601a-72cb-4f4f-a767-37070804ab1c",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "7d3a601a-72cb-4f4f-a767-37070804ab1c",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/8jqh0fep",
+      "id": "1",
+      "name": "bg-day2-document.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "alt": "游戏场景背景",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "63d15e92-60e4-4fd2-8731-185e788dd876",
+        "contentType": "image/png",
+        "uri": "H:\\gitwork\\unable-to-converge-game\\assets\\pixel-backgrounds\\day2-document.png"
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/29gr2p8n",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "fillColor": "rgba(23, 14, 15, 0.74)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vu9knih4",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        112,
+        84,
+        1696,
+        28
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "09 / NEXT",
+      "textPreview": "09 / NEXT",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "09 / NEXT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "09 / NEXT",
+          "runs": [
+            {
+              "index": 1,
+              "text": "09 / NEXT",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/knih4byh",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        112,
+        134,
+        1696,
+        88
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.1"
+      },
+      "geometry": "rect",
+      "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+      "textPreview": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "fontSize": 72,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "后续方向：从短篇原型扩展为可复玩的叙事系统"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+          "runs": [
+            {
+              "index": 1,
+              "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8bat47y",
+      "id": "5",
+      "bbox": [
+        112,
+        242,
+        1,
+        1
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.2"
+      },
+      "geometry": "rect",
+      "resolvedFontSize": 1,
+      "resolvedTextStyle": {
+        "fontSize": 75,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2lszqtcj",
+      "id": "6",
+      "bbox": [
+        112,
+        484,
+        538,
+        52
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.0"
+      },
+      "geometry": "rect",
+      "text": "内容扩展",
+      "textPreview": "内容扩展",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "内容扩展"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "内容扩展",
+          "runs": [
+            {
+              "index": 1,
+              "text": "内容扩展",
+              "fontSize": 42,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v6psfil0",
+      "id": "7",
+      "bbox": [
+        112,
+        556,
+        538,
+        72
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.1"
+      },
+      "geometry": "rect",
+      "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+      "textPreview": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "增加更多天数、更多关系类型，让误解"
+          },
+          {
+            "index": 2,
+            "text": "模式形成可比较的谱系。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+              "fontSize": 30,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kre1w7mp",
+      "id": "8",
+      "bbox": [
+        692,
+        484,
+        538,
+        52
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.0"
+      },
+      "geometry": "rect",
+      "text": "系统扩展",
+      "textPreview": "系统扩展",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "系统扩展"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "系统扩展",
+          "runs": [
+            {
+              "index": 1,
+              "text": "系统扩展",
+              "fontSize": 42,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbulwva",
+      "id": "9",
+      "bbox": [
+        692,
+        556,
+        538,
+        72
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.1"
+      },
+      "geometry": "rect",
+      "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+      "textPreview": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "加入存档、章节选择、音量控制，让玩"
+          },
+          {
+            "index": 2,
+            "text": "家回看不同选择的代价。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+              "fontSize": 30,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lszqtcj6",
+      "id": "10",
+      "bbox": [
+        1270,
+        484,
+        538,
+        52
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.0"
+      },
+      "geometry": "rect",
+      "text": "表现扩展",
+      "textPreview": "表现扩展",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "表现扩展"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "表现扩展",
+          "runs": [
+            {
+              "index": 1,
+              "text": "表现扩展",
+              "fontSize": 42,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s72x4nap",
+      "id": "11",
+      "bbox": [
+        1270,
+        556,
+        538,
+        72
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.1"
+      },
+      "geometry": "rect",
+      "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+      "textPreview": "为结局增加专属画面、音效和更明确的情绪转场。",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "为结局增加专属画面、音效和更明确的"
+          },
+          {
+            "index": 2,
+            "text": "情绪转场。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+              "fontSize": 30,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3m94fu18",
+      "id": "12",
+      "name": "footer-rule",
+      "bbox": [
+        208,
+        930,
+        180,
+        4
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.0"
+      },
+      "geometry": "rect",
+      "fillColor": "rgba(255, 211, 108, 0.68)",
+      "lineColor": "rgba(255, 211, 108, 0.68)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5gbq1or",
+      "id": "13",
+      "name": "footer-label",
+      "bbox": [
+        1050,
+        920,
+        662,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.1"
+      },
+      "geometry": "rect",
+      "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+      "textPreview": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+              "fontSize": 19,
+              "color": "rgba(255, 226, 165, 0.78)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "baseUnit": 8,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "slide-root",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "image",
+            "name": "bg-day2-document.png",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "source": {
+              "kind": "path",
+              "path": "H:\\gitwork\\unable-to-converge-game\\assets\\pixel-backgrounds\\day2-document.png"
+            },
+            "fit": "cover",
+            "alt": "游戏场景背景",
+            "element": {
+              "aid": "im/8jqh0fep",
+              "id": "1",
+              "kind": "image"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "panel",
+            "name": "bg-scrim",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "element": {
+              "aid": "sh/29gr2p8n",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "column",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 224,
+              "height": 557.8
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [
+              {
+                "path": "0.2.0",
+                "kind": "column",
+                "name": "title-stack",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1,
+                  "height": 159
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 84,
+                  "width": 1696,
+                  "height": 159
+                },
+                "children": [
+                  {
+                    "path": "0.2.0.0",
+                    "kind": "text",
+                    "name": "kicker",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 27.6
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 84,
+                      "width": 1696,
+                      "height": 27.6
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 84,
+                      "width": 1696,
+                      "height": 28
+                    },
+                    "children": [],
+                    "text": "09 / NEXT",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/vu9knih4",
+                      "id": "3",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "kind": "text",
+                    "name": "slide-title",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 86.4
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 133.6,
+                      "width": 1696,
+                      "height": 86.4
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 134,
+                      "width": 1696,
+                      "height": 88
+                    },
+                    "children": [],
+                    "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/knih4byh",
+                      "id": "4",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "kind": "text",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 242,
+                      "width": 1,
+                      "height": 1
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 242,
+                      "width": 1,
+                      "height": 1
+                    },
+                    "children": [],
+                    "text": "",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/d8bat47y",
+                      "id": "5",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 22,
+                "effectiveGap": 22,
+                "justifyOffset": 0,
+                "align": "start",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 112,
+                  "top": 84,
+                  "width": 1696,
+                  "height": 159
+                },
+                "items": [
+                  {
+                    "path": "0.2.0.0",
+                    "frame": {
+                      "left": 112,
+                      "top": 84,
+                      "width": 1696,
+                      "height": 27.6
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "frame": {
+                      "left": 112,
+                      "top": 133.6,
+                      "width": 1696,
+                      "height": 86.4
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "frame": {
+                      "left": 112,
+                      "top": 242,
+                      "width": 1,
+                      "height": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.1",
+                "kind": "grid",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "fill",
+                    "value": 1
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 84,
+                  "height": 0
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 295,
+                  "width": 1696,
+                  "height": 522.2
+                },
+                "children": [
+                  {
+                    "path": "0.2.1.0",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fill",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 106.4
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.0.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 50.4
+                        },
+                        "frame": {
+                          "left": 112,
+                          "top": 484.9,
+                          "width": 537.33,
+                          "height": 50.4
+                        },
+                        "snappedFrame": {
+                          "left": 112,
+                          "top": 484,
+                          "width": 538,
+                          "height": 52
+                        },
+                        "children": [],
+                        "text": "内容扩展",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/2lszqtcj",
+                          "id": "6",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "frame": {
+                          "left": 112,
+                          "top": 555.3,
+                          "width": 537.33,
+                          "height": 72
+                        },
+                        "snappedFrame": {
+                          "left": 112,
+                          "top": 556,
+                          "width": 538,
+                          "height": 72
+                        },
+                        "children": [],
+                        "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/v6psfil0",
+                          "id": "7",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 20,
+                    "effectiveGap": 20,
+                    "justifyOffset": 189.9,
+                    "align": "start",
+                    "justify": "center",
+                    "contentFrame": {
+                      "left": 112,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.0.0",
+                        "frame": {
+                          "left": 112,
+                          "top": 484.9,
+                          "width": 537.33,
+                          "height": 50.4
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.1",
+                        "frame": {
+                          "left": 112,
+                          "top": 555.3,
+                          "width": 537.33,
+                          "height": 72
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fill",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 106.4
+                    },
+                    "frame": {
+                      "left": 691.33,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.1.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 50.4
+                        },
+                        "frame": {
+                          "left": 691.33,
+                          "top": 484.9,
+                          "width": 537.33,
+                          "height": 50.4
+                        },
+                        "snappedFrame": {
+                          "left": 692,
+                          "top": 484,
+                          "width": 538,
+                          "height": 52
+                        },
+                        "children": [],
+                        "text": "系统扩展",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/kre1w7mp",
+                          "id": "8",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "frame": {
+                          "left": 691.33,
+                          "top": 555.3,
+                          "width": 537.33,
+                          "height": 72
+                        },
+                        "snappedFrame": {
+                          "left": 692,
+                          "top": 556,
+                          "width": 538,
+                          "height": 72
+                        },
+                        "children": [],
+                        "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/dcbulwva",
+                          "id": "9",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 20,
+                    "effectiveGap": 20,
+                    "justifyOffset": 189.9,
+                    "align": "start",
+                    "justify": "center",
+                    "contentFrame": {
+                      "left": 691.33,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.1.0",
+                        "frame": {
+                          "left": 691.33,
+                          "top": 484.9,
+                          "width": 537.33,
+                          "height": 50.4
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.1",
+                        "frame": {
+                          "left": 691.33,
+                          "top": 555.3,
+                          "width": 537.33,
+                          "height": 72
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "path": "0.2.1.2",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fill",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 106.4
+                    },
+                    "frame": {
+                      "left": 1270.67,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.2.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 50.4
+                        },
+                        "frame": {
+                          "left": 1270.67,
+                          "top": 484.9,
+                          "width": 537.33,
+                          "height": 50.4
+                        },
+                        "snappedFrame": {
+                          "left": 1270,
+                          "top": 484,
+                          "width": 538,
+                          "height": 52
+                        },
+                        "children": [],
+                        "text": "表现扩展",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/lszqtcj6",
+                          "id": "10",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.2.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "frame": {
+                          "left": 1270.67,
+                          "top": 555.3,
+                          "width": 537.33,
+                          "height": 72
+                        },
+                        "snappedFrame": {
+                          "left": 1270,
+                          "top": 556,
+                          "width": 538,
+                          "height": 72
+                        },
+                        "children": [],
+                        "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/s72x4nap",
+                          "id": "11",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 20,
+                    "effectiveGap": 20,
+                    "justifyOffset": 189.9,
+                    "align": "start",
+                    "justify": "center",
+                    "contentFrame": {
+                      "left": 1270.67,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.2.0",
+                        "frame": {
+                          "left": 1270.67,
+                          "top": 484.9,
+                          "width": 537.33,
+                          "height": 50.4
+                        }
+                      },
+                      {
+                        "path": "0.2.1.2.1",
+                        "frame": {
+                          "left": 1270.67,
+                          "top": 555.3,
+                          "width": 537.33,
+                          "height": 72
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "columnGap": 42,
+                "rowGap": 0,
+                "alignItems": "stretch",
+                "justifyItems": "stretch",
+                "contentFrame": {
+                  "left": 112,
+                  "top": 295,
+                  "width": 1696,
+                  "height": 522.2
+                },
+                "columns": [
+                  {
+                    "mode": "fr",
+                    "value": 1
+                  },
+                  {
+                    "mode": "fr",
+                    "value": 1
+                  },
+                  {
+                    "mode": "fr",
+                    "value": 1
+                  }
+                ],
+                "autoRows": "auto",
+                "resolvedRows": [
+                  "auto"
+                ],
+                "columnSizes": [
+                  537.33,
+                  537.33,
+                  537.33
+                ],
+                "rowSizes": [
+                  522.2
+                ],
+                "cells": [
+                  {
+                    "path": "0.2.1.0",
+                    "column": 0,
+                    "row": 0,
+                    "columnSpan": 1,
+                    "rowSpan": 1,
+                    "cellFrame": {
+                      "left": 112,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    }
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "column": 1,
+                    "row": 0,
+                    "columnSpan": 1,
+                    "rowSpan": 1,
+                    "cellFrame": {
+                      "left": 691.33,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    }
+                  },
+                  {
+                    "path": "0.2.1.2",
+                    "column": 2,
+                    "row": 0,
+                    "columnSpan": 1,
+                    "rowSpan": 1,
+                    "cellFrame": {
+                      "left": 1270.67,
+                      "top": 295,
+                      "width": 537.33,
+                      "height": 522.2
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.2",
+                "kind": "row",
+                "name": "footer-row",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1033.9,
+                  "height": 126.8
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 869.2,
+                  "width": 1696,
+                  "height": 126.8
+                },
+                "children": [
+                  {
+                    "path": "0.2.2.0",
+                    "kind": "rule",
+                    "name": "footer-rule",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 180
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 4
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 180,
+                      "height": 4
+                    },
+                    "frame": {
+                      "left": 208,
+                      "top": 930,
+                      "width": 180,
+                      "height": 4
+                    },
+                    "snappedFrame": {
+                      "left": 208,
+                      "top": 930,
+                      "width": 180,
+                      "height": 4
+                    },
+                    "children": [],
+                    "weight": 4,
+                    "element": {
+                      "aid": "sh/3m94fu18",
+                      "id": "12",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.2.1",
+                    "kind": "text",
+                    "name": "footer-label",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 661.9,
+                      "height": 22.8
+                    },
+                    "frame": {
+                      "left": 1050.1,
+                      "top": 920,
+                      "width": 661.9,
+                      "height": 24
+                    },
+                    "snappedFrame": {
+                      "left": 1050,
+                      "top": 920,
+                      "width": 662,
+                      "height": 24
+                    },
+                    "children": [],
+                    "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/a5gbq1or",
+                      "id": "13",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 52,
+                  "right": 96,
+                  "bottom": 52,
+                  "left": 96
+                },
+                "gap": 0,
+                "effectiveGap": 662.1,
+                "justifyOffset": 0,
+                "align": "center",
+                "justify": "between",
+                "contentFrame": {
+                  "left": 208,
+                  "top": 921.2,
+                  "width": 1504,
+                  "height": 22.8
+                },
+                "items": [
+                  {
+                    "path": "0.2.2.0",
+                    "frame": {
+                      "left": 208,
+                      "top": 930,
+                      "width": 180,
+                      "height": 4
+                    }
+                  },
+                  {
+                    "path": "0.2.2.1",
+                    "frame": {
+                      "left": 1050.1,
+                      "top": 920,
+                      "width": 661.9,
+                      "height": 24
+                    }
+                  }
+                ]
+              }
+            ],
+            "padding": {
+              "top": 84,
+              "right": 112,
+              "bottom": 84,
+              "left": 112
+            },
+            "gap": 52,
+            "effectiveGap": 52,
+            "justifyOffset": 0,
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 112,
+              "top": 84,
+              "width": 1696,
+              "height": 912
+            },
+            "items": [
+              {
+                "path": "0.2.0",
+                "frame": {
+                  "left": 112,
+                  "top": 84,
+                  "width": 1696,
+                  "height": 159
+                }
+              },
+              {
+                "path": "0.2.1",
+                "frame": {
+                  "left": 112,
+                  "top": 295,
+                  "width": 1696,
+                  "height": 522.2
+                }
+              },
+              {
+                "path": "0.2.2",
+                "frame": {
+                  "left": 112,
+                  "top": 869.2,
+                  "width": 1696,
+                  "height": 126.8
+                }
+              }
+            ]
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

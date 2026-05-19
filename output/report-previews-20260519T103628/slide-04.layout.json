@@ -1,0 +1,1534 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/jbt27o",
+    "id": "jbt27o",
+    "slide": 4,
+    "layoutId": "e4d5dd3f-7347-47e5-a747-64e10568dfd3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8deccd12-c213-4c88-820c-7e1674b181ca",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e4d5dd3f-7347-47e5-a747-64e10568dfd3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8deccd12-c213-4c88-820c-7e1674b181ca",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8deccd12-c213-4c88-820c-7e1674b181ca",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/32lszqtc",
+      "id": "1",
+      "name": "bg-night2-friend.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "alt": "游戏场景背景",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "d47a02d8-5387-4aee-bd2d-fbe2a5cec552",
+        "contentType": "image/png",
+        "byteLength": 1630297
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "fillColor": "rgba(15, 12, 24, 0.72)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        108,
+        82,
+        1704,
+        28
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "03 / STORY",
+      "textPreview": "03 / STORY",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03 / STORY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03 / STORY",
+          "runs": [
+            {
+              "index": 1,
+              "text": "03 / STORY",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqh0fepk",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        108,
+        132,
+        1704,
+        88
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.1"
+      },
+      "geometry": "rect",
+      "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+      "textPreview": "故事内容：不是寻找真相，而是观察解释如何失效",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "fontSize": 72,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "故事内容：不是寻找真相，而是观察解释如何失效"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+          "runs": [
+            {
+              "index": 1,
+              "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5o7qpg3",
+      "id": "5",
+      "bbox": [
+        108,
+        240,
+        1,
+        1
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.2"
+      },
+      "geometry": "rect",
+      "resolvedFontSize": 1,
+      "resolvedTextStyle": {
+        "fontSize": 75,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1w7mp0bi",
+      "id": "6",
+      "bbox": [
+        108,
+        288,
+        742,
+        52
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.0"
+      },
+      "geometry": "rect",
+      "text": "白天的四个问题",
+      "textPreview": "白天的四个问题",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "白天的四个问题"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "白天的四个问题",
+          "runs": [
+            {
+              "index": 1,
+              "text": "白天的四个问题",
+              "fontSize": 42,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bat47y1",
+      "id": "7",
+      "bbox": [
+        108,
+        366,
+        742,
+        192
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.1"
+      },
+      "geometry": "rect",
+      "text": "网络断开\n文档混乱\n房间失序\n汇报未成形",
+      "textPreview": "网络断开 | 文档混乱 | 房间失序 | 汇报未成形",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "网络断开"
+          },
+          {
+            "index": 2,
+            "text": "文档混乱"
+          },
+          {
+            "index": 3,
+            "text": "房间失序"
+          },
+          {
+            "index": 4,
+            "text": "汇报未成形"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "网络断开",
+          "runs": [
+            {
+              "index": 1,
+              "text": "网络断开",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "文档混乱",
+          "runs": [
+            {
+              "index": 1,
+              "text": "文档混乱",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "房间失序",
+          "runs": [
+            {
+              "index": 1,
+              "text": "房间失序",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "汇报未成形",
+          "runs": [
+            {
+              "index": 1,
+              "text": "汇报未成形",
+              "fontSize": 40,
+              "color": "#FFF3C3",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji5snelo",
+      "id": "8",
+      "bbox": [
+        108,
+        586,
+        742,
+        66
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.2"
+      },
+      "geometry": "rect",
+      "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+      "textPreview": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界"
+          },
+          {
+            "index": 2,
+            "text": "变稳定。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+              "fontSize": 27,
+              "color": "rgba(255, 230, 185, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxc3ylc7",
+      "id": "9",
+      "bbox": [
+        940,
+        288,
+        872,
+        52
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.0"
+      },
+      "geometry": "rect",
+      "text": "夜晚的四段关系",
+      "textPreview": "夜晚的四段关系",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "夜晚的四段关系"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "夜晚的四段关系",
+          "runs": [
+            {
+              "index": 1,
+              "text": "夜晚的四段关系",
+              "fontSize": 42,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn29gr2p",
+      "id": "10",
+      "bbox": [
+        940,
+        366,
+        872,
+        164
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.1"
+      },
+      "geometry": "rect",
+      "text": "家人把疲惫听成指责\n朋友把休息听成疏远\n同事把风险听成否定\n亲密关系把边界听成冷淡",
+      "textPreview": "家人把疲惫听成指责 | 朋友把休息听成疏远 | 同事把风险听成否定 | 亲密关系把边界听成冷淡",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "fontSize": 34,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "家人把疲惫听成指责"
+          },
+          {
+            "index": 2,
+            "text": "朋友把休息听成疏远"
+          },
+          {
+            "index": 3,
+            "text": "同事把风险听成否定"
+          },
+          {
+            "index": 4,
+            "text": "亲密关系把边界听成冷淡"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "家人把疲惫听成指责",
+          "runs": [
+            {
+              "index": 1,
+              "text": "家人把疲惫听成指责",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "朋友把休息听成疏远",
+          "runs": [
+            {
+              "index": 1,
+              "text": "朋友把休息听成疏远",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "同事把风险听成否定",
+          "runs": [
+            {
+              "index": 1,
+              "text": "同事把风险听成否定",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "亲密关系把边界听成冷淡",
+          "runs": [
+            {
+              "index": 1,
+              "text": "亲密关系把边界听成冷淡",
+              "fontSize": 34,
+              "color": "#FFE6B3",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58z25kb6",
+      "id": "11",
+      "bbox": [
+        940,
+        556,
+        872,
+        34
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.2"
+      },
+      "geometry": "rect",
+      "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+      "textPreview": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+              "fontSize": 27,
+              "color": "rgba(255, 230, 185, 0.88)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "baseUnit": 8,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "slide-root",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "image",
+            "name": "bg-night2-friend.png",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "source": {
+              "kind": "dataUrl"
+            },
+            "fit": "cover",
+            "alt": "游戏场景背景",
+            "element": {
+              "aid": "im/32lszqtc",
+              "id": "1",
+              "kind": "image"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "panel",
+            "name": "bg-scrim",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "element": {
+              "aid": "sh/18jqh0fe",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "column",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 216,
+              "height": 369
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [
+              {
+                "path": "0.2.0",
+                "kind": "column",
+                "name": "title-stack",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1,
+                  "height": 159
+                },
+                "frame": {
+                  "left": 108,
+                  "top": 82,
+                  "width": 1704,
+                  "height": 159
+                },
+                "children": [
+                  {
+                    "path": "0.2.0.0",
+                    "kind": "text",
+                    "name": "kicker",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 27.6
+                    },
+                    "frame": {
+                      "left": 108,
+                      "top": 82,
+                      "width": 1704,
+                      "height": 27.6
+                    },
+                    "snappedFrame": {
+                      "left": 108,
+                      "top": 82,
+                      "width": 1704,
+                      "height": 28
+                    },
+                    "children": [],
+                    "text": "03 / STORY",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/8nqxs72x",
+                      "id": "3",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "kind": "text",
+                    "name": "slide-title",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 86.4
+                    },
+                    "frame": {
+                      "left": 108,
+                      "top": 131.6,
+                      "width": 1704,
+                      "height": 86.4
+                    },
+                    "snappedFrame": {
+                      "left": 108,
+                      "top": 132,
+                      "width": 1704,
+                      "height": 88
+                    },
+                    "children": [],
+                    "text": "故事内容：不是寻找真相，而是观察解释如何失效",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/jqh0fepk",
+                      "id": "4",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "kind": "text",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "frame": {
+                      "left": 108,
+                      "top": 240,
+                      "width": 1,
+                      "height": 1
+                    },
+                    "snappedFrame": {
+                      "left": 108,
+                      "top": 240,
+                      "width": 1,
+                      "height": 1
+                    },
+                    "children": [],
+                    "text": "",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/q5o7qpg3",
+                      "id": "5",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 22,
+                "effectiveGap": 22,
+                "justifyOffset": 0,
+                "align": "start",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 108,
+                  "top": 82,
+                  "width": 1704,
+                  "height": 159
+                },
+                "items": [
+                  {
+                    "path": "0.2.0.0",
+                    "frame": {
+                      "left": 108,
+                      "top": 82,
+                      "width": 1704,
+                      "height": 27.6
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "frame": {
+                      "left": 108,
+                      "top": 131.6,
+                      "width": 1704,
+                      "height": 86.4
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "frame": {
+                      "left": 108,
+                      "top": 240,
+                      "width": 1,
+                      "height": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.1",
+                "kind": "grid",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "fill",
+                    "value": 1
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 90,
+                  "height": 0
+                },
+                "frame": {
+                  "left": 108,
+                  "top": 287,
+                  "width": 1704,
+                  "height": 711
+                },
+                "children": [
+                  {
+                    "path": "0.2.1.0",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fill",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 330.8
+                    },
+                    "frame": {
+                      "left": 108,
+                      "top": 287,
+                      "width": 742.44,
+                      "height": 711
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.0.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 50.4
+                        },
+                        "frame": {
+                          "left": 108,
+                          "top": 287,
+                          "width": 742.44,
+                          "height": 50.4
+                        },
+                        "snappedFrame": {
+                          "left": 108,
+                          "top": 288,
+                          "width": 742,
+                          "height": 52
+                        },
+                        "children": [],
+                        "text": "白天的四个问题",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/1w7mp0bi",
+                          "id": "6",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 192
+                        },
+                        "frame": {
+                          "left": 108,
+                          "top": 365.4,
+                          "width": 742.44,
+                          "height": 192
+                        },
+                        "snappedFrame": {
+                          "left": 108,
+                          "top": 366,
+                          "width": 742,
+                          "height": 192
+                        },
+                        "children": [],
+                        "text": "网络断开\n文档混乱\n房间失序\n汇报未成形",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/8bat47y1",
+                          "id": "7",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.2",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 32.4
+                        },
+                        "frame": {
+                          "left": 108,
+                          "top": 585.4,
+                          "width": 742.44,
+                          "height": 64.8
+                        },
+                        "snappedFrame": {
+                          "left": 108,
+                          "top": 586,
+                          "width": 742,
+                          "height": 66
+                        },
+                        "children": [],
+                        "text": "它们都能被拆成动作：检查、整理、归位、练习。完成后世界变稳定。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/ji5snelo",
+                          "id": "8",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 28,
+                    "effectiveGap": 28,
+                    "justifyOffset": 0,
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 108,
+                      "top": 287,
+                      "width": 742.44,
+                      "height": 711
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.0.0",
+                        "frame": {
+                          "left": 108,
+                          "top": 287,
+                          "width": 742.44,
+                          "height": 50.4
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.1",
+                        "frame": {
+                          "left": 108,
+                          "top": 365.4,
+                          "width": 742.44,
+                          "height": 192
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.2",
+                        "frame": {
+                          "left": 108,
+                          "top": 585.4,
+                          "width": 742.44,
+                          "height": 64.8
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fill",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 302
+                    },
+                    "frame": {
+                      "left": 940.44,
+                      "top": 287,
+                      "width": 871.56,
+                      "height": 711
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.1.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 50.4
+                        },
+                        "frame": {
+                          "left": 940.44,
+                          "top": 287,
+                          "width": 871.56,
+                          "height": 50.4
+                        },
+                        "snappedFrame": {
+                          "left": 940,
+                          "top": 288,
+                          "width": 872,
+                          "height": 52
+                        },
+                        "children": [],
+                        "text": "夜晚的四段关系",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/uxc3ylc7",
+                          "id": "9",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 163.2
+                        },
+                        "frame": {
+                          "left": 940.44,
+                          "top": 365.4,
+                          "width": 871.56,
+                          "height": 163.2
+                        },
+                        "snappedFrame": {
+                          "left": 940,
+                          "top": 366,
+                          "width": 872,
+                          "height": 164
+                        },
+                        "children": [],
+                        "text": "家人把疲惫听成指责\n朋友把休息听成疏远\n同事把风险听成否定\n亲密关系把边界听成冷淡",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/gn29gr2p",
+                          "id": "10",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.2",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 32.4
+                        },
+                        "frame": {
+                          "left": 940.44,
+                          "top": 556.6,
+                          "width": 871.56,
+                          "height": 32.4
+                        },
+                        "snappedFrame": {
+                          "left": 940,
+                          "top": 556,
+                          "width": 872,
+                          "height": 34
+                        },
+                        "children": [],
+                        "text": "玩家的核心体验不是“说服成功”，而是感到语言被不断改写。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/58z25kb6",
+                          "id": "11",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 28,
+                    "effectiveGap": 28,
+                    "justifyOffset": 0,
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 940.44,
+                      "top": 287,
+                      "width": 871.56,
+                      "height": 711
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.1.0",
+                        "frame": {
+                          "left": 940.44,
+                          "top": 287,
+                          "width": 871.56,
+                          "height": 50.4
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.1",
+                        "frame": {
+                          "left": 940.44,
+                          "top": 365.4,
+                          "width": 871.56,
+                          "height": 163.2
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.2",
+                        "frame": {
+                          "left": 940.44,
+                          "top": 556.6,
+                          "width": 871.56,
+                          "height": 32.4
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "columnGap": 90,
+                "rowGap": 0,
+                "alignItems": "stretch",
+                "justifyItems": "stretch",
+                "contentFrame": {
+                  "left": 108,
+                  "top": 287,
+                  "width": 1704,
+                  "height": 711
+                },
+                "columns": [
+                  {
+                    "mode": "fr",
+                    "value": 0.92
+                  },
+                  {
+                    "mode": "fr",
+                    "value": 1.08
+                  }
+                ],
+                "autoRows": "auto",
+                "resolvedRows": [
+                  "auto"
+                ],
+                "columnSizes": [
+                  742.44,
+                  871.56
+                ],
+                "rowSizes": [
+                  711
+                ],
+                "cells": [
+                  {
+                    "path": "0.2.1.0",
+                    "column": 0,
+                    "row": 0,
+                    "columnSpan": 1,
+                    "rowSpan": 1,
+                    "cellFrame": {
+                      "left": 108,
+                      "top": 287,
+                      "width": 742.44,
+                      "height": 711
+                    }
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "column": 1,
+                    "row": 0,
+                    "columnSpan": 1,
+                    "rowSpan": 1,
+                    "cellFrame": {
+                      "left": 940.44,
+                      "top": 287,
+                      "width": 871.56,
+                      "height": 711
+                    }
+                  }
+                ]
+              }
+            ],
+            "padding": {
+              "top": 82,
+              "right": 108,
+              "bottom": 82,
+              "left": 108
+            },
+            "gap": 46,
+            "effectiveGap": 46,
+            "justifyOffset": 0,
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 108,
+              "top": 82,
+              "width": 1704,
+              "height": 916
+            },
+            "items": [
+              {
+                "path": "0.2.0",
+                "frame": {
+                  "left": 108,
+                  "top": 82,
+                  "width": 1704,
+                  "height": 159
+                }
+              },
+              {
+                "path": "0.2.1",
+                "frame": {
+                  "left": 108,
+                  "top": 287,
+                  "width": 1704,
+                  "height": 711
+                }
+              }
+            ]
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

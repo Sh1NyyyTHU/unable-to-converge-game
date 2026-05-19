@@ -1,0 +1,571 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/29gr2p8n",
+    "id": "29gr2p8n",
+    "slide": 11,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/zqtcj6to",
+      "id": "14",
+      "name": "bg-day2-document.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image21.png",
+        "contentType": "image/png"
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image21.png",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gr2p8nq",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(23, 14, 15, 0.74)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvy90je9",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        112,
+        84,
+        1696,
+        28
+      ],
+      "geometry": "rect",
+      "text": "09 / NEXT",
+      "textPreview": "09 / NEXT",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "09 / NEXT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "09 / NEXT",
+          "runs": [
+            {
+              "index": 1,
+              "text": "09 / NEXT",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r2p8nqxs",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        112,
+        134,
+        1696,
+        88
+      ],
+      "geometry": "rect",
+      "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+      "textPreview": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "后续方向：从短篇原型扩展为可复玩的叙事系统"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+          "runs": [
+            {
+              "index": 1,
+              "text": "后续方向：从短篇原型扩展为可复玩的叙事系统",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hwfyxob",
+      "id": "5",
+      "bbox": [
+        112,
+        242,
+        1,
+        1
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94fu18jq",
+      "id": "6",
+      "bbox": [
+        112,
+        484,
+        538,
+        52
+      ],
+      "geometry": "rect",
+      "text": "内容扩展",
+      "textPreview": "内容扩展",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "内容扩展"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "内容扩展",
+          "runs": [
+            {
+              "index": 1,
+              "text": "内容扩展",
+              "fontSize": 42,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "7",
+      "bbox": [
+        112,
+        556,
+        538,
+        72
+      ],
+      "geometry": "rect",
+      "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+      "textPreview": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "增加更多天数、更多关系类型，让误解"
+          },
+          {
+            "index": 2,
+            "text": "模式形成可比较的谱系。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "增加更多天数、更多关系类型，让误解模式形成可比较的谱系。",
+              "fontSize": 30,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqd4vmtw",
+      "id": "8",
+      "bbox": [
+        692,
+        484,
+        538,
+        52
+      ],
+      "geometry": "rect",
+      "text": "系统扩展",
+      "textPreview": "系统扩展",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "系统扩展"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "系统扩展",
+          "runs": [
+            {
+              "index": 1,
+              "text": "系统扩展",
+              "fontSize": 42,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25kb6xkf",
+      "id": "9",
+      "bbox": [
+        692,
+        556,
+        538,
+        72
+      ],
+      "geometry": "rect",
+      "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+      "textPreview": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "加入存档、章节选择、音量控制，让玩"
+          },
+          {
+            "index": 2,
+            "text": "家回看不同选择的代价。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "加入存档、章节选择、音量控制，让玩家回看不同选择的代价。",
+              "fontSize": 30,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4fu18jqh",
+      "id": "10",
+      "bbox": [
+        1270,
+        484,
+        538,
+        52
+      ],
+      "geometry": "rect",
+      "text": "表现扩展",
+      "textPreview": "表现扩展",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "表现扩展"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "表现扩展",
+          "runs": [
+            {
+              "index": 1,
+              "text": "表现扩展",
+              "fontSize": 42,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0nuxc3y",
+      "id": "11",
+      "bbox": [
+        1270,
+        556,
+        538,
+        72
+      ],
+      "geometry": "rect",
+      "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+      "textPreview": "为结局增加专属画面、音效和更明确的情绪转场。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "为结局增加专属画面、音效和更明确的"
+          },
+          {
+            "index": 2,
+            "text": "情绪转场。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "为结局增加专属画面、音效和更明确的情绪转场。",
+              "fontSize": 30,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m94fu18j",
+      "id": "12",
+      "name": "footer-rule",
+      "bbox": [
+        208,
+        930,
+        180,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(255, 211, 108, 0.68)",
+      "lineColor": "rgba(255, 211, 108, 0.68)",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fu18jqh0",
+      "id": "13",
+      "name": "footer-label",
+      "bbox": [
+        1050,
+        920,
+        662,
+        24
+      ],
+      "geometry": "rect",
+      "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+      "textPreview": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "汇报重点：主题明确，形式轻量，视听风格和机制共同服务“无法收敛”的体验。",
+              "fontSize": 19,
+              "color": "rgba(255, 226, 165, 0.78)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

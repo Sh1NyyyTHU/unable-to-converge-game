@@ -1,0 +1,842 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/0z61032l",
+    "id": "0z61032l",
+    "slide": 8,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qd4vmtwr",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "#24171D"
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4nap4r6",
+      "id": "2",
+      "name": "kicker",
+      "bbox": [
+        96,
+        72,
+        1728,
+        28
+      ],
+      "geometry": "rect",
+      "text": "06 / VISUAL STYLE",
+      "textPreview": "06 / VISUAL STYLE",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "06 / VISUAL STYLE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "06 / VISUAL STYLE",
+          "runs": [
+            {
+              "index": 1,
+              "text": "06 / VISUAL STYLE",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jqh0fep",
+      "id": "3",
+      "name": "slide-title",
+      "bbox": [
+        96,
+        122,
+        1728,
+        88
+      ],
+      "geometry": "rect",
+      "text": "画风：像素化生活场景 + 复古对话 UI",
+      "textPreview": "画风：像素化生活场景 + 复古对话 UI",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "画风：像素化生活场景 + 复古对话 UI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "画风：像素化生活场景 + 复古对话 UI",
+          "runs": [
+            {
+              "index": 1,
+              "text": "画风：像素化生活场景 + 复古对话 UI",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fa9w3m94",
+      "id": "4",
+      "name": "slide-subtitle",
+      "bbox": [
+        96,
+        230,
+        1180,
+        36
+      ],
+      "geometry": "rect",
+      "text": "画面不是为了写实，而是把日常经验压缩成可识别的情绪空间。",
+      "textPreview": "画面不是为了写实，而是把日常经验压缩成可识别的情绪空间。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "画面不是为了写实，而是把日常经验压缩成可识别的情绪空间。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "画面不是为了写实，而是把日常经验压缩成可识别的情绪空间。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "画面不是为了写实，而是把日常经验压缩成可识别的情绪空间。",
+              "fontSize": 30,
+              "color": "rgba(255, 229, 177, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpg3ex0n",
+      "id": "5",
+      "name": "thumb-暖色白天：秩序与行动",
+      "bbox": [
+        96,
+        300,
+        679.51,
+        520
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/5gbq1ory",
+      "id": "27",
+      "bbox": [
+        96,
+        300,
+        679.51,
+        520
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image16.png",
+        "contentType": "image/png"
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image16.png",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8v6psfil",
+      "id": "7",
+      "bbox": [
+        96,
+        300,
+        679.51,
+        520
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je9cvixc",
+      "id": "8",
+      "bbox": [
+        114,
+        778,
+        644,
+        26
+      ],
+      "geometry": "rect",
+      "text": "暖色白天：秩序与行动",
+      "textPreview": "暖色白天：秩序与行动",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "暖色白天：秩序与行动"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "暖色白天：秩序与行动",
+          "runs": [
+            {
+              "index": 1,
+              "text": "暖色白天：秩序与行动",
+              "fontSize": 21,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "9",
+      "name": "thumb-冷紫夜晚：不安与防御",
+      "bbox": [
+        797.51,
+        300,
+        502.25,
+        520
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 10,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/u18jqh0f",
+      "id": "28",
+      "bbox": [
+        797.51,
+        300,
+        502.25,
+        520
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image17.png",
+        "contentType": "image/png"
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image17.png",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hgn29gr2",
+      "id": "11",
+      "bbox": [
+        797.51,
+        300,
+        502.25,
+        520
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap4r65wj",
+      "id": "12",
+      "bbox": [
+        816,
+        778,
+        466,
+        26
+      ],
+      "geometry": "rect",
+      "text": "冷紫夜晚：不安与防御",
+      "textPreview": "冷紫夜晚：不安与防御",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "冷紫夜晚：不安与防御"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "冷紫夜晚：不安与防御",
+          "runs": [
+            {
+              "index": 1,
+              "text": "冷紫夜晚：不安与防御",
+              "fontSize": 21,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/za1gvy90",
+      "id": "13",
+      "name": "thumb-结局空间：余波与停顿",
+      "bbox": [
+        1321.75,
+        300,
+        502.25,
+        520
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 14,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/jm1cfa9w",
+      "id": "29",
+      "bbox": [
+        1321.75,
+        300,
+        502.25,
+        520
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image18.png",
+        "contentType": "image/png"
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image18.png",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hoza1gvy",
+      "id": "15",
+      "bbox": [
+        1321.75,
+        300,
+        502.25,
+        520
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1gvy90j",
+      "id": "16",
+      "bbox": [
+        1340,
+        778,
+        466,
+        26
+      ],
+      "geometry": "rect",
+      "text": "结局空间：余波与停顿",
+      "textPreview": "结局空间：余波与停顿",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "结局空间：余波与停顿"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "结局空间：余波与停顿",
+          "runs": [
+            {
+              "index": 1,
+              "text": "结局空间：余波与停顿",
+              "fontSize": 21,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zidonyd0",
+      "id": "17",
+      "name": "chip-像素颗粒",
+      "bbox": [
+        96,
+        864,
+        112,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#FFD36C",
+      "lineWidth": 2
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s72x4nap",
+      "id": "18",
+      "bbox": [
+        114,
+        874,
+        76,
+        24
+      ],
+      "geometry": "rect",
+      "text": "像素颗粒",
+      "textPreview": "像素颗粒",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "像素颗粒"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "像素颗粒",
+          "runs": [
+            {
+              "index": 1,
+              "text": "像素颗粒",
+              "fontSize": 19,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lszqtcj6",
+      "id": "19",
+      "name": "chip-低饱和背景",
+      "bbox": [
+        226,
+        864,
+        131,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#F0CB89",
+      "lineWidth": 2
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pg3ex0nu",
+      "id": "20",
+      "bbox": [
+        244,
+        874,
+        96,
+        24
+      ],
+      "geometry": "rect",
+      "text": "低饱和背景",
+      "textPreview": "低饱和背景",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "低饱和背景"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "低饱和背景",
+          "runs": [
+            {
+              "index": 1,
+              "text": "低饱和背景",
+              "fontSize": 19,
+              "color": "#F0CB89",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "21",
+      "name": "chip-高对比 UI",
+      "bbox": [
+        375,
+        854,
+        114.77,
+        64
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#FFF2C2",
+      "lineWidth": 2
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7adsji5s",
+      "id": "22",
+      "bbox": [
+        394,
+        864,
+        78,
+        46
+      ],
+      "geometry": "rect",
+      "text": "高对比 UI",
+      "textPreview": "高对比 UI",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "高对比"
+          },
+          {
+            "index": 2,
+            "text": "UI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "高对比 UI",
+          "runs": [
+            {
+              "index": 1,
+              "text": "高对比 UI",
+              "fontSize": 19,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epkzupwb",
+      "id": "23",
+      "name": "chip-人物头像符号化",
+      "bbox": [
+        507.77,
+        864,
+        169,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#EF8AA8",
+      "lineWidth": 2
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/psfil0rq",
+      "id": "24",
+      "bbox": [
+        526,
+        874,
+        134,
+        24
+      ],
+      "geometry": "rect",
+      "text": "人物头像符号化",
+      "textPreview": "人物头像符号化",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "人物头像符号化"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "人物头像符号化",
+          "runs": [
+            {
+              "index": 1,
+              "text": "人物头像符号化",
+              "fontSize": 19,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "25",
+      "name": "chip-扫描线与抖动感",
+      "bbox": [
+        694.77,
+        864,
+        169,
+        44
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#7ECBFF",
+      "lineWidth": 2
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "26",
+      "bbox": [
+        712,
+        874,
+        134,
+        24
+      ],
+      "geometry": "rect",
+      "text": "扫描线与抖动感",
+      "textPreview": "扫描线与抖动感",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "扫描线与抖动感"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "扫描线与抖动感",
+          "runs": [
+            {
+              "index": 1,
+              "text": "扫描线与抖动感",
+              "fontSize": 19,
+              "color": "#7ECBFF",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

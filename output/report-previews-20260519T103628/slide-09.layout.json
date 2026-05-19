@@ -1,0 +1,1337 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/994a1o",
+    "id": "994a1o",
+    "slide": 9,
+    "layoutId": "e4d5dd3f-7347-47e5-a747-64e10568dfd3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8deccd12-c213-4c88-820c-7e1674b181ca",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e4d5dd3f-7347-47e5-a747-64e10568dfd3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8deccd12-c213-4c88-820c-7e1674b181ca",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8deccd12-c213-4c88-820c-7e1674b181ca",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/wra5gbq1",
+      "id": "1",
+      "name": "bg-ending.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "alt": "游戏场景背景",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "f7d811d9-52fe-4ba5-8184-33f76a6c7ec2",
+        "contentType": "image/png",
+        "byteLength": 1586554
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/at47y1kr",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "fillColor": "rgba(17, 13, 20, 0.64)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ex0nuxc",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        112,
+        90,
+        1696,
+        28
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "08 / MEANING",
+      "textPreview": "08 / MEANING",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "08 / MEANING"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "08 / MEANING",
+          "runs": [
+            {
+              "index": 1,
+              "text": "08 / MEANING",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sneloj2t",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        112,
+        140,
+        1696,
+        174
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.1"
+      },
+      "geometry": "rect",
+      "text": "作品价值：把“说清楚”从道德要求变成可被质疑的机制",
+      "textPreview": "作品价值：把“说清楚”从道德要求变成可被质疑的机制",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "fontSize": 72,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "作品价值：把“说清楚”从道德要求变成可被质疑的机"
+          },
+          {
+            "index": 2,
+            "text": "制"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "作品价值：把“说清楚”从道德要求变成可被质疑的机制",
+          "runs": [
+            {
+              "index": 1,
+              "text": "作品价值：把“说清楚”从道德要求变成可被质疑的机制",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l87ed8ba",
+      "id": "5",
+      "bbox": [
+        112,
+        334,
+        1,
+        1
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.2"
+      },
+      "geometry": "rect",
+      "resolvedFontSize": 1,
+      "resolvedTextStyle": {
+        "fontSize": 75,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahoza1gv",
+      "id": "6",
+      "name": "meaning-claim",
+      "bbox": [
+        112,
+        584,
+        1360,
+        116
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1"
+      },
+      "geometry": "rect",
+      "text": "玩家最终带走的不是一套沟通技巧，而是一个更尖锐的问题：\n当关系把每次解释都改写成新误解时，我是否还必须继续解释？",
+      "textPreview": "玩家最终带走的不是一套沟通技巧，而是一个更尖锐的问题： | 当关系把每次解释都改写成新误解时，我是否还必须继续解释？",
+      "resolvedFontSize": 48,
+      "resolvedTextStyle": {
+        "fontSize": 48,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "玩家最终带走的不是一套沟通技巧，而是一个更尖锐的问题："
+          },
+          {
+            "index": 2,
+            "text": "当关系把每次解释都改写成新误解时，我是否还必须继续解释？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "玩家最终带走的不是一套沟通技巧，而是一个更尖锐的问题：",
+          "runs": [
+            {
+              "index": 1,
+              "text": "玩家最终带走的不是一套沟通技巧，而是一个更尖锐的问题：",
+              "fontSize": 48,
+              "color": "#FFF3BD",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "当关系把每次解释都改写成新误解时，我是否还必须继续解释？",
+          "runs": [
+            {
+              "index": 1,
+              "text": "当关系把每次解释都改写成新误解时，我是否还必须继续解释？",
+              "fontSize": 48,
+              "color": "#FFF3BD",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32lszqtc",
+      "id": "7",
+      "name": "chip-适合课堂讨论",
+      "bbox": [
+        112,
+        947.2,
+        150,
+        42.8
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.0"
+      },
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#9FD56F",
+      "lineWidth": 2
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "8",
+      "bbox": [
+        130,
+        958,
+        114,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "适合课堂讨论",
+      "textPreview": "适合课堂讨论",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "适合课堂讨论"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "适合课堂讨论",
+          "runs": [
+            {
+              "index": 1,
+              "text": "适合课堂讨论",
+              "fontSize": 19,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "9",
+      "name": "chip-适合互动展陈",
+      "bbox": [
+        284,
+        947.2,
+        150,
+        42.8
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.1"
+      },
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#FFD36C",
+      "lineWidth": 2
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hoza1gvy",
+      "id": "10",
+      "bbox": [
+        302,
+        958,
+        114,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.1.0"
+      },
+      "geometry": "rect",
+      "text": "适合互动展陈",
+      "textPreview": "适合互动展陈",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "适合互动展陈"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "适合互动展陈",
+          "runs": [
+            {
+              "index": 1,
+              "text": "适合互动展陈",
+              "fontSize": 19,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s36hcrmh",
+      "id": "11",
+      "name": "chip-适合继续扩写章节",
+      "bbox": [
+        456,
+        947.2,
+        188,
+        42.8
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.2"
+      },
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#EF8AA8",
+      "lineWidth": 2
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zidonyd0",
+      "id": "12",
+      "bbox": [
+        474,
+        958,
+        152,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2.2.0"
+      },
+      "geometry": "rect",
+      "text": "适合继续扩写章节",
+      "textPreview": "适合继续扩写章节",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "适合继续扩写章节"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "适合继续扩写章节",
+          "runs": [
+            {
+              "index": 1,
+              "text": "适合继续扩写章节",
+              "fontSize": 19,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "baseUnit": 8,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "slide-root",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "image",
+            "name": "bg-ending.png",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "source": {
+              "kind": "dataUrl"
+            },
+            "fit": "cover",
+            "alt": "游戏场景背景",
+            "element": {
+              "aid": "im/wra5gbq1",
+              "id": "1",
+              "kind": "image"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "panel",
+            "name": "bg-scrim",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "element": {
+              "aid": "sh/at47y1kr",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "column",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 1584,
+              "height": 497
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [
+              {
+                "path": "0.2.0",
+                "kind": "column",
+                "name": "title-stack",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1,
+                  "height": 159
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 90,
+                  "width": 1696,
+                  "height": 245.4
+                },
+                "children": [
+                  {
+                    "path": "0.2.0.0",
+                    "kind": "text",
+                    "name": "kicker",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 27.6
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 90,
+                      "width": 1696,
+                      "height": 27.6
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 90,
+                      "width": 1696,
+                      "height": 28
+                    },
+                    "children": [],
+                    "text": "08 / MEANING",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/3ex0nuxc",
+                      "id": "3",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "kind": "text",
+                    "name": "slide-title",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 86.4
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 139.6,
+                      "width": 1696,
+                      "height": 172.8
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 140,
+                      "width": 1696,
+                      "height": 174
+                    },
+                    "children": [],
+                    "text": "作品价值：把“说清楚”从道德要求变成可被质疑的机制",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/sneloj2t",
+                      "id": "4",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "kind": "text",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "fixed",
+                        "value": 1
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 334.4,
+                      "width": 1,
+                      "height": 1
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 334,
+                      "width": 1,
+                      "height": 1
+                    },
+                    "children": [],
+                    "text": "",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/l87ed8ba",
+                      "id": "5",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 22,
+                "effectiveGap": 22,
+                "justifyOffset": 0,
+                "align": "start",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 112,
+                  "top": 90,
+                  "width": 1696,
+                  "height": 245.4
+                },
+                "items": [
+                  {
+                    "path": "0.2.0.0",
+                    "frame": {
+                      "left": 112,
+                      "top": 90,
+                      "width": 1696,
+                      "height": 27.6
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "frame": {
+                      "left": 112,
+                      "top": 139.6,
+                      "width": 1696,
+                      "height": 172.8
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "frame": {
+                      "left": 112,
+                      "top": 334.4,
+                      "width": 1,
+                      "height": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.1",
+                "kind": "text",
+                "name": "meaning-claim",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1360
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1360,
+                  "height": 115.2
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 583.7,
+                  "width": 1360,
+                  "height": 115.2
+                },
+                "snappedFrame": {
+                  "left": 112,
+                  "top": 584,
+                  "width": 1360,
+                  "height": 116
+                },
+                "children": [],
+                "text": "玩家最终带走的不是一套沟通技巧，而是一个更尖锐的问题：\n当关系把每次解释都改写成新误解时，我是否还必须继续解释？",
+                "transform": "none",
+                "element": {
+                  "aid": "sh/ahoza1gv",
+                  "id": "6",
+                  "kind": "shape"
+                }
+              },
+              {
+                "path": "0.2.2",
+                "kind": "row",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 532,
+                  "height": 42.8
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 947.2,
+                  "width": 1696,
+                  "height": 42.8
+                },
+                "children": [
+                  {
+                    "path": "0.2.2.0",
+                    "kind": "panel",
+                    "name": "chip-适合课堂讨论",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 150,
+                      "height": 42.8
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 947.2,
+                      "width": 150,
+                      "height": 42.8
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 947.2,
+                      "width": 150,
+                      "height": 42.8
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.2.0.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "hug"
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 114,
+                          "height": 22.8
+                        },
+                        "frame": {
+                          "left": 130,
+                          "top": 957.2,
+                          "width": 114,
+                          "height": 22.8
+                        },
+                        "snappedFrame": {
+                          "left": 130,
+                          "top": 958,
+                          "width": 114,
+                          "height": 24
+                        },
+                        "children": [],
+                        "text": "适合课堂讨论",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/wb2hwfyx",
+                          "id": "8",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 10,
+                      "right": 18,
+                      "bottom": 10,
+                      "left": 18
+                    },
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 130,
+                      "top": 957.2,
+                      "width": 114,
+                      "height": 22.8
+                    },
+                    "element": {
+                      "aid": "sh/32lszqtc",
+                      "id": "7",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.2.1",
+                    "kind": "panel",
+                    "name": "chip-适合互动展陈",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 150,
+                      "height": 42.8
+                    },
+                    "frame": {
+                      "left": 284,
+                      "top": 947.2,
+                      "width": 150,
+                      "height": 42.8
+                    },
+                    "snappedFrame": {
+                      "left": 284,
+                      "top": 947.2,
+                      "width": 150,
+                      "height": 42.8
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.2.1.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "hug"
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 114,
+                          "height": 22.8
+                        },
+                        "frame": {
+                          "left": 302,
+                          "top": 957.2,
+                          "width": 114,
+                          "height": 22.8
+                        },
+                        "snappedFrame": {
+                          "left": 302,
+                          "top": 958,
+                          "width": 114,
+                          "height": 24
+                        },
+                        "children": [],
+                        "text": "适合互动展陈",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/hoza1gvy",
+                          "id": "10",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 10,
+                      "right": 18,
+                      "bottom": 10,
+                      "left": 18
+                    },
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 302,
+                      "top": 957.2,
+                      "width": 114,
+                      "height": 22.8
+                    },
+                    "element": {
+                      "aid": "sh/lwval87e",
+                      "id": "9",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.2.2",
+                    "kind": "panel",
+                    "name": "chip-适合继续扩写章节",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 188,
+                      "height": 42.8
+                    },
+                    "frame": {
+                      "left": 456,
+                      "top": 947.2,
+                      "width": 188,
+                      "height": 42.8
+                    },
+                    "snappedFrame": {
+                      "left": 456,
+                      "top": 947.2,
+                      "width": 188,
+                      "height": 42.8
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.2.2.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "hug"
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 152,
+                          "height": 22.8
+                        },
+                        "frame": {
+                          "left": 474,
+                          "top": 957.2,
+                          "width": 152,
+                          "height": 22.8
+                        },
+                        "snappedFrame": {
+                          "left": 474,
+                          "top": 958,
+                          "width": 152,
+                          "height": 24
+                        },
+                        "children": [],
+                        "text": "适合继续扩写章节",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/zidonyd0",
+                          "id": "12",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 10,
+                      "right": 18,
+                      "bottom": 10,
+                      "left": 18
+                    },
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 474,
+                      "top": 957.2,
+                      "width": 152,
+                      "height": 22.8
+                    },
+                    "element": {
+                      "aid": "sh/s36hcrmh",
+                      "id": "11",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 22,
+                "effectiveGap": 22,
+                "justifyOffset": 0,
+                "align": "start",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 112,
+                  "top": 947.2,
+                  "width": 1696,
+                  "height": 42.8
+                },
+                "items": [
+                  {
+                    "path": "0.2.2.0",
+                    "frame": {
+                      "left": 112,
+                      "top": 947.2,
+                      "width": 150,
+                      "height": 42.8
+                    }
+                  },
+                  {
+                    "path": "0.2.2.1",
+                    "frame": {
+                      "left": 284,
+                      "top": 947.2,
+                      "width": 150,
+                      "height": 42.8
+                    }
+                  },
+                  {
+                    "path": "0.2.2.2",
+                    "frame": {
+                      "left": 456,
+                      "top": 947.2,
+                      "width": 188,
+                      "height": 42.8
+                    }
+                  }
+                ]
+              }
+            ],
+            "padding": {
+              "top": 90,
+              "right": 112,
+              "bottom": 90,
+              "left": 112
+            },
+            "gap": 0,
+            "effectiveGap": 248.3,
+            "justifyOffset": 0,
+            "align": "start",
+            "justify": "between",
+            "contentFrame": {
+              "left": 112,
+              "top": 90,
+              "width": 1696,
+              "height": 900
+            },
+            "items": [
+              {
+                "path": "0.2.0",
+                "frame": {
+                  "left": 112,
+                  "top": 90,
+                  "width": 1696,
+                  "height": 245.4
+                }
+              },
+              {
+                "path": "0.2.1",
+                "frame": {
+                  "left": 112,
+                  "top": 583.7,
+                  "width": 1360,
+                  "height": 115.2
+                }
+              },
+              {
+                "path": "0.2.2",
+                "frame": {
+                  "left": 112,
+                  "top": 947.2,
+                  "width": 1696,
+                  "height": 42.8
+                }
+              }
+            ]
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

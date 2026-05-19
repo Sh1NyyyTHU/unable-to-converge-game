@@ -1,0 +1,1495 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/a3zyoe",
+    "id": "a3zyoe",
+    "slide": 1,
+    "layoutId": "39a16af9-c7e4-4e80-84c7-6458acfb6973",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "7d3a601a-72cb-4f4f-a767-37070804ab1c",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "39a16af9-c7e4-4e80-84c7-6458acfb6973",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "7d3a601a-72cb-4f4f-a767-37070804ab1c",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "7d3a601a-72cb-4f4f-a767-37070804ab1c",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/4nap4r65",
+      "id": "1",
+      "name": "bg-start.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "alt": "游戏场景背景",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "6dc0d698-eb12-4f44-94c2-2f645c453b61",
+        "contentType": "image/png",
+        "uri": "H:\\gitwork\\unable-to-converge-game\\assets\\pixel-backgrounds\\start.png"
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "fillColor": "rgba(27, 15, 16, 0.46)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rytsvu9k",
+      "id": "3",
+      "bbox": [
+        116,
+        108,
+        96,
+        28
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "项目汇报",
+      "textPreview": "项目汇报",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "项目汇报"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "项目汇报",
+          "runs": [
+            {
+              "index": 1,
+              "text": "项目汇报",
+              "fontSize": 24,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "4",
+      "bbox": [
+        1500,
+        96,
+        304,
+        52
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.1"
+      },
+      "geometry": "rect",
+      "text": "原生 HTML / Canvas 2D 叙事游戏",
+      "textPreview": "原生 HTML / Canvas 2D 叙事游戏",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原生 HTML / Canvas 2D"
+          },
+          {
+            "index": 2,
+            "text": "叙事游戏"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原生 HTML / Canvas 2D 叙事游戏",
+          "runs": [
+            {
+              "index": 1,
+              "text": "原生 HTML / Canvas 2D 叙事游戏",
+              "fontSize": 22,
+              "color": "rgba(255, 226, 173, 0.82)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "5",
+      "name": "cover-title",
+      "bbox": [
+        116,
+        336,
+        900,
+        294
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0"
+      },
+      "geometry": "rect",
+      "text": "无法\n收敛",
+      "textPreview": "无法 | 收敛",
+      "resolvedFontSize": 122,
+      "resolvedTextStyle": {
+        "fontSize": 122,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "无法"
+          },
+          {
+            "index": 2,
+            "text": "收敛"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "无法",
+          "runs": [
+            {
+              "index": 1,
+              "text": "无法",
+              "fontSize": 122,
+              "color": "#FFF4BD",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "收敛",
+          "runs": [
+            {
+              "index": 1,
+              "text": "收敛",
+              "fontSize": 122,
+              "color": "#FFF4BD",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y1kre1w7",
+      "id": "6",
+      "name": "cover-subtitle",
+      "bbox": [
+        116,
+        656,
+        1020,
+        42
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1"
+      },
+      "geometry": "rect",
+      "text": "一个关于表达、误解与停止解释的叙事解谜游戏",
+      "textPreview": "一个关于表达、误解与停止解释的叙事解谜游戏",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "fontSize": 34,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "一个关于表达、误解与停止解释的叙事解谜游戏"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "一个关于表达、误解与停止解释的叙事解谜游戏",
+          "runs": [
+            {
+              "index": 1,
+              "text": "一个关于表达、误解与停止解释的叙事解谜游戏",
+              "fontSize": 34,
+              "color": "rgba(255, 229, 181, 0.92)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "7",
+      "name": "chip-白天：可验证问题",
+      "bbox": [
+        116,
+        725.4,
+        188,
+        42.8
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.0"
+      },
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#9FD56F",
+      "lineWidth": 2
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3ex0nux",
+      "id": "8",
+      "bbox": [
+        134,
+        736,
+        152,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "白天：可验证问题",
+      "textPreview": "白天：可验证问题",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "白天：可验证问题"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "白天：可验证问题",
+          "runs": [
+            {
+              "index": 1,
+              "text": "白天：可验证问题",
+              "fontSize": 19,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5o7qpg3e",
+      "id": "9",
+      "name": "chip-夜晚：关系误读",
+      "bbox": [
+        320,
+        725.4,
+        169,
+        42.8
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.1"
+      },
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#EF8AA8",
+      "lineWidth": 2
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "10",
+      "bbox": [
+        338,
+        736,
+        134,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.1.0"
+      },
+      "geometry": "rect",
+      "text": "夜晚：关系误读",
+      "textPreview": "夜晚：关系误读",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "夜晚：关系误读"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "夜晚：关系误读",
+          "runs": [
+            {
+              "index": 1,
+              "text": "夜晚：关系误读",
+              "fontSize": 19,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "11",
+      "name": "chip-结局：边界重构",
+      "bbox": [
+        505,
+        725.4,
+        169,
+        42.8
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.2"
+      },
+      "geometry": "roundRect",
+      "fillColor": "rgba(48, 28, 18, 0.76)",
+      "lineColor": "#FFD36C",
+      "lineWidth": 2
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "12",
+      "bbox": [
+        524,
+        736,
+        134,
+        24
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.2.2.0"
+      },
+      "geometry": "rect",
+      "text": "结局：边界重构",
+      "textPreview": "结局：边界重构",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "结局：边界重构"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "结局：边界重构",
+          "runs": [
+            {
+              "index": 1,
+              "text": "结局：边界重构",
+              "fontSize": 19,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upwb2hwf",
+      "id": "13",
+      "name": "cover-bottom",
+      "bbox": [
+        116,
+        956,
+        1688,
+        30
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.2"
+      },
+      "geometry": "rect",
+      "text": "作品主题 / 艺术形式 / 故事结构 / 视觉风格",
+      "textPreview": "作品主题 / 艺术形式 / 故事结构 / 视觉风格",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "作品主题 / 艺术形式 / 故事结构 / 视觉风格"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "作品主题 / 艺术形式 / 故事结构 / 视觉风格",
+          "runs": [
+            {
+              "index": 1,
+              "text": "作品主题 / 艺术形式 / 故事结构 / 视觉风格",
+              "fontSize": 24,
+              "color": "rgba(255, 230, 177, 0.82)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "baseUnit": 8,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "slide-root",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "image",
+            "name": "bg-start.png",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "source": {
+              "kind": "path",
+              "path": "H:\\gitwork\\unable-to-converge-game\\assets\\pixel-backgrounds\\start.png"
+            },
+            "fit": "cover",
+            "alt": "游戏场景背景",
+            "element": {
+              "aid": "im/4nap4r65",
+              "id": "1",
+              "kind": "image"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "panel",
+            "name": "bg-scrim",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "element": {
+              "aid": "sh/yd0z6103",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "column",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 1472,
+              "height": 682
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [
+              {
+                "path": "0.2.0",
+                "kind": "row",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 400.74,
+                  "height": 28.8
+                },
+                "frame": {
+                  "left": 116,
+                  "top": 96,
+                  "width": 1688,
+                  "height": 52.8
+                },
+                "children": [
+                  {
+                    "path": "0.2.0.0",
+                    "kind": "text",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 96,
+                      "height": 28.8
+                    },
+                    "frame": {
+                      "left": 116,
+                      "top": 108,
+                      "width": 96,
+                      "height": 28
+                    },
+                    "snappedFrame": {
+                      "left": 116,
+                      "top": 108,
+                      "width": 96,
+                      "height": 28
+                    },
+                    "children": [],
+                    "text": "项目汇报",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/rytsvu9k",
+                      "id": "3",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "kind": "text",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 304.74,
+                      "height": 26.4
+                    },
+                    "frame": {
+                      "left": 1499.26,
+                      "top": 96,
+                      "width": 304.74,
+                      "height": 52
+                    },
+                    "snappedFrame": {
+                      "left": 1500,
+                      "top": 96,
+                      "width": 304,
+                      "height": 52
+                    },
+                    "children": [],
+                    "text": "原生 HTML / Canvas 2D 叙事游戏",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/g7adsji5",
+                      "id": "4",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 0,
+                "effectiveGap": 1287.26,
+                "justifyOffset": 0,
+                "align": "center",
+                "justify": "between",
+                "contentFrame": {
+                  "left": 116,
+                  "top": 96,
+                  "width": 1688,
+                  "height": 52.8
+                },
+                "items": [
+                  {
+                    "path": "0.2.0.0",
+                    "frame": {
+                      "left": 116,
+                      "top": 108,
+                      "width": 96,
+                      "height": 28
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "frame": {
+                      "left": 1499.26,
+                      "top": 96,
+                      "width": 304.74,
+                      "height": 52
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.1",
+                "kind": "column",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fixed",
+                    "value": 1240
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1020,
+                  "height": 432.4
+                },
+                "frame": {
+                  "left": 116,
+                  "top": 335.8,
+                  "width": 1240,
+                  "height": 432.4
+                },
+                "children": [
+                  {
+                    "path": "0.2.1.0",
+                    "kind": "text",
+                    "name": "cover-title",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 900
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 900,
+                      "height": 292.8
+                    },
+                    "frame": {
+                      "left": 116,
+                      "top": 335.8,
+                      "width": 900,
+                      "height": 292.8
+                    },
+                    "snappedFrame": {
+                      "left": 116,
+                      "top": 336,
+                      "width": 900,
+                      "height": 294
+                    },
+                    "children": [],
+                    "text": "无法\n收敛",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/9s36hcrm",
+                      "id": "5",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "kind": "text",
+                    "name": "cover-subtitle",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1020
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 1020,
+                      "height": 40.8
+                    },
+                    "frame": {
+                      "left": 116,
+                      "top": 656.6,
+                      "width": 1020,
+                      "height": 40.8
+                    },
+                    "snappedFrame": {
+                      "left": 116,
+                      "top": 656,
+                      "width": 1020,
+                      "height": 42
+                    },
+                    "children": [],
+                    "text": "一个关于表达、误解与停止解释的叙事解谜游戏",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/y1kre1w7",
+                      "id": "6",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.1.2",
+                    "kind": "row",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "hug"
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 558,
+                      "height": 42.8
+                    },
+                    "frame": {
+                      "left": 116,
+                      "top": 725.4,
+                      "width": 558,
+                      "height": 42.8
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.2.0",
+                        "kind": "panel",
+                        "name": "chip-白天：可验证问题",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "hug"
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 188,
+                          "height": 42.8
+                        },
+                        "frame": {
+                          "left": 116,
+                          "top": 725.4,
+                          "width": 188,
+                          "height": 42.8
+                        },
+                        "snappedFrame": {
+                          "left": 116,
+                          "top": 725.4,
+                          "width": 188,
+                          "height": 42.8
+                        },
+                        "children": [
+                          {
+                            "path": "0.2.1.2.0.0",
+                            "kind": "text",
+                            "requestedSize": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            },
+                            "intrinsicSize": {
+                              "width": 152,
+                              "height": 22.8
+                            },
+                            "frame": {
+                              "left": 134,
+                              "top": 735.4,
+                              "width": 152,
+                              "height": 22.8
+                            },
+                            "snappedFrame": {
+                              "left": 134,
+                              "top": 736,
+                              "width": 152,
+                              "height": 24
+                            },
+                            "children": [],
+                            "text": "白天：可验证问题",
+                            "transform": "none",
+                            "element": {
+                              "aid": "sh/g3ex0nux",
+                              "id": "8",
+                              "kind": "shape"
+                            }
+                          }
+                        ],
+                        "padding": {
+                          "top": 10,
+                          "right": 18,
+                          "bottom": 10,
+                          "left": 18
+                        },
+                        "align": "start",
+                        "justify": "start",
+                        "contentFrame": {
+                          "left": 134,
+                          "top": 735.4,
+                          "width": 152,
+                          "height": 22.8
+                        },
+                        "element": {
+                          "aid": "sh/rmhk3q5o",
+                          "id": "7",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.2.1",
+                        "kind": "panel",
+                        "name": "chip-夜晚：关系误读",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "hug"
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 169,
+                          "height": 42.8
+                        },
+                        "frame": {
+                          "left": 320,
+                          "top": 725.4,
+                          "width": 169,
+                          "height": 42.8
+                        },
+                        "snappedFrame": {
+                          "left": 320,
+                          "top": 725.4,
+                          "width": 169,
+                          "height": 42.8
+                        },
+                        "children": [
+                          {
+                            "path": "0.2.1.2.1.0",
+                            "kind": "text",
+                            "requestedSize": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            },
+                            "intrinsicSize": {
+                              "width": 133,
+                              "height": 22.8
+                            },
+                            "frame": {
+                              "left": 338,
+                              "top": 735.4,
+                              "width": 133,
+                              "height": 22.8
+                            },
+                            "snappedFrame": {
+                              "left": 338,
+                              "top": 736,
+                              "width": 134,
+                              "height": 24
+                            },
+                            "children": [],
+                            "text": "夜晚：关系误读",
+                            "transform": "none",
+                            "element": {
+                              "aid": "sh/5gbq1ory",
+                              "id": "10",
+                              "kind": "shape"
+                            }
+                          }
+                        ],
+                        "padding": {
+                          "top": 10,
+                          "right": 18,
+                          "bottom": 10,
+                          "left": 18
+                        },
+                        "align": "start",
+                        "justify": "start",
+                        "contentFrame": {
+                          "left": 338,
+                          "top": 735.4,
+                          "width": 133,
+                          "height": 22.8
+                        },
+                        "element": {
+                          "aid": "sh/5o7qpg3e",
+                          "id": "9",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.2.2",
+                        "kind": "panel",
+                        "name": "chip-结局：边界重构",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "hug"
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 169,
+                          "height": 42.8
+                        },
+                        "frame": {
+                          "left": 505,
+                          "top": 725.4,
+                          "width": 169,
+                          "height": 42.8
+                        },
+                        "snappedFrame": {
+                          "left": 505,
+                          "top": 725.4,
+                          "width": 169,
+                          "height": 42.8
+                        },
+                        "children": [
+                          {
+                            "path": "0.2.1.2.2.0",
+                            "kind": "text",
+                            "requestedSize": {
+                              "width": {
+                                "mode": "hug"
+                              },
+                              "height": {
+                                "mode": "hug"
+                              }
+                            },
+                            "intrinsicSize": {
+                              "width": 133,
+                              "height": 22.8
+                            },
+                            "frame": {
+                              "left": 523,
+                              "top": 735.4,
+                              "width": 133,
+                              "height": 22.8
+                            },
+                            "snappedFrame": {
+                              "left": 524,
+                              "top": 736,
+                              "width": 134,
+                              "height": 24
+                            },
+                            "children": [],
+                            "text": "结局：边界重构",
+                            "transform": "none",
+                            "element": {
+                              "aid": "sh/nap4r65w",
+                              "id": "12",
+                              "kind": "shape"
+                            }
+                          }
+                        ],
+                        "padding": {
+                          "top": 10,
+                          "right": 18,
+                          "bottom": 10,
+                          "left": 18
+                        },
+                        "align": "start",
+                        "justify": "start",
+                        "contentFrame": {
+                          "left": 523,
+                          "top": 735.4,
+                          "width": 133,
+                          "height": 22.8
+                        },
+                        "element": {
+                          "aid": "sh/cvixczed",
+                          "id": "11",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 16,
+                    "effectiveGap": 16,
+                    "justifyOffset": 0,
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 116,
+                      "top": 725.4,
+                      "width": 558,
+                      "height": 42.8
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.2.0",
+                        "frame": {
+                          "left": 116,
+                          "top": 725.4,
+                          "width": 188,
+                          "height": 42.8
+                        }
+                      },
+                      {
+                        "path": "0.2.1.2.1",
+                        "frame": {
+                          "left": 320,
+                          "top": 725.4,
+                          "width": 169,
+                          "height": 42.8
+                        }
+                      },
+                      {
+                        "path": "0.2.1.2.2",
+                        "frame": {
+                          "left": 505,
+                          "top": 725.4,
+                          "width": 169,
+                          "height": 42.8
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 28,
+                "effectiveGap": 28,
+                "justifyOffset": 0,
+                "align": "start",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 116,
+                  "top": 335.8,
+                  "width": 1240,
+                  "height": 432.4
+                },
+                "items": [
+                  {
+                    "path": "0.2.1.0",
+                    "frame": {
+                      "left": 116,
+                      "top": 335.8,
+                      "width": 900,
+                      "height": 292.8
+                    }
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "frame": {
+                      "left": 116,
+                      "top": 656.6,
+                      "width": 1020,
+                      "height": 40.8
+                    }
+                  },
+                  {
+                    "path": "0.2.1.2",
+                    "frame": {
+                      "left": 116,
+                      "top": 725.4,
+                      "width": 558,
+                      "height": 42.8
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.2",
+                "kind": "text",
+                "name": "cover-bottom",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 0,
+                  "height": 28.8
+                },
+                "frame": {
+                  "left": 116,
+                  "top": 955.2,
+                  "width": 1688,
+                  "height": 28.8
+                },
+                "snappedFrame": {
+                  "left": 116,
+                  "top": 956,
+                  "width": 1688,
+                  "height": 30
+                },
+                "children": [],
+                "text": "作品主题 / 艺术形式 / 故事结构 / 视觉风格",
+                "transform": "none",
+                "element": {
+                  "aid": "sh/upwb2hwf",
+                  "id": "13",
+                  "kind": "shape"
+                }
+              }
+            ],
+            "padding": {
+              "top": 96,
+              "right": 116,
+              "bottom": 96,
+              "left": 116
+            },
+            "gap": 0,
+            "effectiveGap": 187,
+            "justifyOffset": 0,
+            "align": "start",
+            "justify": "between",
+            "contentFrame": {
+              "left": 116,
+              "top": 96,
+              "width": 1688,
+              "height": 888
+            },
+            "items": [
+              {
+                "path": "0.2.0",
+                "frame": {
+                  "left": 116,
+                  "top": 96,
+                  "width": 1688,
+                  "height": 52.8
+                }
+              },
+              {
+                "path": "0.2.1",
+                "frame": {
+                  "left": 116,
+                  "top": 335.8,
+                  "width": 1240,
+                  "height": 432.4
+                }
+              },
+              {
+                "path": "0.2.2",
+                "frame": {
+                  "left": 116,
+                  "top": 955.2,
+                  "width": 1688,
+                  "height": 28.8
+                }
+              }
+            ]
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,563 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/58z25kb6",
+    "id": "58z25kb6",
+    "slide": 7,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/m94fu18j",
+      "id": "14",
+      "name": "bg-start.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image15.png",
+        "contentType": "image/png"
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image15.png",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylc7u54z",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(24, 15, 16, 0.76)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r65wjudg",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        112,
+        82,
+        1696,
+        28
+      ],
+      "geometry": "rect",
+      "text": "05 / ART FORM",
+      "textPreview": "05 / ART FORM",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "05 / ART FORM"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "05 / ART FORM",
+          "runs": [
+            {
+              "index": 1,
+              "text": "05 / ART FORM",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3ex0nux",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        112,
+        132,
+        1696,
+        88
+      ],
+      "geometry": "rect",
+      "text": "艺术形式：轻量网页游戏，把浏览器变成舞台",
+      "textPreview": "艺术形式：轻量网页游戏，把浏览器变成舞台",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "艺术形式：轻量网页游戏，把浏览器变成舞台"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "艺术形式：轻量网页游戏，把浏览器变成舞台",
+          "runs": [
+            {
+              "index": 1,
+              "text": "艺术形式：轻量网页游戏，把浏览器变成舞台",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5o7qpg3e",
+      "id": "5",
+      "bbox": [
+        112,
+        240,
+        1,
+        1
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yxobm58z",
+      "id": "6",
+      "bbox": [
+        112,
+        454,
+        878,
+        70
+      ],
+      "geometry": "rect",
+      "text": "原生 HTML",
+      "textPreview": "原生 HTML",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原生 HTML"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原生 HTML",
+          "runs": [
+            {
+              "index": 1,
+              "text": "原生 HTML",
+              "fontSize": 58,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nih4byhg",
+      "id": "7",
+      "bbox": [
+        112,
+        556,
+        878,
+        70
+      ],
+      "geometry": "rect",
+      "text": "+ CSS 响应式画布",
+      "textPreview": "+ CSS 响应式画布",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+ CSS 响应式画布"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+ CSS 响应式画布",
+          "runs": [
+            {
+              "index": 1,
+              "text": "+ CSS 响应式画布",
+              "fontSize": 58,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "8",
+      "bbox": [
+        112,
+        660,
+        878,
+        70
+      ],
+      "geometry": "rect",
+      "text": "+ JavaScript 状态机",
+      "textPreview": "+ JavaScript 状态机",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+ JavaScript 状态机"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+ JavaScript 状态机",
+          "runs": [
+            {
+              "index": 1,
+              "text": "+ JavaScript 状态机",
+              "fontSize": 58,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s36hcrm",
+      "id": "9",
+      "bbox": [
+        112,
+        764,
+        878,
+        70
+      ],
+      "geometry": "rect",
+      "text": "+ Canvas 2D 绘制",
+      "textPreview": "+ Canvas 2D 绘制",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "+ Canvas 2D 绘制"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "+ Canvas 2D 绘制",
+          "runs": [
+            {
+              "index": 1,
+              "text": "+ Canvas 2D 绘制",
+              "fontSize": 58,
+              "color": "#7ECBFF",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8v6psfi",
+      "id": "10",
+      "bbox": [
+        1060.04,
+        289,
+        747.96,
+        709
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(255, 224, 163, 0.1)",
+      "lineColor": "rgba(255, 211, 108, 0.38)",
+      "lineWidth": 2
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onyd0z61",
+      "id": "11",
+      "bbox": [
+        1100,
+        546,
+        668,
+        44
+      ],
+      "geometry": "rect",
+      "text": "形式服务主题",
+      "textPreview": "形式服务主题",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "形式服务主题"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "形式服务主题",
+          "runs": [
+            {
+              "index": 1,
+              "text": "形式服务主题",
+              "fontSize": 36,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z25kb6xk",
+      "id": "12",
+      "bbox": [
+        1100,
+        612,
+        668,
+        70
+      ],
+      "geometry": "rect",
+      "text": "没有复杂操作、没有战斗系统，只有点击选择和数值反馈。玩家被迫关注语言本身的偏移。",
+      "textPreview": "没有复杂操作、没有战斗系统，只有点击选择和数值反馈。玩家被迫关注语言本身的偏移。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "没有复杂操作、没有战斗系统，只有点击选择和数值"
+          },
+          {
+            "index": 2,
+            "text": "反馈。玩家被迫关注语言本身的偏移。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "没有复杂操作、没有战斗系统，只有点击选择和数值反馈。玩家被迫关注语言本身的偏移。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "没有复杂操作、没有战斗系统，只有点击选择和数值反馈。玩家被迫关注语言本身的偏移。",
+              "fontSize": 29,
+              "color": "rgba(255, 232, 187, 0.9)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6hcrmhk3",
+      "id": "13",
+      "bbox": [
+        1100,
+        706,
+        668,
+        36
+      ],
+      "geometry": "rect",
+      "text": "轻量网页也方便部署、分享和课堂/展览现场演示。",
+      "textPreview": "轻量网页也方便部署、分享和课堂/展览现场演示。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "轻量网页也方便部署、分享和课堂/展览现场演示。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "轻量网页也方便部署、分享和课堂/展览现场演示。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "轻量网页也方便部署、分享和课堂/展览现场演示。",
+              "fontSize": 29,
+              "color": "rgba(255, 232, 187, 0.9)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

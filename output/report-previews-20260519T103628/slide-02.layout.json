@@ -1,0 +1,1395 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/uleaad",
+    "id": "uleaad",
+    "slide": 2,
+    "layoutId": "e4d5dd3f-7347-47e5-a747-64e10568dfd3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8deccd12-c213-4c88-820c-7e1674b181ca",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e4d5dd3f-7347-47e5-a747-64e10568dfd3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8deccd12-c213-4c88-820c-7e1674b181ca",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8deccd12-c213-4c88-820c-7e1674b181ca",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/h0fepkzu",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        960,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0.0"
+      },
+      "alt": "白天电脑网络场景",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "81f138eb-34ad-4529-a744-e18513ab2875",
+        "contentType": "image/png",
+        "byteLength": 1508666
+      }
+    },
+    {
+      "order": 2,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/a9w3m94f",
+      "id": "2",
+      "bbox": [
+        960,
+        0,
+        960,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0.1"
+      },
+      "alt": "夜晚家庭对话场景",
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "d092208e-ec9e-4128-ac58-711334a654da",
+        "contentType": "image/png",
+        "byteLength": 1441262
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yhgn29gr",
+      "id": "3",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "fillColor": "rgba(17, 12, 16, 0.6)"
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wjudg7a",
+      "id": "4",
+      "name": "kicker",
+      "bbox": [
+        112,
+        86,
+        1696,
+        28
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.0"
+      },
+      "geometry": "rect",
+      "text": "01 / CORE IDEA",
+      "textPreview": "01 / CORE IDEA",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "01 / CORE IDEA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "01 / CORE IDEA",
+          "runs": [
+            {
+              "index": 1,
+              "text": "01 / CORE IDEA",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq1oryt",
+      "id": "5",
+      "name": "slide-title",
+      "bbox": [
+        112,
+        136,
+        1696,
+        174
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.1"
+      },
+      "geometry": "rect",
+      "text": "核心思想：\n能解决的问题会反馈，无法收敛的关系只会偏移",
+      "textPreview": "核心思想： | 能解决的问题会反馈，无法收敛的关系只会偏移",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "fontSize": 72,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心思想："
+          },
+          {
+            "index": 2,
+            "text": "能解决的问题会反馈，无法收敛的关系只会偏移"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心思想：",
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心思想：",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "能解决的问题会反馈，无法收敛的关系只会偏移",
+          "runs": [
+            {
+              "index": 1,
+              "text": "能解决的问题会反馈，无法收敛的关系只会偏移",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxc3ylc",
+      "id": "6",
+      "name": "slide-subtitle",
+      "bbox": [
+        112,
+        330,
+        1180,
+        72
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.0.2"
+      },
+      "geometry": "rect",
+      "text": "游戏把“表达”设计成一个系统：白天给出明确输入和结果，夜晚则让解释不断被重新解释。",
+      "textPreview": "游戏把“表达”设计成一个系统：白天给出明确输入和结果，夜晚则让解释不断被重新解释。",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "fontSize": 30,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "游戏把“表达”设计成一个系统：白天给出明确输入和结果，夜晚则让解释不断被重新解释"
+          },
+          {
+            "index": 2,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "游戏把“表达”设计成一个系统：白天给出明确输入和结果，夜晚则让解释不断被重新解释。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "游戏把“表达”设计成一个系统：白天给出明确输入和结果，夜晚则让解释不断被重新解释。",
+              "fontSize": 30,
+              "color": "rgba(255, 229, 177, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y90je9cv",
+      "id": "7",
+      "bbox": [
+        112,
+        902,
+        816,
+        48
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.0"
+      },
+      "geometry": "rect",
+      "text": "白天",
+      "textPreview": "白天",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "白天"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "白天",
+          "runs": [
+            {
+              "index": 1,
+              "text": "白天",
+              "fontSize": 40,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5sneloj2",
+      "id": "8",
+      "bbox": [
+        112,
+        962,
+        816,
+        34
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.0.1"
+      },
+      "geometry": "rect",
+      "text": "问题可以拆分为步骤，可以验证，可以完成。玩家获得行动反馈。",
+      "textPreview": "问题可以拆分为步骤，可以验证，可以完成。玩家获得行动反馈。",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "问题可以拆分为步骤，可以验证，可以完成。玩家获得行动反馈。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "问题可以拆分为步骤，可以验证，可以完成。玩家获得行动反馈。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "问题可以拆分为步骤，可以验证，可以完成。玩家获得行动反馈。",
+              "fontSize": 27,
+              "color": "rgba(245, 230, 187, 0.9)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cbulwval",
+      "id": "9",
+      "bbox": [
+        992,
+        902,
+        816,
+        48
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.0"
+      },
+      "geometry": "rect",
+      "text": "夜晚",
+      "textPreview": "夜晚",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "+mn-lt",
+        "bold": true,
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "夜晚"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "夜晚",
+          "runs": [
+            {
+              "index": 1,
+              "text": "夜晚",
+              "fontSize": 40,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "10",
+      "bbox": [
+        992,
+        962,
+        816,
+        34
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2.1.1.1"
+      },
+      "geometry": "rect",
+      "text": "误解没有单一答案。越解释，越可能被转译成新的压力。",
+      "textPreview": "误解没有单一答案。越解释，越可能被转译成新的压力。",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "误解没有单一答案。越解释，越可能被转译成新的压力。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "误解没有单一答案。越解释，越可能被转译成新的压力。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "误解没有单一答案。越解释，越可能被转译成新的压力。",
+              "fontSize": 27,
+              "color": "rgba(245, 230, 187, 0.9)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "baseUnit": 8,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "slide-root",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "grid",
+            "name": "two-world-bg",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [
+              {
+                "path": "0.0.0",
+                "kind": "image",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "fill",
+                    "value": 1
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 0,
+                  "height": 0
+                },
+                "frame": {
+                  "left": 0,
+                  "top": 0,
+                  "width": 960,
+                  "height": 1080
+                },
+                "snappedFrame": {
+                  "left": 0,
+                  "top": 0,
+                  "width": 960,
+                  "height": 1080
+                },
+                "children": [],
+                "source": {
+                  "kind": "dataUrl"
+                },
+                "fit": "cover",
+                "alt": "白天电脑网络场景",
+                "element": {
+                  "aid": "im/h0fepkzu",
+                  "id": "1",
+                  "kind": "image"
+                }
+              },
+              {
+                "path": "0.0.1",
+                "kind": "image",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "fill",
+                    "value": 1
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 0,
+                  "height": 0
+                },
+                "frame": {
+                  "left": 960,
+                  "top": 0,
+                  "width": 960,
+                  "height": 1080
+                },
+                "snappedFrame": {
+                  "left": 960,
+                  "top": 0,
+                  "width": 960,
+                  "height": 1080
+                },
+                "children": [],
+                "source": {
+                  "kind": "dataUrl"
+                },
+                "fit": "cover",
+                "alt": "夜晚家庭对话场景",
+                "element": {
+                  "aid": "im/a9w3m94f",
+                  "id": "2",
+                  "kind": "image"
+                }
+              }
+            ],
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "columnGap": 0,
+            "rowGap": 0,
+            "alignItems": "stretch",
+            "justifyItems": "stretch",
+            "contentFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "columns": [
+              {
+                "mode": "fr",
+                "value": 1
+              },
+              {
+                "mode": "fr",
+                "value": 1
+              }
+            ],
+            "autoRows": "auto",
+            "resolvedRows": [
+              "auto"
+            ],
+            "columnSizes": [
+              960,
+              960
+            ],
+            "rowSizes": [
+              1080
+            ],
+            "cells": [
+              {
+                "path": "0.0.0",
+                "column": 0,
+                "row": 0,
+                "columnSpan": 1,
+                "rowSpan": 1,
+                "cellFrame": {
+                  "left": 0,
+                  "top": 0,
+                  "width": 960,
+                  "height": 1080
+                }
+              },
+              {
+                "path": "0.0.1",
+                "column": 1,
+                "row": 0,
+                "columnSpan": 1,
+                "rowSpan": 1,
+                "cellFrame": {
+                  "left": 960,
+                  "top": 0,
+                  "width": 960,
+                  "height": 1080
+                }
+              }
+            ]
+          },
+          {
+            "path": "0.1",
+            "kind": "panel",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 0,
+              "height": 0
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "snappedFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [],
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start",
+            "justify": "start",
+            "contentFrame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "element": {
+              "aid": "sh/yhgn29gr",
+              "id": "3",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "column",
+            "requestedSize": {
+              "width": {
+                "mode": "fill",
+                "value": 1
+              },
+              "height": {
+                "mode": "fill",
+                "value": 1
+              }
+            },
+            "intrinsicSize": {
+              "width": 224,
+              "height": 768.4
+            },
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "children": [
+              {
+                "path": "0.2.0",
+                "kind": "column",
+                "name": "title-stack",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "hug"
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 1180,
+                  "height": 316.4
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 86,
+                  "width": 1696,
+                  "height": 316.4
+                },
+                "children": [
+                  {
+                    "path": "0.2.0.0",
+                    "kind": "text",
+                    "name": "kicker",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 27.6
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 86,
+                      "width": 1696,
+                      "height": 27.6
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 86,
+                      "width": 1696,
+                      "height": 28
+                    },
+                    "children": [],
+                    "text": "01 / CORE IDEA",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/5wjudg7a",
+                      "id": "4",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "kind": "text",
+                    "name": "slide-title",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 172.8
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 135.6,
+                      "width": 1696,
+                      "height": 172.8
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 136,
+                      "width": 1696,
+                      "height": 174
+                    },
+                    "children": [],
+                    "text": "核心思想：\n能解决的问题会反馈，无法收敛的关系只会偏移",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/gbq1oryt",
+                      "id": "5",
+                      "kind": "shape"
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "kind": "text",
+                    "name": "slide-subtitle",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fixed",
+                        "value": 1180
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 1180,
+                      "height": 72
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 330.4,
+                      "width": 1180,
+                      "height": 72
+                    },
+                    "snappedFrame": {
+                      "left": 112,
+                      "top": 330,
+                      "width": 1180,
+                      "height": 72
+                    },
+                    "children": [],
+                    "text": "游戏把“表达”设计成一个系统：白天给出明确输入和结果，夜晚则让解释不断被重新解释。",
+                    "transform": "none",
+                    "element": {
+                      "aid": "sh/nuxc3ylc",
+                      "id": "6",
+                      "kind": "shape"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 22,
+                "effectiveGap": 22,
+                "justifyOffset": 0,
+                "align": "start",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 112,
+                  "top": 86,
+                  "width": 1696,
+                  "height": 316.4
+                },
+                "items": [
+                  {
+                    "path": "0.2.0.0",
+                    "frame": {
+                      "left": 112,
+                      "top": 86,
+                      "width": 1696,
+                      "height": 27.6
+                    }
+                  },
+                  {
+                    "path": "0.2.0.1",
+                    "frame": {
+                      "left": 112,
+                      "top": 135.6,
+                      "width": 1696,
+                      "height": 172.8
+                    }
+                  },
+                  {
+                    "path": "0.2.0.2",
+                    "frame": {
+                      "left": 112,
+                      "top": 330.4,
+                      "width": 1180,
+                      "height": 72
+                    }
+                  }
+                ]
+              },
+              {
+                "path": "0.2.1",
+                "kind": "row",
+                "requestedSize": {
+                  "width": {
+                    "mode": "fill",
+                    "value": 1
+                  },
+                  "height": {
+                    "mode": "fixed",
+                    "value": 280
+                  }
+                },
+                "intrinsicSize": {
+                  "width": 64,
+                  "height": 92.4
+                },
+                "frame": {
+                  "left": 112,
+                  "top": 714,
+                  "width": 1696,
+                  "height": 280
+                },
+                "children": [
+                  {
+                    "path": "0.2.1.0",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 92.4
+                    },
+                    "frame": {
+                      "left": 112,
+                      "top": 902,
+                      "width": 816,
+                      "height": 92
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.0.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 48
+                        },
+                        "frame": {
+                          "left": 112,
+                          "top": 902,
+                          "width": 816,
+                          "height": 48
+                        },
+                        "snappedFrame": {
+                          "left": 112,
+                          "top": 902,
+                          "width": 816,
+                          "height": 48
+                        },
+                        "children": [],
+                        "text": "白天",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/y90je9cv",
+                          "id": "7",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 32.4
+                        },
+                        "frame": {
+                          "left": 112,
+                          "top": 962,
+                          "width": 816,
+                          "height": 32.4
+                        },
+                        "snappedFrame": {
+                          "left": 112,
+                          "top": 962,
+                          "width": 816,
+                          "height": 34
+                        },
+                        "children": [],
+                        "text": "问题可以拆分为步骤，可以验证，可以完成。玩家获得行动反馈。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/5sneloj2",
+                          "id": "8",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 12,
+                    "effectiveGap": 12,
+                    "justifyOffset": 0,
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 112,
+                      "top": 902,
+                      "width": 816,
+                      "height": 92
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.0.0",
+                        "frame": {
+                          "left": 112,
+                          "top": 902,
+                          "width": 816,
+                          "height": 48
+                        }
+                      },
+                      {
+                        "path": "0.2.1.0.1",
+                        "frame": {
+                          "left": 112,
+                          "top": 962,
+                          "width": 816,
+                          "height": 32.4
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "kind": "column",
+                    "requestedSize": {
+                      "width": {
+                        "mode": "fill",
+                        "value": 1
+                      },
+                      "height": {
+                        "mode": "hug"
+                      }
+                    },
+                    "intrinsicSize": {
+                      "width": 0,
+                      "height": 92.4
+                    },
+                    "frame": {
+                      "left": 992,
+                      "top": 902,
+                      "width": 816,
+                      "height": 92
+                    },
+                    "children": [
+                      {
+                        "path": "0.2.1.1.0",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 48
+                        },
+                        "frame": {
+                          "left": 992,
+                          "top": 902,
+                          "width": 816,
+                          "height": 48
+                        },
+                        "snappedFrame": {
+                          "left": 992,
+                          "top": 902,
+                          "width": 816,
+                          "height": 48
+                        },
+                        "children": [],
+                        "text": "夜晚",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/cbulwval",
+                          "id": "9",
+                          "kind": "shape"
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.1",
+                        "kind": "text",
+                        "requestedSize": {
+                          "width": {
+                            "mode": "fill",
+                            "value": 1
+                          },
+                          "height": {
+                            "mode": "hug"
+                          }
+                        },
+                        "intrinsicSize": {
+                          "width": 0,
+                          "height": 32.4
+                        },
+                        "frame": {
+                          "left": 992,
+                          "top": 962,
+                          "width": 816,
+                          "height": 32.4
+                        },
+                        "snappedFrame": {
+                          "left": 992,
+                          "top": 962,
+                          "width": 816,
+                          "height": 34
+                        },
+                        "children": [],
+                        "text": "误解没有单一答案。越解释，越可能被转译成新的压力。",
+                        "transform": "none",
+                        "element": {
+                          "aid": "sh/e9cvixcz",
+                          "id": "10",
+                          "kind": "shape"
+                        }
+                      }
+                    ],
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "gap": 12,
+                    "effectiveGap": 12,
+                    "justifyOffset": 0,
+                    "align": "start",
+                    "justify": "start",
+                    "contentFrame": {
+                      "left": 992,
+                      "top": 902,
+                      "width": 816,
+                      "height": 92
+                    },
+                    "items": [
+                      {
+                        "path": "0.2.1.1.0",
+                        "frame": {
+                          "left": 992,
+                          "top": 902,
+                          "width": 816,
+                          "height": 48
+                        }
+                      },
+                      {
+                        "path": "0.2.1.1.1",
+                        "frame": {
+                          "left": 992,
+                          "top": 962,
+                          "width": 816,
+                          "height": 32.4
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "padding": {
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0,
+                  "left": 0
+                },
+                "gap": 64,
+                "effectiveGap": 64,
+                "justifyOffset": 0,
+                "align": "end",
+                "justify": "start",
+                "contentFrame": {
+                  "left": 112,
+                  "top": 714,
+                  "width": 1696,
+                  "height": 280
+                },
+                "items": [
+                  {
+                    "path": "0.2.1.0",
+                    "frame": {
+                      "left": 112,
+                      "top": 902,
+                      "width": 816,
+                      "height": 92
+                    }
+                  },
+                  {
+                    "path": "0.2.1.1",
+                    "frame": {
+                      "left": 992,
+                      "top": 902,
+                      "width": 816,
+                      "height": 92
+                    }
+                  }
+                ]
+              }
+            ],
+            "padding": {
+              "top": 86,
+              "right": 112,
+              "bottom": 86,
+              "left": 112
+            },
+            "gap": 0,
+            "effectiveGap": 311.6,
+            "justifyOffset": 0,
+            "align": "start",
+            "justify": "between",
+            "contentFrame": {
+              "left": 112,
+              "top": 86,
+              "width": 1696,
+              "height": 908
+            },
+            "items": [
+              {
+                "path": "0.2.0",
+                "frame": {
+                  "left": 112,
+                  "top": 86,
+                  "width": 1696,
+                  "height": 316.4
+                }
+              },
+              {
+                "path": "0.2.1",
+                "frame": {
+                  "left": 112,
+                  "top": 714,
+                  "width": 1696,
+                  "height": 280
+                }
+              }
+            ]
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 0,
+              "top": 0,
+              "width": 1920,
+              "height": 1080
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

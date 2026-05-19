@@ -1,0 +1,1129 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/s72x4nap",
+    "id": "s72x4nap",
+    "slide": 4,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/fil0rqd4",
+      "id": "40",
+      "name": "bg-day4-presentation.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image4.png",
+        "contentType": "image/png",
+        "byteLength": 1897668
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image4.png",
+        "contentType": "image/png",
+        "byteLength": 1897668
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpg3ex",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(24, 15, 17, 0.72)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsji5sne",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        96,
+        74,
+        1728,
+        28
+      ],
+      "geometry": "rect",
+      "text": "02 / STRUCTURE",
+      "textPreview": "02 / STRUCTURE",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02 / STRUCTURE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02 / STRUCTURE",
+          "runs": [
+            {
+              "index": 1,
+              "text": "02 / STRUCTURE",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        96,
+        124,
+        1728,
+        88
+      ],
+      "geometry": "rect",
+      "text": "叙事结构：四天循环，两个世界",
+      "textPreview": "叙事结构：四天循环，两个世界",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "叙事结构：四天循环，两个世界"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "叙事结构：四天循环，两个世界",
+          "runs": [
+            {
+              "index": 1,
+              "text": "叙事结构：四天循环，两个世界",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "5",
+      "name": "slide-subtitle",
+      "bbox": [
+        96,
+        232,
+        1180,
+        36
+      ],
+      "geometry": "rect",
+      "text": "每一天都先处理现实问题，再进入同主题的人际误解。",
+      "textPreview": "每一天都先处理现实问题，再进入同主题的人际误解。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每一天都先处理现实问题，再进入同主题的人际误解。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每一天都先处理现实问题，再进入同主题的人际误解。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "每一天都先处理现实问题，再进入同主题的人际误解。",
+              "fontSize": 30,
+              "color": "rgba(255, 229, 177, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "6",
+      "name": "thumb-Day 1  修电脑网络",
+      "bbox": [
+        96,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/qxs72x4n",
+      "id": "41",
+      "bbox": [
+        96,
+        302,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image5.png",
+        "contentType": "image/png",
+        "byteLength": 1508666
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image5.png",
+        "contentType": "image/png",
+        "byteLength": 1508666
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6hcrmhk3",
+      "id": "8",
+      "bbox": [
+        96,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z25kb6xk",
+      "id": "9",
+      "bbox": [
+        114,
+        524,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Day 1  修电脑网络",
+      "textPreview": "Day 1  修电脑网络",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Day 1  修电脑网络"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Day 1  修电脑网络",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Day 1  修电脑网络",
+              "fontSize": 21,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "10",
+      "name": "thumb-Day 2  修改文档",
+      "bbox": [
+        532.5,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 11,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/xobm58z2",
+      "id": "42",
+      "bbox": [
+        532.5,
+        302,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image6.png",
+        "contentType": "image/png",
+        "byteLength": 1688343
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image6.png",
+        "contentType": "image/png",
+        "byteLength": 1688343
+      }
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4vmtwra",
+      "id": "12",
+      "bbox": [
+        532.5,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "13",
+      "bbox": [
+        550,
+        524,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Day 2  修改文档",
+      "textPreview": "Day 2  修改文档",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Day 2  修改文档"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Day 2  修改文档",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Day 2  修改文档",
+              "fontSize": 21,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmtwra5g",
+      "id": "14",
+      "name": "thumb-Day 3  整理房间",
+      "bbox": [
+        969,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 15,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/83itgfml",
+      "id": "43",
+      "bbox": [
+        969,
+        302,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image7.png",
+        "contentType": "image/png",
+        "byteLength": 1697130
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image7.png",
+        "contentType": "image/png",
+        "byteLength": 1697130
+      }
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsji5sne",
+      "id": "16",
+      "bbox": [
+        969,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpg3ex",
+      "id": "17",
+      "bbox": [
+        988,
+        524,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Day 3  整理房间",
+      "textPreview": "Day 3  整理房间",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Day 3  整理房间"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Day 3  整理房间",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Day 3  整理房间",
+              "fontSize": 21,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vahoza1g",
+      "id": "18",
+      "name": "thumb-Day 4  准备汇报",
+      "bbox": [
+        1405.5,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 19,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/fu18jqh0",
+      "id": "44",
+      "bbox": [
+        1405.5,
+        302,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image8.png",
+        "contentType": "image/png",
+        "byteLength": 1897668
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image8.png",
+        "contentType": "image/png",
+        "byteLength": 1897668
+      }
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/epkzupwb",
+      "id": "20",
+      "bbox": [
+        1405.5,
+        302,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7adsji5s",
+      "id": "21",
+      "bbox": [
+        1424,
+        524,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Day 4  准备汇报",
+      "textPreview": "Day 4  准备汇报",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Day 4  准备汇报"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Day 4  准备汇报",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Day 4  准备汇报",
+              "fontSize": 21,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wval87ed",
+      "id": "22",
+      "name": "thumb-Night 1  家庭对话",
+      "bbox": [
+        96,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 23,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/m94fu18j",
+      "id": "45",
+      "bbox": [
+        96,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image9.png",
+        "contentType": "image/png",
+        "byteLength": 1441262
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image9.png",
+        "contentType": "image/png",
+        "byteLength": 1441262
+      }
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "24",
+      "bbox": [
+        96,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "25",
+      "bbox": [
+        114,
+        804,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Night 1  家庭对话",
+      "textPreview": "Night 1  家庭对话",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Night 1  家庭对话"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Night 1  家庭对话",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Night 1  家庭对话",
+              "fontSize": 21,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "26",
+      "name": "thumb-Night 2  朋友聊天",
+      "bbox": [
+        532.5,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 27,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/x0nuxc3y",
+      "id": "46",
+      "bbox": [
+        532.5,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image10.png",
+        "contentType": "image/png",
+        "byteLength": 1630297
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image10.png",
+        "contentType": "image/png",
+        "byteLength": 1630297
+      }
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "28",
+      "bbox": [
+        532.5,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7u54zido",
+      "id": "29",
+      "bbox": [
+        550,
+        804,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Night 2  朋友聊天",
+      "textPreview": "Night 2  朋友聊天",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Night 2  朋友聊天"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Night 2  朋友聊天",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Night 2  朋友聊天",
+              "fontSize": 21,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twra5gbq",
+      "id": "30",
+      "name": "thumb-Night 3  工作沟通",
+      "bbox": [
+        969,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 31,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/4fu18jqh",
+      "id": "47",
+      "bbox": [
+        969,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image11.png",
+        "contentType": "image/png",
+        "byteLength": 1439233
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image11.png",
+        "contentType": "image/png",
+        "byteLength": 1439233
+      }
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq1oryts",
+      "id": "32",
+      "bbox": [
+        969,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m58z25kb",
+      "id": "33",
+      "bbox": [
+        988,
+        804,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Night 3  工作沟通",
+      "textPreview": "Night 3  工作沟通",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Night 3  工作沟通"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Night 3  工作沟通",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Night 3  工作沟通",
+              "fontSize": 21,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t83itgfm",
+      "id": "34",
+      "name": "thumb-Night 4  亲密关系",
+      "bbox": [
+        1405.5,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(255, 222, 154, 0.34)",
+      "lineWidth": 2
+    },
+    {
+      "order": 35,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/f6dcbulw",
+      "id": "48",
+      "bbox": [
+        1405.5,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image12.png",
+        "contentType": "image/png",
+        "byteLength": 1707342
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image12.png",
+        "contentType": "image/png",
+        "byteLength": 1707342
+      }
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2hwfyxo",
+      "id": "36",
+      "bbox": [
+        1405.5,
+        582.6,
+        418.5,
+        262.6
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(20, 14, 15, 0.34)"
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhk3q5o7",
+      "id": "37",
+      "bbox": [
+        1424,
+        804,
+        382,
+        26
+      ],
+      "geometry": "rect",
+      "text": "Night 4  亲密关系",
+      "textPreview": "Night 4  亲密关系",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Night 4  亲密关系"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Night 4  亲密关系",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Night 4  亲密关系",
+              "fontSize": 21,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgfmlkjm",
+      "id": "38",
+      "name": "footer-rule",
+      "bbox": [
+        192,
+        940,
+        180,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(255, 211, 108, 0.68)",
+      "lineColor": "rgba(255, 211, 108, 0.68)",
+      "lineWidth": 0
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4vmtwra5",
+      "id": "39",
+      "name": "footer-label",
+      "bbox": [
+        1292,
+        930,
+        438,
+        24
+      ],
+      "geometry": "rect",
+      "text": "白天推进秩序，夜晚暴露偏移；循环本身就是主题。",
+      "textPreview": "白天推进秩序，夜晚暴露偏移；循环本身就是主题。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "白天推进秩序，夜晚暴露偏移；循环本身就是主题。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "白天推进秩序，夜晚暴露偏移；循环本身就是主题。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "白天推进秩序，夜晚暴露偏移；循环本身就是主题。",
+              "fontSize": 19,
+              "color": "rgba(255, 226, 165, 0.78)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,1115 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/mlkjm1cf",
+    "id": "mlkjm1cf",
+    "slide": 6,
+    "layoutId": "/ppt/slideLayouts/slideLayout2.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/w7mp0bi9",
+      "id": "32",
+      "name": "bg-night3-work.png",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image14.png",
+        "contentType": "image/png",
+        "byteLength": 1439233
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image14.png",
+        "contentType": "image/png",
+        "byteLength": 1439233
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ovahoza1",
+      "id": "2",
+      "name": "bg-scrim",
+      "bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "geometry": "rect",
+      "fillColor": "rgba(17, 12, 22, 0.76)"
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dg7adsji",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        96,
+        76,
+        1728,
+        28
+      ],
+      "geometry": "rect",
+      "text": "04 / MECHANICS",
+      "textPreview": "04 / MECHANICS",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "04 / MECHANICS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "04 / MECHANICS",
+          "runs": [
+            {
+              "index": 1,
+              "text": "04 / MECHANICS",
+              "fontSize": 23,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6hcrmhk3",
+      "id": "4",
+      "name": "slide-title",
+      "bbox": [
+        96,
+        126,
+        1728,
+        88
+      ],
+      "geometry": "rect",
+      "text": "系统设计：选择不是正确答案，而是代价分配",
+      "textPreview": "系统设计：选择不是正确答案，而是代价分配",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "系统设计：选择不是正确答案，而是代价分配"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "系统设计：选择不是正确答案，而是代价分配",
+          "runs": [
+            {
+              "index": 1,
+              "text": "系统设计：选择不是正确答案，而是代价分配",
+              "fontSize": 72,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/z25kb6xk",
+      "id": "5",
+      "name": "slide-subtitle",
+      "bbox": [
+        96,
+        234,
+        1180,
+        36
+      ],
+      "geometry": "rect",
+      "text": "三类夜晚选择分别改变清晰度、理解率、解释成本和自我保留度。",
+      "textPreview": "三类夜晚选择分别改变清晰度、理解率、解释成本和自我保留度。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "三类夜晚选择分别改变清晰度、理解率、解释成本和自我保留度。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "三类夜晚选择分别改变清晰度、理解率、解释成本和自我保留度。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "三类夜晚选择分别改变清晰度、理解率、解释成本和自我保留度。",
+              "fontSize": 30,
+              "color": "rgba(255, 229, 177, 0.88)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onyd0z61",
+      "id": "6",
+      "bbox": [
+        96,
+        306,
+        928.48,
+        132
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(70, 37, 24, 0.72)",
+      "lineColor": "rgba(255, 211, 108, 0.45)",
+      "lineWidth": 2
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8v6psfi",
+      "id": "7",
+      "bbox": [
+        126,
+        332,
+        868,
+        38
+      ],
+      "geometry": "rect",
+      "text": "更详细地解释",
+      "textPreview": "更详细地解释",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "更详细地解释"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "更详细地解释",
+          "runs": [
+            {
+              "index": 1,
+              "text": "更详细地解释",
+              "fontSize": 31,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "8",
+      "bbox": [
+        126,
+        384,
+        868,
+        30
+      ],
+      "geometry": "rect",
+      "text": "清晰度上升，但成本变高；对方可能把原因听成责备。",
+      "textPreview": "清晰度上升，但成本变高；对方可能把原因听成责备。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "清晰度上升，但成本变高；对方可能把原因听成责备。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "清晰度上升，但成本变高；对方可能把原因听成责备。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "清晰度上升，但成本变高；对方可能把原因听成责备。",
+              "fontSize": 24,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "9",
+      "bbox": [
+        96,
+        458,
+        928.48,
+        132
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(70, 37, 54, 0.72)",
+      "lineColor": "rgba(239, 138, 168, 0.5)",
+      "lineWidth": 2
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxc3ylc",
+      "id": "10",
+      "bbox": [
+        126,
+        484,
+        868,
+        38
+      ],
+      "geometry": "rect",
+      "text": "更委婉地表达",
+      "textPreview": "更委婉地表达",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "更委婉地表达"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "更委婉地表达",
+          "runs": [
+            {
+              "index": 1,
+              "text": "更委婉地表达",
+              "fontSize": 31,
+              "color": "#EF8AA8",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y90je9cv",
+      "id": "11",
+      "bbox": [
+        126,
+        536,
+        868,
+        30
+      ],
+      "geometry": "rect",
+      "text": "冲突感降低，但误解会从新的入口进入。",
+      "textPreview": "冲突感降低，但误解会从新的入口进入。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "冲突感降低，但误解会从新的入口进入。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "冲突感降低，但误解会从新的入口进入。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "冲突感降低，但误解会从新的入口进入。",
+              "fontSize": 24,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wjudg7a",
+      "id": "12",
+      "bbox": [
+        96,
+        610,
+        928.48,
+        132
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(38, 73, 50, 0.7)",
+      "lineColor": "rgba(159, 213, 111, 0.55)",
+      "lineWidth": 2
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq1oryt",
+      "id": "13",
+      "bbox": [
+        126,
+        636,
+        868,
+        38
+      ],
+      "geometry": "rect",
+      "text": "暂停解释，保护自己",
+      "textPreview": "暂停解释，保护自己",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "暂停解释，保护自己"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "暂停解释，保护自己",
+          "runs": [
+            {
+              "index": 1,
+              "text": "暂停解释，保护自己",
+              "fontSize": 31,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n29gr2p8",
+      "id": "14",
+      "bbox": [
+        126,
+        688,
+        868,
+        30
+      ],
+      "geometry": "rect",
+      "text": "不立刻修复关系，但停止把自我交给证明。",
+      "textPreview": "不立刻修复关系，但停止把自我交给证明。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "不立刻修复关系，但停止把自我交给证明。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "不立刻修复关系，但停止把自我交给证明。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "不立刻修复关系，但停止把自我交给证明。",
+              "fontSize": 24,
+              "color": "#FFF2C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yhgn29gr",
+      "id": "15",
+      "bbox": [
+        1094,
+        436,
+        120,
+        28
+      ],
+      "geometry": "rect",
+      "text": "表达清晰度",
+      "textPreview": "表达清晰度",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "表达清晰度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "表达清晰度",
+          "runs": [
+            {
+              "index": 1,
+              "text": "表达清晰度",
+              "fontSize": 24,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58z25kb6",
+      "id": "16",
+      "bbox": [
+        1800,
+        422,
+        24,
+        56
+      ],
+      "geometry": "rect",
+      "text": "65",
+      "textPreview": "65",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "6"
+          },
+          {
+            "index": 2,
+            "text": "5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "65",
+          "runs": [
+            {
+              "index": 1,
+              "text": "65",
+              "fontSize": 24,
+              "color": "#7ECBFF",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn29gr2p",
+      "id": "17",
+      "bbox": [
+        1096,
+        488,
+        728,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(255, 255, 255, 0.14)"
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/neloj2t8",
+      "id": "18",
+      "bbox": [
+        1096,
+        488,
+        403,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#7ECBFF"
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ytsvu9kn",
+      "id": "19",
+      "bbox": [
+        1094,
+        544,
+        120,
+        28
+      ],
+      "geometry": "rect",
+      "text": "对方理解率",
+      "textPreview": "对方理解率",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "对方理解率"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "对方理解率",
+          "runs": [
+            {
+              "index": 1,
+              "text": "对方理解率",
+              "fontSize": 24,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x4nap4r",
+      "id": "20",
+      "bbox": [
+        1800,
+        530,
+        24,
+        56
+      ],
+      "geometry": "rect",
+      "text": "42",
+      "textPreview": "42",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4"
+          },
+          {
+            "index": 2,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "42",
+          "runs": [
+            {
+              "index": 1,
+              "text": "42",
+              "fontSize": 24,
+              "color": "#9FD56F",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vixczed8",
+      "id": "21",
+      "bbox": [
+        1096,
+        600,
+        728,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(255, 255, 255, 0.14)"
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3q5o7qp",
+      "id": "22",
+      "bbox": [
+        1096,
+        600,
+        260,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#9FD56F"
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/donyd0z6",
+      "id": "23",
+      "bbox": [
+        1094,
+        654,
+        96,
+        28
+      ],
+      "geometry": "rect",
+      "text": "解释成本",
+      "textPreview": "解释成本",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "解释成本"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "解释成本",
+          "runs": [
+            {
+              "index": 1,
+              "text": "解释成本",
+              "fontSize": 24,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6psfil0r",
+      "id": "24",
+      "bbox": [
+        1800,
+        640,
+        24,
+        56
+      ],
+      "geometry": "rect",
+      "text": "80",
+      "textPreview": "80",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "8"
+          },
+          {
+            "index": 2,
+            "text": "0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "80",
+          "runs": [
+            {
+              "index": 1,
+              "text": "80",
+              "fontSize": 24,
+              "color": "#F38B70",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/val87ed8",
+      "id": "25",
+      "bbox": [
+        1096,
+        704,
+        728,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(255, 255, 255, 0.14)"
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kre1w7mp",
+      "id": "26",
+      "bbox": [
+        1096,
+        704,
+        496,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F38B70"
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcbulwva",
+      "id": "27",
+      "bbox": [
+        1094,
+        764,
+        120,
+        28
+      ],
+      "geometry": "rect",
+      "text": "自我保留度",
+      "textPreview": "自我保留度",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "自我保留度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "自我保留度",
+          "runs": [
+            {
+              "index": 1,
+              "text": "自我保留度",
+              "fontSize": 24,
+              "color": "#FFF2C2",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2lszqtcj",
+      "id": "28",
+      "bbox": [
+        1800,
+        750,
+        24,
+        56
+      ],
+      "geometry": "rect",
+      "text": "38",
+      "textPreview": "38",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          },
+          {
+            "index": 2,
+            "text": "8"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "38",
+          "runs": [
+            {
+              "index": 1,
+              "text": "38",
+              "fontSize": 24,
+              "color": "#FFD36C",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v6psfil0",
+      "id": "29",
+      "bbox": [
+        1096,
+        816,
+        728,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "rgba(255, 255, 255, 0.14)"
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "30",
+      "bbox": [
+        1096,
+        816,
+        236,
+        18
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFD36C"
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sji5snel",
+      "id": "31",
+      "bbox": [
+        1094,
+        858,
+        730,
+        32
+      ],
+      "geometry": "rect",
+      "text": "结局由这些指标共同决定：无限解释、沉默系统、边界重构。",
+      "textPreview": "结局由这些指标共同决定：无限解释、沉默系统、边界重构。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "alignment": "left"
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "结局由这些指标共同决定：无限解释、沉默系统、边界重构。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "结局由这些指标共同决定：无限解释、沉默系统、边界重构。",
+          "runs": [
+            {
+              "index": 1,
+              "text": "结局由这些指标共同决定：无限解释、沉默系统、边界重构。",
+              "fontSize": 26,
+              "color": "rgba(255, 236, 188, 0.92)",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}
