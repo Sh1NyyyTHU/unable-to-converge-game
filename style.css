@@ -16,6 +16,14 @@ body {
   width: 100%;
   min-height: 100%;
   margin: 0;
+  /* 防止移动端默认行为 */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* 防止iOS橡皮筋效果影响游戏 */
+  overscroll-behavior: none;
+  touch-action: manipulation;
 }
 
 body {
@@ -57,6 +65,11 @@ body {
     0 30px 70px rgba(0, 0, 0, 0.48);
   image-rendering: pixelated;
   image-rendering: crisp-edges;
+  /* 触屏优化 */
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .hint {
@@ -77,10 +90,47 @@ body {
 
 @media (max-width: 720px) {
   body {
-    padding: 12px;
+    padding: 8px;
+  }
+
+  #gameCanvas {
+    border-width: 4px;
+    box-shadow:
+      0 0 0 3px #2a1a12,
+      0 10px 0 rgba(42, 26, 18, 0.36),
+      0 18px 40px rgba(0, 0, 0, 0.48);
   }
 
   .hint {
-    font-size: 12px;
+    font-size: 11px;
+    margin: 8px auto 0;
+    line-height: 1.5;
+  }
+}
+
+/* 超小屏 / 横屏手机 */
+@media (max-width: 480px) {
+  body {
+    padding: 4px;
+  }
+
+  #gameCanvas {
+    border-width: 3px;
+  }
+}
+
+/* 横屏时确保 Canvas 不超出可视区域 */
+@media (orientation: landscape) and (max-height: 500px) {
+  body {
+    padding: 4px;
+  }
+
+  #gameCanvas {
+    width: auto;
+    height: min(100%, calc(100vh - 48px));
+  }
+
+  .hint {
+    display: none;
   }
 }

@@ -6,6 +6,9 @@ const BASE_HEIGHT = 540;
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
+// 触屏设备检测
+const IS_TOUCH_DEVICE = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+
 let dpr = 1;
 let mouse = { x: -1, y: -1 };
 let buttons = [];
@@ -756,6 +759,8 @@ const GameState = {
   showLog: false,
   // 音效开关
   sfxEnabled: true,
+  // 触屏候选
+  touchCandidate: null,
 };
 
 class Button {
@@ -981,6 +986,7 @@ function resetGame() {
     isTransitioning: false,
     decisionLog: [],
     showLog: false,
+    touchCandidate: null,
   });
 }
 
@@ -1536,62 +1542,150 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
-// 触摸支持
+// ===== 移动端触屏支持 =====
+let touchStartPos = { x: 0, y: 0 };
+let touchStartTime = 0;
+let touchMoved = false;
+const TAP_MOVE_THRESHOLD = 12; // 移动超过此像素视为拖拽，否则为点击
+const TAP_TIME_THRESHOLD = 300; // 超过此毫秒视为长按
+let touchRipple = null; // 触摸涟漪 { x, y, alpha, radius }
+
 canvas.addEventListener("touchstart", (event) => {
   event.preventDefault();
   const touch = event.touches[0];
-  mouse = getPointerPosition(touch);
+  const pos = getPointerPosition(touch);
+  mouse = pos;
+  touchStartPos = { x: pos.x, y: pos.y };
+  touchStartTime = Date.now();
+  touchMoved = false;
+
+  // iOS AudioContext 必须在用户手势中恢复
   AudioManager.unlock();
   SFX.init();
+  if (SFX.audioCtx && SFX.audioCtx.state === "suspended") {
+    SFX.audioCtx.resume();
+  }
 
-  const hotspot = findHotspotAt(mouse.x, mouse.y);
+  // 检查是否在可拖拽的热点上
+  const hotspot = findHotspotAt(pos.x, pos.y);
   if (hotspot && isCurrentStepHotspot(hotspot) && !isHotspotDone(hotspot) && !hotspot.wrong) {
-    GameState.isDragging = true;
-    GameState.dragHotspot = hotspot;
-    GameState.dragOffsetX = mouse.x - hotspot.x;
-    GameState.dragOffsetY = mouse.y - hotspot.y;
-    GameState.dragX = hotspot.x;
-    GameState.dragY = hotspot.y;
+    // 不立即开始拖拽，等 move 超过阈值
+    GameState.touchCandidate = hotspot;
+    // 显示触摸涟漪
+    touchRipple = { x: pos.x, y: pos.y, alpha: 0.6, radius: 4, maxRadius: 28 };
+  } else {
+    GameState.touchCandidate = null;
   }
 }, { passive: false });
 
 canvas.addEventListener("touchmove", (event) => {
   event.preventDefault();
   const touch = event.touches[0];
-  mouse = getPointerPosition(touch);
+  const pos = getPointerPosition(touch);
+  mouse = pos;
+
+  const dx = pos.x - touchStartPos.x;
+  const dy = pos.y - touchStartPos.y;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+
+  // 移动到阈值以上才开始拖拽
+  if (!touchMoved && distance >= TAP_MOVE_THRESHOLD) {
+    touchMoved = true;
+    touchRipple = null; // 取消涟漪
+
+    if (GameState.touchCandidate) {
+      const h = GameState.touchCandidate;
+      GameState.isDragging = true;
+      GameState.dragHotspot = h;
+      GameState.dragOffsetX = touchStartPos.x - h.x;
+      GameState.dragOffsetY = touchStartPos.y - h.y;
+      GameState.dragX = h.x;
+      GameState.dragY = h.y;
+      GameState.touchCandidate = null;
+      SFX.click();
+    }
+  }
+
   if (GameState.isDragging && GameState.dragHotspot) {
-    GameState.dragX = mouse.x - GameState.dragOffsetX;
-    GameState.dragY = mouse.y - GameState.dragOffsetY;
+    GameState.dragX = pos.x - GameState.dragOffsetX;
+    GameState.dragY = pos.y - GameState.dragOffsetY;
   }
 }, { passive: false });
 
 canvas.addEventListener("touchend", (event) => {
   event.preventDefault();
-  if (!GameState.isDragging) return;
+  GameState.touchCandidate = null;
 
-  const dropTarget = getCurrentDropTarget();
-  const hotspot = GameState.dragHotspot;
+  const elapsed = Date.now() - touchStartTime;
 
-  if (dropTarget && dropTarget.contains(mouse.x, mouse.y)) {
-    spawnParticles(dropTarget.x + dropTarget.w / 2, dropTarget.y + dropTarget.h / 2, 20, "#ffd36c", 5, 35, 4);
-    SFX.success();
-    endDrag(true);
-    if (hotspot && hotspot.onClick) {
-      hotspot.onClick();
+  if (GameState.isDragging) {
+    // 拖拽结束
+    const dropTarget = getCurrentDropTarget();
+    const hotspot = GameState.dragHotspot;
+
+    if (dropTarget && dropTarget.contains(mouse.x, mouse.y)) {
+      spawnParticles(dropTarget.x + dropTarget.w / 2, dropTarget.y + dropTarget.h / 2, 20, "#ffd36c", 5, 35, 4);
+      SFX.success();
+      endDrag(true);
+      if (hotspot && hotspot.onClick) {
+        hotspot.onClick();
+      }
+    } else {
+      endDrag(false);
     }
-  } else {
+  } else if (!touchMoved && elapsed < TAP_TIME_THRESHOLD) {
+    // 轻触（tap）：优先热点，其次按钮
+    const hotspot = findHotspotAt(mouse.x, mouse.y);
+    if (hotspot) {
+      touchRipple = { x: mouse.x, y: mouse.y, alpha: 0.5, radius: 4, maxRadius: 22 };
+      SFX.click();
+      if (hotspot.onClick) {
+        hotspot.onClick();
+        AudioManager.syncWithScene();
+      }
+    } else {
+      const hit = buttons.find((button) => !button.disabled && button.contains(mouse.x, mouse.y));
+      if (hit) {
+        touchRipple = { x: mouse.x, y: mouse.y, alpha: 0.5, radius: 4, maxRadius: 22 };
+        SFX.click();
+        hit.onClick();
+        AudioManager.syncWithScene();
+      }
+    }
+  }
+  // 长按不做任何事（防止 iOS 文本选择等）
+}, { passive: false });
+
+canvas.addEventListener("touchcancel", (event) => {
+  // 触摸被打断（如来电、系统手势等）
+  GameState.touchCandidate = null;
+  touchRipple = null;
+  if (GameState.isDragging) {
     endDrag(false);
   }
+});
 
-  // 如果没有拖拽，当作点击处理
-  if (!hotspot) {
-    const hit = buttons.find((button) => !button.disabled && button.contains(mouse.x, mouse.y));
-    if (hit) {
-      hit.onClick();
-      AudioManager.syncWithScene();
-    }
+// 绘制触摸涟漪
+function drawTouchRipple() {
+  if (!touchRipple) return;
+
+  touchRipple.radius += (touchRipple.maxRadius - touchRipple.radius) * 0.3;
+  touchRipple.alpha -= 0.04;
+
+  if (touchRipple.alpha <= 0) {
+    touchRipple = null;
+    return;
   }
-}, { passive: false });
+
+  ctx.save();
+  ctx.globalAlpha = touchRipple.alpha;
+  ctx.strokeStyle = "#ffd36c";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(touchRipple.x, touchRipple.y, touchRipple.radius, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.restore();
+}
 
 window.addEventListener("resize", resizeCanvasForDpr);
 
@@ -1657,6 +1751,9 @@ function draw() {
 
   // 绘制连击指示器
   drawComboIndicator();
+
+  // 绘制触摸涟漪
+  drawTouchRipple();
 }
 
 // ===== 拖拽辅助函数 =====
@@ -1929,12 +2026,16 @@ function drawNight() {
     );
   });
 
-  // 快捷键提示
+  // 快捷键提示（根据设备类型）
   ctx.save();
   ctx.fillStyle = "rgba(255,230,160,0.45)";
   ctx.font = "12px Microsoft YaHei, sans-serif";
   ctx.textAlign = "center";
-  ctx.fillText("💡 按键 1-4 快速选择  |  Tab 查看决策日志  |  S 开关音效", BASE_WIDTH / 2, 510);
+  if (IS_TOUCH_DEVICE) {
+    ctx.fillText("💡 轻触选项按钮进行回应  |  长按场景物件进行拖拽", BASE_WIDTH / 2, 510);
+  } else {
+    ctx.fillText("💡 按键 1-4 快速选择  |  Tab 查看决策日志  |  S 开关音效", BASE_WIDTH / 2, 510);
+  }
   ctx.restore();
 }
 
