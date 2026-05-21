@@ -121,17 +121,26 @@ const NIGHT_EFFECTS = {
   detail: {
     label: "更详细地解释",
     hint: "补充背景、过程和原因。",
+    shortcut: "1",
     delta: { clarity: 10, understanding: -5, cost: 15, self: -8 },
   },
   gentle: {
     label: "更委婉地表达",
     hint: "降低语气，避免刺激对方。",
+    shortcut: "2",
     delta: { clarity: 8, understanding: -3, cost: 12, self: -6 },
   },
   pause: {
     label: "暂停解释，保护自己",
     hint: "停止追加说明，保留边界。",
+    shortcut: "3",
     delta: { clarity: 0, understanding: 0, cost: -5, self: 8 },
+  },
+  reframe: {
+    label: "换个角度重新表达",
+    hint: "承认感受，但不接受归因。",
+    shortcut: "4",
+    delta: { clarity: 6, understanding: 2, cost: 8, self: -2 },
   },
 };
 
@@ -398,6 +407,33 @@ const DAY_HOTSPOTS = {
   ],
 };
 
+// 拖拽目标区域：每个白天任务步骤对应的拖放目标
+const DAY_DROP_TARGETS = {
+  1: [
+    { x: 620, y: 144, w: 180, h: 100, label: "拖到路由器区域", step: 0 },
+    { x: 430, y: 130, w: 140, h: 90, label: "拖到电脑网络图标", step: 1 },
+    { x: 480, y: 155, w: 60, h: 50, label: "拖到连接按钮", step: 2 },
+  ],
+  2: [
+    { x: 298, y: 126, w: 176, h: 150, label: "拖到文档段落区", step: 0 },
+    { x: 492, y: 138, w: 160, h: 130, label: "拖到排序箭头区", step: 1 },
+    { x: 662, y: 154, w: 138, h: 104, label: "拖到结论标记区", step: 2 },
+  ],
+  3: [
+    { x: 430, y: 180, w: 220, h: 120, label: "拖到分类收纳区", step: 0 },
+    { x: 280, y: 260, w: 160, h: 70, label: "拖到垃圾处理区", step: 1 },
+    { x: 662, y: 118, w: 128, h: 132, label: "拖到收纳柜", step: 2 },
+  ],
+  4: [
+    { x: 264, y: 142, w: 138, h: 120, label: "拖到提纲区", step: 0 },
+    { x: 438, y: 120, w: 202, h: 146, label: "拖到幻灯片区", step: 1 },
+    { x: 676, y: 154, w: 120, h: 108, label: "拖到练习区", step: 2 },
+  ],
+};
+
+// 连击奖励阈值
+const COMBO_THRESHOLDS = [3, 6, 10, 15];
+
 const DAY_TASKS = [
   {
     day: 1,
@@ -481,6 +517,11 @@ const NIGHT_DIALOGUES = [
         other: "你又在逃避。",
         note: "误解没有马上消失，但你没有继续把自己耗进去。",
       },
+      reframe: {
+        player: "我听到你觉得被忽视了。我确实累了，但这不改变我对你的在意。",
+        other: "你嘴上说在意，但行动上完全看不出来。",
+        note: "你承认了对方的感受，但没有接受归因。对方暂时无法接住这个区分。",
+      },
     },
     followUp: {
       player: "我想把话说清楚一点。",
@@ -501,6 +542,11 @@ const NIGHT_DIALOGUES = [
         player: "我不继续解释了。我现在需要休息。",
         other: "随便你。",
         note: "对话没有变温和，但你保住了停止的权利。",
+      },
+      reframe: {
+        player: "我不是在争论谁对谁错。我只是需要先恢复能量，然后再好好谈。",
+        other: "等你恢复了也还是这些话。",
+        note: "你试图把冲突和时间分开，但对方的预期没有改变。",
       },
     },
   },
@@ -527,6 +573,11 @@ const NIGHT_DIALOGUES = [
         other: "好吧，随你。",
         note: "关系没有被立刻修复，但你的休息没有继续被谈判。",
       },
+      reframe: {
+        player: "我理解你可能觉得被冷落了。我确实在退后，但不是从你这里退后。",
+        other: "那你能不能说清楚你到底需要什么？",
+        note: "你承认了对方的感受，也表达了边界。对方开始问具体问题了。",
+      },
     },
     followUp: {
       player: "我需要休息，但这不代表关系变了。",
@@ -547,6 +598,11 @@ const NIGHT_DIALOGUES = [
         player: "我今天到这里。等我休息好再联系你。",
         other: "嗯。",
         note: "没有得到完整理解，但你没有继续透支来换即时回应。",
+      },
+      reframe: {
+        player: "我对你的重视不需要用秒回来证明。但如果你需要确认，我可以说清楚。",
+        other: "你说吧，我听着。",
+        note: "你把证明的压力从自己身上卸掉，同时给了对方一个可接收的位置。",
       },
     },
   },
@@ -573,6 +629,11 @@ const NIGHT_DIALOGUES = [
         other: "行，你标吧。",
         note: "你把沟通拉回任务，没有继续证明自己的动机。",
       },
+      reframe: {
+        player: "我理解被指出问题会让人不舒服。我的目标只是让交付更安全，不是评价你。",
+        other: "你说得好听，但挑错的时候也没见你客气。",
+        note: "你区分了流程和评价，但对方还没准备好接受这个区分。",
+      },
     },
     followUp: {
       player: "我讨论的是文件风险，不是个人评价。",
@@ -593,6 +654,11 @@ const NIGHT_DIALOGUES = [
         player: "我先不讨论动机，只把复核项写清楚。",
         other: "那就按你说的来。",
         note: "任务继续推进，你也停止为自己的善意辩护。",
+      },
+      reframe: {
+        player: "你做的部分我没问题。只是这几个数据点会影响整体判断，我们一起过一遍？",
+        other: "行，你说哪几个。",
+        note: "你把焦点从人转移到具体数据，对方终于开始看向文件本身。",
       },
     },
   },
@@ -619,6 +685,11 @@ const NIGHT_DIALOGUES = [
         other: "你现在连证明都不愿意了。",
         note: "对方仍然不满意，但你第一次没有把自己放进无尽证明里。",
       },
+      reframe: {
+        player: "我听到你在担心。我不是不爱你了，只是今天太累，没办法用你想要的方式回应。",
+        other: "那为什么以前可以，现在不可以？",
+        note: "你接住了对方的情绪，但对方把'现在做不到'听成了'变心了'。",
+      },
     },
     followUp: {
       player: "我需要先恢复，不想在疲惫时争论。",
@@ -640,6 +711,11 @@ const NIGHT_DIALOGUES = [
         other: "你就是不愿意面对。",
         note: "误解仍在，但你没有把边界交出去。",
       },
+      reframe: {
+        player: "我没办法用疲惫的状态给出好的回应。等明天我状态恢复，我们再认真谈。",
+        other: "那我就等你到明天。",
+        note: "你没有证明爱，但给了明确的时间。对方虽然不甘，但接受了延后。",
+      },
     },
   },
 ];
@@ -657,6 +733,29 @@ const GameState = {
   nightChoice: null,
   nightRound: 0,
   ending: null,
+  // 拖拽系统
+  isDragging: false,
+  dragHotspot: null,
+  dragX: 0,
+  dragY: 0,
+  dragOffsetX: 0,
+  dragOffsetY: 0,
+  // 粒子系统
+  particles: [],
+  // 连击系统
+  combo: 0,
+  comboMax: 0,
+  comboTimer: 0,
+  lastActionTime: 0,
+  // 过渡动画
+  transitionAlpha: 1,
+  transitionTarget: null,
+  isTransitioning: false,
+  // 决策日志
+  decisionLog: [],
+  showLog: false,
+  // 音效开关
+  sfxEnabled: true,
 };
 
 class Button {
@@ -765,6 +864,94 @@ function getButtonPalette(kind, hovering, disabled) {
   return palettes[kind] || palettes.primary;
 }
 
+// ===== 粒子系统 =====
+class Particle {
+  constructor(x, y, vx, vy, color, life, size) {
+    this.x = x;
+    this.y = y;
+    this.vx = vx;
+    this.vy = vy;
+    this.color = color;
+    this.life = life;
+    this.maxLife = life;
+    this.size = size || 3;
+  }
+
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    this.vy += 0.08;
+    this.life -= 1;
+  }
+
+  draw(ctx) {
+    const alpha = this.life / this.maxLife;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = this.color;
+    ctx.fillRect(this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
+    ctx.restore();
+  }
+
+  get alive() {
+    return this.life > 0;
+  }
+}
+
+function spawnParticles(x, y, count, color, spread, life, size) {
+  for (let i = 0; i < count; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = (Math.random() * (spread || 3)) + 0.5;
+    GameState.particles.push(new Particle(
+      x, y,
+      Math.cos(angle) * speed,
+      Math.sin(angle) * speed - 1,
+      color || "#ffd36c",
+      (life || 30) + Math.floor(Math.random() * 15),
+      size || 3
+    ));
+  }
+}
+
+// ===== 音效系统（使用振荡器合成，无需外部文件）=====
+const SFX = {
+  audioCtx: null,
+
+  init() {
+    if (!this.audioCtx) {
+      try {
+        this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      } catch (e) {
+        // 不支持
+      }
+    }
+  },
+
+  play(freq, duration, type, volume, ramp) {
+    if (!GameState.sfxEnabled || !this.audioCtx) return;
+    try {
+      const osc = this.audioCtx.createOscillator();
+      const gain = this.audioCtx.createGain();
+      osc.type = type || "square";
+      osc.frequency.setValueAtTime(freq, this.audioCtx.currentTime);
+      gain.gain.setValueAtTime((volume || 0.08), this.audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, this.audioCtx.currentTime + (duration || 0.12));
+      osc.connect(gain);
+      gain.connect(this.audioCtx.destination);
+      osc.start();
+      osc.stop(this.audioCtx.currentTime + (duration || 0.12));
+    } catch (e) {
+      // 静默处理
+    }
+  },
+
+  click() { this.play(800, 0.06, "square", 0.06); },
+  success() { this.play(523, 0.1, "square", 0.08); this.play(659, 0.1, "square", 0.08); setTimeout(() => this.play(784, 0.15, "square", 0.08), 80); },
+  error() { this.play(150, 0.2, "sawtooth", 0.07); },
+  combo() { this.play(880, 0.08, "square", 0.06); setTimeout(() => this.play(1100, 0.08, "square", 0.06), 60); },
+  transition() { this.play(440, 0.2, "sine", 0.05); setTimeout(() => this.play(330, 0.3, "sine", 0.05), 120); },
+};
+
 function resetGame() {
   Object.assign(GameState, {
     scene: "start",
@@ -780,6 +967,20 @@ function resetGame() {
     nightChoice: null,
     nightRound: 0,
     ending: null,
+    isDragging: false,
+    dragHotspot: null,
+    dragX: 0,
+    dragY: 0,
+    particles: [],
+    combo: 0,
+    comboMax: 0,
+    comboTimer: 0,
+    lastActionTime: 0,
+    transitionAlpha: 1,
+    transitionTarget: null,
+    isTransitioning: false,
+    decisionLog: [],
+    showLog: false,
   });
 }
 
@@ -790,14 +991,152 @@ function startGame() {
     phase: "day",
     dayStep: 0,
     dayObjectState: {},
-    feedback: "点击场景里的物件，按合理顺序处理问题。",
+    feedback: "拖拽高亮物件到虚线目标区域，按合理顺序处理问题。",
     nightChoice: null,
     nightRound: 0,
+    combo: 0,
+    comboMax: 0,
+    comboTimer: 0,
+    lastActionTime: Date.now(),
+    decisionLog: [{ day: 1, phase: "day", action: "游戏开始", time: new Date().toLocaleTimeString() }],
   });
+  SFX.init();
 }
 
 function clamp(value, min = 0, max = 100) {
   return Math.max(min, Math.min(max, value));
+}
+
+// ===== 连击系统 =====
+function updateCombo(success) {
+  const now = Date.now();
+  const timeSinceLastAction = now - GameState.lastActionTime;
+  GameState.lastActionTime = now;
+
+  if (success) {
+    if (timeSinceLastAction < 8000) {
+      GameState.combo += 1;
+      GameState.comboMax = Math.max(GameState.comboMax, GameState.combo);
+      if (GameState.combo >= 3) {
+        SFX.combo();
+      }
+    } else {
+      GameState.combo = 1;
+    }
+  } else {
+    GameState.combo = 0;
+  }
+}
+
+function getComboBonus() {
+  if (GameState.combo >= 15) return { clarity: 3, self: 3, label: "完美节奏 ×15+" };
+  if (GameState.combo >= 10) return { clarity: 2, self: 2, label: "行云流水 ×10" };
+  if (GameState.combo >= 6) return { clarity: 1, self: 1, label: "渐入佳境 ×6" };
+  if (GameState.combo >= 3) return { clarity: 0, self: 1, label: "连续行动 ×3" };
+  return null;
+}
+
+// ===== 过渡动画 =====
+function startTransition(targetScene, callback) {
+  GameState.isTransitioning = true;
+  GameState.transitionTarget = { scene: targetScene, callback };
+  GameState.transitionAlpha = 0;
+}
+
+function updateTransition() {
+  if (!GameState.isTransitioning) return;
+
+  if (GameState.transitionAlpha < 1) {
+    GameState.transitionAlpha += 0.06;
+    if (GameState.transitionAlpha >= 1) {
+      GameState.transitionAlpha = 1;
+      if (GameState.transitionTarget) {
+        GameState.transitionTarget.callback();
+        AudioManager.syncWithScene();
+        SFX.transition();
+      }
+      GameState.isTransitioning = false;
+      GameState.transitionTarget = null;
+    }
+  }
+}
+
+function drawTransitionOverlay() {
+  if (!GameState.isTransitioning) return;
+
+  const alpha = GameState.transitionAlpha < 0.5
+    ? GameState.transitionAlpha * 2
+    : (1 - GameState.transitionAlpha) * 2;
+
+  ctx.save();
+  ctx.fillStyle = `rgba(18, 12, 24, ${alpha})`;
+  ctx.fillRect(0, 0, BASE_WIDTH, BASE_HEIGHT);
+
+  // 扫描线效果
+  for (let y = 0; y < BASE_HEIGHT; y += 4) {
+    if (y % 8 < 4) {
+      ctx.fillStyle = `rgba(255, 230, 160, ${alpha * 0.08})`;
+      ctx.fillRect(0, y, BASE_WIDTH, 2);
+    }
+  }
+  ctx.restore();
+}
+
+// ===== 决策日志 =====
+function addDecision(action, detail) {
+  GameState.decisionLog.push({
+    day: GameState.day,
+    phase: GameState.phase,
+    action,
+    detail: detail || "",
+    time: new Date().toLocaleTimeString(),
+    clarity: GameState.clarity,
+    understanding: GameState.understanding,
+    cost: GameState.cost,
+    self: GameState.self,
+  });
+}
+
+function drawDecisionLog() {
+  if (!GameState.showLog) return;
+
+  ctx.save();
+  ctx.fillStyle = "rgba(18, 10, 22, 0.92)";
+  ctx.fillRect(0, 0, BASE_WIDTH, BASE_HEIGHT);
+
+  ctx.fillStyle = "#ffd36c";
+  ctx.font = "700 26px Microsoft YaHei, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText("📋 决策日志", BASE_WIDTH / 2, 50);
+
+  ctx.fillStyle = "#a0a0c0";
+  ctx.font = "13px Microsoft YaHei, sans-serif";
+  ctx.fillText("按 Tab 键关闭", BASE_WIDTH / 2, 78);
+
+  const logs = GameState.decisionLog.slice(-12);
+  ctx.textAlign = "left";
+  logs.forEach((log, i) => {
+    const y = 110 + i * 34;
+    ctx.fillStyle = i % 2 === 0 ? "rgba(255,230,160,0.08)" : "rgba(0,0,0,0.2)";
+    ctx.fillRect(60, y - 8, 840, 30);
+
+    ctx.fillStyle = log.phase === "night" ? "#f0a8cc" : "#c9ef82";
+    ctx.font = "600 13px Microsoft YaHei, sans-serif";
+    ctx.fillText(`D${log.day} ${log.phase === "night" ? "🌙" : "☀️"}`, 75, y + 12);
+
+    ctx.fillStyle = "#eee0c0";
+    ctx.font = "13px Microsoft YaHei, sans-serif";
+    ctx.fillText(log.action, 150, y + 12);
+
+    ctx.fillStyle = "#988868";
+    ctx.font = "11px Microsoft YaHei, sans-serif";
+    ctx.fillText(`C:${log.clarity} U:${log.understanding} $:${log.cost} S:${log.self}`, 520, y + 12);
+
+    ctx.fillStyle = "#666680";
+    ctx.fillText(log.time, 750, y + 12);
+  });
+
+  ctx.restore();
 }
 
 function applyStats(delta) {
@@ -841,11 +1180,69 @@ function completeDayStep(feedback) {
   GameState.feedback = feedback || task.progress[GameState.dayStep];
   GameState.dayStep += 1;
 
-  if (GameState.dayStep >= task.steps.length) {
-    applyStats({ clarity: 5, self: 5 });
-    GameState.scene = "dayResult";
-    GameState.feedback = task.solved;
+  updateCombo(true);
+  const comboBonus = getComboBonus();
+  const baseStats = { clarity: 5, self: 5 };
+
+  if (comboBonus) {
+    baseStats.clarity += comboBonus.clarity || 0;
+    baseStats.self += comboBonus.self || 0;
+    GameState.feedback += ` [${comboBonus.label}]`;
   }
+
+  applyStats(baseStats);
+  SFX.success();
+
+  if (GameState.dayStep >= task.steps.length) {
+    addDecision("白天完成", `${task.title} - ${task.solved}`);
+    startTransition("dayResult", () => {
+      GameState.scene = "dayResult";
+      GameState.feedback = task.solved;
+    });
+  }
+}
+
+function handleDayHotspot(hotspot) {
+  const task = getCurrentDayTask();
+  const expected = task.steps[GameState.dayStep];
+  const state = getDayState();
+
+  if (hotspot.wrong) {
+    GameState.feedback = hotspot.wrong;
+    updateCombo(false);
+    SFX.error();
+    spawnParticles(hotspot.x + hotspot.w / 2, hotspot.y + hotspot.h / 2, 8, "#f38b70", 2, 20, 2);
+    return;
+  }
+
+  if (hotspot.step !== GameState.dayStep || hotspot.action !== expected) {
+    GameState.feedback = `现在需要"${expected}"。"${hotspot.label}"还不是当前关键点。（提示：试试拖动物件到高亮目标区域）`;
+    SFX.error();
+    return;
+  }
+
+  if (hotspot.group) {
+    const group = state.groups[hotspot.group] || [];
+    if (!group.includes(hotspot.id)) {
+      group.push(hotspot.id);
+      state.groups[hotspot.group] = group;
+    }
+    state.clicked[hotspot.id] = true;
+
+    const remaining = hotspot.required - group.length;
+    if (remaining > 0) {
+      GameState.feedback = `${hotspot.feedback} 还剩 ${remaining} 个相关物件。`;
+      SFX.click();
+      spawnParticles(hotspot.x + hotspot.w / 2, hotspot.y + hotspot.h / 2, 5, "#ffd36c", 1.5, 15, 2);
+      addDecision("收集物件", hotspot.label);
+      return;
+    }
+  }
+
+  state.clicked[hotspot.id] = true;
+  spawnParticles(hotspot.x + hotspot.w / 2, hotspot.y + hotspot.h / 2, 12, "#9fd56f", 3, 25, 3);
+  addDecision("正确操作", hotspot.label);
+  completeDayStep(hotspot.feedback);
 }
 
 class Hotspot {
@@ -887,89 +1284,67 @@ class Hotspot {
   }
 }
 
-function handleDayAction(label, feedback) {
-  const task = getCurrentDayTask();
-  const expected = task.steps[GameState.dayStep];
-
-  if (label !== expected) {
-    GameState.feedback = `“${label}”暂时不能解决核心问题。先找到当前最关键的一步。`;
-    return;
-  }
-
-  completeDayStep(feedback);
-}
-
-function handleDayHotspot(hotspot) {
-  const task = getCurrentDayTask();
-  const expected = task.steps[GameState.dayStep];
-  const state = getDayState();
-
-  if (hotspot.wrong) {
-    GameState.feedback = hotspot.wrong;
-    return;
-  }
-
-  if (hotspot.step !== GameState.dayStep || hotspot.action !== expected) {
-    GameState.feedback = `现在需要“${expected}”。“${hotspot.label}”还不是当前关键点。`;
-    return;
-  }
-
-  if (hotspot.group) {
-    const group = state.groups[hotspot.group] || [];
-    if (!group.includes(hotspot.id)) {
-      group.push(hotspot.id);
-      state.groups[hotspot.group] = group;
-    }
-    state.clicked[hotspot.id] = true;
-
-    const remaining = hotspot.required - group.length;
-    if (remaining > 0) {
-      GameState.feedback = `${hotspot.feedback} 还剩 ${remaining} 个相关物件。`;
-      return;
-    }
-  }
-
-  state.clicked[hotspot.id] = true;
-  completeDayStep(hotspot.feedback);
-}
 
 function handleNightChoice(choice) {
   GameState.nightChoice = choice;
   applyStats(NIGHT_EFFECTS[choice].delta);
   GameState.feedback = getCurrentNightResponse(choice).note;
-  GameState.scene = "nightResult";
+
+  updateCombo(choice !== "pause");
+  spawnParticles(480, 330, 15, "#f0a8cc", 4, 30, 4);
+  SFX.click();
+  addDecision("夜晚回应", NIGHT_EFFECTS[choice].label);
+
+  startTransition("nightResult", () => {
+    GameState.scene = "nightResult";
+  });
 }
 
 function goToNight() {
-  GameState.scene = "night";
-  GameState.phase = "night";
-  GameState.nightChoice = null;
-  GameState.nightRound = 0;
-  GameState.feedback = "你试着把意思说清楚。";
+  addDecision("进入夜晚", `第${GameState.day}天 · ${getCurrentNightDialogue().title}`);
+  SFX.transition();
+  startTransition("night", () => {
+    GameState.scene = "night";
+    GameState.phase = "night";
+    GameState.nightChoice = null;
+    GameState.nightRound = 0;
+    GameState.feedback = "你试着把意思说清楚。";
+  });
 }
 
 function continueNightDialogue() {
   GameState.nightRound += 1;
-  GameState.nightChoice = null;
-  GameState.scene = "night";
-  GameState.feedback = "误解没有消失。你还可以继续解释，也可以停下来。";
+  SFX.transition();
+  startTransition("night", () => {
+    GameState.scene = "night";
+    GameState.nightChoice = null;
+    GameState.feedback = "误解没有消失。你还可以继续解释，也可以停下来。";
+  });
 }
 
 function goToNextDayOrEnding() {
   if (GameState.day >= 4) {
     resolveEnding();
-    GameState.scene = "ending";
+    addDecision("游戏结局", GameState.ending.title);
+    SFX.transition();
+    startTransition("ending", () => {
+      GameState.scene = "ending";
+    });
     return;
   }
 
   GameState.day += 1;
   GameState.phase = "day";
-  GameState.scene = "day";
   GameState.dayStep = 0;
   GameState.dayObjectState = {};
-  GameState.nightChoice = null;
   GameState.nightRound = 0;
-  GameState.feedback = "新的一天开始。点击场景中的物件，一步步处理具体问题。";
+  SFX.transition();
+  startTransition("day", () => {
+    GameState.scene = "day";
+    GameState.nightChoice = null;
+    GameState.feedback = "新的一天开始。拖拽场景中的物件到目标区域，一步步处理具体问题。";
+    addDecision("新的一天", `第${GameState.day}天开始`);
+  });
 }
 
 function resolveEnding() {
@@ -1011,18 +1386,81 @@ function getPointerPosition(event) {
 
 canvas.addEventListener("mousemove", (event) => {
   mouse = getPointerPosition(event);
+
+  // 拖拽中更新位置
+  if (GameState.isDragging && GameState.dragHotspot) {
+    GameState.dragX = mouse.x - GameState.dragOffsetX;
+    GameState.dragY = mouse.y - GameState.dragOffsetY;
+  }
+
   const hoveringButton = buttons.some((button) => !button.disabled && button.contains(mouse.x, mouse.y));
-  const hoveringHotspot = hotspots.some((hotspot) => hotspot.contains(mouse.x, mouse.y));
-  canvas.style.cursor = hoveringButton || hoveringHotspot ? "pointer" : "default";
+  const hoveringHotspot = !GameState.isDragging && hotspots.some((hotspot) => hotspot.contains(mouse.x, mouse.y));
+  const hoveringDropTarget = GameState.isDragging && getCurrentDropTarget() && getCurrentDropTarget().contains(mouse.x, mouse.y);
+
+  if (GameState.isDragging) {
+    canvas.style.cursor = hoveringDropTarget ? "grabbing" : "grabbing";
+  } else if (hoveringButton || hoveringHotspot) {
+    canvas.style.cursor = "pointer";
+  } else if (getCurrentDropTarget() && getCurrentDropTarget().contains(mouse.x, mouse.y)) {
+    canvas.style.cursor = "grab";
+  } else {
+    canvas.style.cursor = "default";
+  }
 });
 
 canvas.addEventListener("mouseleave", () => {
   mouse = { x: -1, y: -1 };
+  if (GameState.isDragging) {
+    endDrag(false);
+  }
+});
+
+canvas.addEventListener("mousedown", (event) => {
+  mouse = getPointerPosition(event);
+  AudioManager.unlock();
+  SFX.init();
+
+  // 左键拖拽
+  const hotspot = findHotspotAt(mouse.x, mouse.y);
+  if (hotspot && isCurrentStepHotspot(hotspot) && !isHotspotDone(hotspot) && !hotspot.wrong) {
+    GameState.isDragging = true;
+    GameState.dragHotspot = hotspot;
+    GameState.dragOffsetX = mouse.x - hotspot.x;
+    GameState.dragOffsetY = mouse.y - hotspot.y;
+    GameState.dragX = hotspot.x;
+    GameState.dragY = hotspot.y;
+    SFX.click();
+    return;
+  }
+});
+
+canvas.addEventListener("mouseup", (event) => {
+  if (!GameState.isDragging) return;
+
+  mouse = getPointerPosition(event);
+  const dropTarget = getCurrentDropTarget();
+  const hotspot = GameState.dragHotspot;
+
+  if (dropTarget && dropTarget.contains(mouse.x, mouse.y)) {
+    // 成功拖到目标
+    spawnParticles(dropTarget.x + dropTarget.w / 2, dropTarget.y + dropTarget.h / 2, 20, "#ffd36c", 5, 35, 4);
+    SFX.success();
+    endDrag(true);
+    if (hotspot && hotspot.onClick) {
+      hotspot.onClick();
+    }
+  } else {
+    // 拖放失败，弹回
+    endDrag(false);
+  }
 });
 
 canvas.addEventListener("click", (event) => {
+  if (GameState.isDragging) return;
+
   mouse = getPointerPosition(event);
   AudioManager.unlock();
+  SFX.init();
   const hit = buttons.find((button) => !button.disabled && button.contains(mouse.x, mouse.y));
   if (hit) {
     hit.onClick();
@@ -1037,6 +1475,124 @@ canvas.addEventListener("click", (event) => {
   }
 });
 
+// 键盘快捷键
+window.addEventListener("keydown", (event) => {
+  // Tab 切换决策日志
+  if (event.key === "Tab") {
+    event.preventDefault();
+    GameState.showLog = !GameState.showLog;
+    return;
+  }
+
+  // 夜晚场景快捷键
+  if (GameState.scene === "night" && !GameState.isTransitioning) {
+    const choices = Object.keys(NIGHT_EFFECTS);
+    const index = parseInt(event.key) - 1;
+    if (index >= 0 && index < choices.length) {
+      handleNightChoice(choices[index]);
+      AudioManager.syncWithScene();
+      return;
+    }
+  }
+
+  // 夜晚结果页面快捷键
+  if (GameState.scene === "nightResult" && !GameState.isTransitioning) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      const canContinueNight = GameState.nightRound === 0;
+      if (canContinueNight) {
+        continueNightDialogue();
+      } else {
+        goToNextDayOrEnding();
+      }
+      AudioManager.syncWithScene();
+      return;
+    }
+  }
+
+  // 白天结果页面快捷键
+  if (GameState.scene === "dayResult" && !GameState.isTransitioning) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      goToNight();
+      AudioManager.syncWithScene();
+      return;
+    }
+  }
+
+  // 结局页
+  if (GameState.scene === "ending" && !GameState.isTransitioning) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      resetGame();
+      AudioManager.syncWithScene();
+      return;
+    }
+  }
+
+  // S 键开关音效
+  if (event.key === "s" || event.key === "S") {
+    GameState.sfxEnabled = !GameState.sfxEnabled;
+  }
+});
+
+// 触摸支持
+canvas.addEventListener("touchstart", (event) => {
+  event.preventDefault();
+  const touch = event.touches[0];
+  mouse = getPointerPosition(touch);
+  AudioManager.unlock();
+  SFX.init();
+
+  const hotspot = findHotspotAt(mouse.x, mouse.y);
+  if (hotspot && isCurrentStepHotspot(hotspot) && !isHotspotDone(hotspot) && !hotspot.wrong) {
+    GameState.isDragging = true;
+    GameState.dragHotspot = hotspot;
+    GameState.dragOffsetX = mouse.x - hotspot.x;
+    GameState.dragOffsetY = mouse.y - hotspot.y;
+    GameState.dragX = hotspot.x;
+    GameState.dragY = hotspot.y;
+  }
+}, { passive: false });
+
+canvas.addEventListener("touchmove", (event) => {
+  event.preventDefault();
+  const touch = event.touches[0];
+  mouse = getPointerPosition(touch);
+  if (GameState.isDragging && GameState.dragHotspot) {
+    GameState.dragX = mouse.x - GameState.dragOffsetX;
+    GameState.dragY = mouse.y - GameState.dragOffsetY;
+  }
+}, { passive: false });
+
+canvas.addEventListener("touchend", (event) => {
+  event.preventDefault();
+  if (!GameState.isDragging) return;
+
+  const dropTarget = getCurrentDropTarget();
+  const hotspot = GameState.dragHotspot;
+
+  if (dropTarget && dropTarget.contains(mouse.x, mouse.y)) {
+    spawnParticles(dropTarget.x + dropTarget.w / 2, dropTarget.y + dropTarget.h / 2, 20, "#ffd36c", 5, 35, 4);
+    SFX.success();
+    endDrag(true);
+    if (hotspot && hotspot.onClick) {
+      hotspot.onClick();
+    }
+  } else {
+    endDrag(false);
+  }
+
+  // 如果没有拖拽，当作点击处理
+  if (!hotspot) {
+    const hit = buttons.find((button) => !button.disabled && button.contains(mouse.x, mouse.y));
+    if (hit) {
+      hit.onClick();
+      AudioManager.syncWithScene();
+    }
+  }
+}, { passive: false });
+
 window.addEventListener("resize", resizeCanvasForDpr);
 
 function startRenderLoop() {
@@ -1044,7 +1600,21 @@ function startRenderLoop() {
     return;
   }
   animationStarted = true;
-  requestAnimationFrame(draw);
+  requestAnimationFrame(renderFrame);
+}
+
+function renderFrame() {
+  updateTransition();
+  updateParticles();
+  draw();
+  requestAnimationFrame(renderFrame);
+}
+
+function updateParticles() {
+  GameState.particles = GameState.particles.filter(p => {
+    p.update();
+    return p.alive;
+  });
 }
 
 function draw() {
@@ -1069,7 +1639,179 @@ function draw() {
   }
 
   buttons.forEach((button) => button.draw(ctx));
-  requestAnimationFrame(draw);
+
+  // 绘制拖放目标区域
+  drawDropTarget();
+
+  // 绘制拖拽中的物件
+  drawDraggedItem();
+
+  // 绘制粒子
+  GameState.particles.forEach(p => p.draw(ctx));
+
+  // 绘制过渡效果
+  drawTransitionOverlay();
+
+  // 绘制决策日志
+  drawDecisionLog();
+
+  // 绘制连击指示器
+  drawComboIndicator();
+}
+
+// ===== 拖拽辅助函数 =====
+function isCurrentStepHotspot(hotspot) {
+  const task = getCurrentDayTask();
+  if (!task) return false;
+  const expected = task.steps[GameState.dayStep];
+  return hotspot.step === GameState.dayStep && hotspot.action === expected && !hotspot.wrong;
+}
+
+class DropTarget {
+  constructor(x, y, w, h, label, step) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.label = label;
+    this.step = step;
+  }
+
+  contains(px, py) {
+    return px >= this.x && px <= this.x + this.w && py >= this.y && py <= this.y + this.h;
+  }
+}
+
+function getCurrentDropTarget() {
+  if (GameState.scene !== "day") return null;
+  const targets = DAY_DROP_TARGETS[GameState.day];
+  if (!targets) return null;
+  const target = targets[GameState.dayStep];
+  if (!target) return null;
+  return new DropTarget(target.x, target.y, target.w, target.h, target.label, target.step);
+}
+
+function drawDropTarget() {
+  if (GameState.scene !== "day" || GameState.isTransitioning) return;
+
+  const target = getCurrentDropTarget();
+  if (!target) return;
+
+  const pulse = 0.5 + Math.sin(jitterTick * 0.06) * 0.2;
+  const hovering = target.contains(mouse.x, mouse.y);
+  const dragging = GameState.isDragging;
+
+  ctx.save();
+  ctx.globalAlpha = dragging ? (hovering ? 0.45 : 0.25) : pulse * 0.35;
+  ctx.setLineDash([8, 4]);
+  ctx.lineDashOffset = jitterTick * 0.5;
+
+  ctx.strokeStyle = hovering && dragging ? "#ffd36c" : "#9fd56f";
+  ctx.lineWidth = hovering && dragging ? 4 : 3;
+  ctx.strokeRect(target.x, target.y, target.w, target.h);
+
+  ctx.fillStyle = hovering && dragging ? "rgba(255, 211, 108, 0.12)" : "rgba(159, 213, 111, 0.06)";
+  ctx.fillRect(target.x, target.y, target.w, target.h);
+
+  // 目标标记
+  ctx.setLineDash([]);
+  ctx.fillStyle = hovering && dragging ? "#ffd36c" : "rgba(159, 213, 111, 0.7)";
+  ctx.font = "600 13px Microsoft YaHei, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText(dragging ? "释放到这里" : "拖拽目标 → " + target.label, target.x + target.w / 2, target.y - 6);
+
+  // 十字准星
+  const cx = target.x + target.w / 2;
+  const cy = target.y + target.h / 2;
+  ctx.strokeStyle = hovering && dragging ? "#ffd36c" : "rgba(159, 213, 111, 0.5)";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(cx - 10, cy);
+  ctx.lineTo(cx + 10, cy);
+  ctx.moveTo(cx, cy - 10);
+  ctx.lineTo(cx, cy + 10);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+function drawDraggedItem() {
+  if (!GameState.isDragging || !GameState.dragHotspot) return;
+
+  const h = GameState.dragHotspot;
+  ctx.save();
+  ctx.globalAlpha = 0.85;
+  ctx.fillStyle = "rgba(255, 211, 108, 0.25)";
+  roundRect(ctx, GameState.dragX, GameState.dragY, h.w, h.h, 6);
+  ctx.fill();
+  ctx.strokeStyle = "#ffd36c";
+  ctx.lineWidth = 3;
+  ctx.setLineDash([4, 2]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.fillStyle = "#fff4c7";
+  ctx.font = "700 15px Microsoft YaHei, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText(h.label, GameState.dragX + h.w / 2, GameState.dragY + h.h / 2);
+
+  // 拖拽粒子尾迹
+  if (jitterTick % 2 === 0) {
+    spawnParticles(GameState.dragX + h.w / 2, GameState.dragY + h.h / 2, 1, "#ffd36c", 1, 8, 2);
+  }
+
+  ctx.restore();
+}
+
+function endDrag(success) {
+  if (!success && GameState.dragHotspot) {
+    SFX.error();
+    spawnParticles(
+      GameState.dragX + GameState.dragHotspot.w / 2,
+      GameState.dragY + GameState.dragHotspot.h / 2,
+      6, "#f38b70", 2, 15, 2
+    );
+  }
+  GameState.isDragging = false;
+  GameState.dragHotspot = null;
+  GameState.dragX = 0;
+  GameState.dragY = 0;
+}
+
+// ===== 连击指示器 =====
+function drawComboIndicator() {
+  if (GameState.combo < 3) return;
+
+  const now = Date.now();
+  const timeSinceAction = now - GameState.lastActionTime;
+  if (timeSinceAction > 5000) return;
+
+  const alpha = Math.min(1, (5000 - timeSinceAction) / 1000);
+  const pulse = 1 + Math.sin(jitterTick * 0.1) * 0.1;
+
+  ctx.save();
+  ctx.globalAlpha = alpha;
+
+  const comboBonus = getComboBonus();
+  const label = comboBonus ? comboBonus.label : `连击 ×${GameState.combo}`;
+
+  ctx.fillStyle = "#3a1d25";
+  ctx.fillRect(BASE_WIDTH - 220, 82, 200, 28);
+  ctx.fillStyle = "#7b3a45";
+  ctx.fillRect(BASE_WIDTH - 222, 80, 200, 28);
+
+  ctx.font = `700 ${Math.floor(14 * pulse)}px Microsoft YaHei, sans-serif`;
+  ctx.fillStyle = "#ffd36c";
+  ctx.textAlign = "center";
+  ctx.fillText(`🔥 ${label}`, BASE_WIDTH - 120, 100);
+  ctx.restore();
+}
+
+function findHotspotAt(x, y) {
+  for (let i = hotspots.length - 1; i >= 0; i--) {
+    if (hotspots[i].contains(x, y)) return hotspots[i];
+  }
+  return null;
 }
 
 function drawStart() {
@@ -1161,22 +1903,46 @@ function drawNight() {
     portraitKey: dialogue.day,
   });
 
-  Object.keys(NIGHT_EFFECTS).forEach((choice, index) => {
+  const choiceKeys = Object.keys(NIGHT_EFFECTS);
+  const btnWidth = 160;
+  const startX = 58;
+  const gap = (640 - btnWidth * 4) / 3;
+
+  choiceKeys.forEach((choice, index) => {
     const label = getCurrentNightResponse(choice).player;
+    const effect = NIGHT_EFFECTS[choice];
+    const kindMap = { pause: "calm", reframe: "ghost", detail: "danger", gentle: "danger" };
+
     buttons.push(
-      new Button(58 + index * 197, 430, 190, 58, label, () => handleNightChoice(choice), {
-        kind: choice === "pause" ? "calm" : "danger",
-        multiline: true,
-        fontSize: 13,
-        maxLines: 3,
-      })
+      new Button(
+        startX + index * (btnWidth + gap), 430, btnWidth, 58,
+        `[${effect.shortcut}] ${label}`,
+        () => handleNightChoice(choice),
+        {
+          kind: kindMap[choice] || "danger",
+          multiline: true,
+          fontSize: 12,
+          maxLines: 3,
+          subLabel: effect.hint,
+        }
+      )
     );
   });
+
+  // 快捷键提示
+  ctx.save();
+  ctx.fillStyle = "rgba(255,230,160,0.45)";
+  ctx.font = "12px Microsoft YaHei, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText("💡 按键 1-4 快速选择  |  Tab 查看决策日志  |  S 开关音效", BASE_WIDTH / 2, 510);
+  ctx.restore();
 }
 
 function drawNightResult() {
   const dialogue = getCurrentNightDialogue();
   const choice = GameState.nightChoice;
+  if (!choice || !NIGHT_EFFECTS[choice]) return; // 过渡期间的安全检查
+
   const result = getCurrentNightResponse(choice);
   drawBaseBackground("night");
   drawHeader(dialogue.scene);
