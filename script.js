@@ -1,5 +1,35 @@
 "use strict";
 
+// ===== Safari 兼容性 polyfill =====
+if (!Object.fromEntries) {
+  Object.fromEntries = function (entries) {
+    var obj = {};
+    for (var i = 0; i < entries.length; i++) {
+      obj[entries[i][0]] = entries[i][1];
+    }
+    return obj;
+  };
+}
+
+// CSS aspect-ratio 降级（Safari < 15）
+(function () {
+  var supportsAspectRatio = false;
+  try {
+    supportsAspectRatio = window.CSS && window.CSS.supports && window.CSS.supports("aspect-ratio", "1");
+  } catch (e) {}
+  if (supportsAspectRatio) return;
+
+  var c = document.getElementById("gameCanvas");
+  if (!c) return;
+  c.style.height = "auto";
+  var updateHeight = function () {
+    c.style.height = Math.floor(c.offsetWidth * 9 / 16) + "px";
+  };
+  updateHeight();
+  window.addEventListener("resize", updateHeight);
+  window.addEventListener("orientationchange", updateHeight);
+})();
+
 const BASE_WIDTH = 960;
 const BASE_HEIGHT = 540;
 
@@ -7,7 +37,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // 触屏设备检测
-const IS_TOUCH_DEVICE = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+const IS_TOUCH_DEVICE = ("ontouchstart" in window) || (typeof navigator !== "undefined" && navigator.maxTouchPoints > 0);
 
 let dpr = 1;
 let mouse = { x: -1, y: -1 };
@@ -35,29 +65,61 @@ const AUDIO_SOURCES = {
   ending: "assets/audio/ending.m4a",
 };
 
-const BackgroundImages = Object.fromEntries(
-  Object.entries(BACKGROUND_SOURCES).map(([key, src]) => {
-    const image = new Image();
-    image.src = src;
-    return [key, image];
-  })
-);
+const BackgroundImages = (function () {
+  var result = {};
+  try {
+    Object.entries(BACKGROUND_SOURCES).forEach(function (entry) {
+      var key = entry[0];
+      var src = entry[1];
+      try {
+        var image = new Image();
+        image.src = src;
+        result[key] = image;
+      } catch (e) {
+        result[key] = null;
+      }
+    });
+  } catch (e) {
+    // Safari 降级：使用 for-in
+    for (var k in BACKGROUND_SOURCES) {
+      if (BACKGROUND_SOURCES.hasOwnProperty(k)) {
+        try {
+          var img = new Image();
+          img.src = BACKGROUND_SOURCES[k];
+          result[k] = img;
+        } catch (e2) {
+          result[k] = null;
+        }
+      }
+    }
+  }
+  return result;
+})();
 
 const AudioManager = {
   unlocked: false,
   activeMode: null,
   volume: 0.42,
-  tracks: typeof Audio === "function"
-    ? Object.fromEntries(
-        Object.entries(AUDIO_SOURCES).map(([key, src]) => {
-          const audio = new Audio(src);
+  tracks: (function () {
+    var result = {};
+    if (typeof Audio !== "function") return result;
+    try {
+      Object.keys(AUDIO_SOURCES).forEach(function (key) {
+        try {
+          var audio = new Audio(AUDIO_SOURCES[key]);
           audio.loop = true;
           audio.preload = "auto";
           audio.volume = 0.42;
-          return [key, audio];
-        })
-      )
-    : {},
+          result[key] = audio;
+        } catch (e) {
+          // 单个音频加载失败不影响其他
+        }
+      });
+    } catch (e) {
+      // Safari 降级
+    }
+    return result;
+  })(),
 
   unlock() {
     this.unlocked = true;

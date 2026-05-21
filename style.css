@@ -54,6 +54,7 @@ body {
 #gameCanvas {
   display: block;
   width: min(100%, 960px);
+  height: auto;
   aspect-ratio: 16 / 9;
   margin: 0 auto;
   border: 6px solid var(--line);
@@ -63,6 +64,7 @@ body {
     0 0 0 4px #2a1a12,
     0 18px 0 rgba(42, 26, 18, 0.36),
     0 30px 70px rgba(0, 0, 0, 0.48);
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   /* 触屏优化 */
