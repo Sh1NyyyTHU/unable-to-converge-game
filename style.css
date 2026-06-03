@@ -11,10 +11,16 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* iOS 平滑滚动 */
+  -webkit-overflow-scrolling: touch;
+}
+
 html,
 body {
-  width: 100%;
-  min-height: 100%;
   margin: 0;
   /* 防止移动端默认行为 */
   -webkit-tap-highlight-color: transparent;
@@ -23,10 +29,12 @@ body {
   user-select: none;
   /* 防止iOS橡皮筋效果影响游戏 */
   overscroll-behavior: none;
-  touch-action: manipulation;
 }
 
 body {
+  width: 100%;
+  min-height: 100%;
+  touch-action: manipulation;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,18 +129,29 @@ body {
   }
 }
 
-/* 横屏时确保 Canvas 不超出可视区域 */
+/* 横屏时确保 Canvas 不超出可视区域，同时允许上下滚动 */
 @media (orientation: landscape) and (max-height: 500px) {
+  html {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   body {
-    padding: 4px;
+    padding: 8px 4px 16px;
+    align-items: flex-start; /* 内容从顶部开始，超出的部分可滚动 */
   }
 
   #gameCanvas {
-    width: auto;
-    height: min(100%, calc(100vh - 48px));
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   .hint {
-    display: none;
+    display: block;
+    font-size: 11px;
+    margin: 8px auto 12px;
+    line-height: 1.5;
   }
 }

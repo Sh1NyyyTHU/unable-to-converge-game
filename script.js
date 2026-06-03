@@ -1611,9 +1611,24 @@ let touchMoved = false;
 const TAP_MOVE_THRESHOLD = 12; // 移动超过此像素视为拖拽，否则为点击
 const TAP_TIME_THRESHOLD = 300; // 超过此毫秒视为长按
 let touchRipple = null; // 触摸涟漪 { x, y, alpha, radius }
+let touchIsGameInteraction = false; // 当前触摸是否为游戏交互（否则允许浏览器滚动）
+
+// 检查触摸位置是否在可交互的游戏元素上
+function isTouchOnInteractiveElement(pos) {
+  // 检查热点
+  const hotspot = findHotspotAt(pos.x, pos.y);
+  if (hotspot && isCurrentStepHotspot(hotspot) && !isHotspotDone(hotspot) && !hotspot.wrong) {
+    return true;
+  }
+  // 检查按钮
+  const hit = buttons.find((button) => !button.disabled && button.contains(pos.x, pos.y));
+  if (hit) {
+    return true;
+  }
+  return false;
+}
 
 canvas.addEventListener("touchstart", (event) => {
-  event.preventDefault();
   const touch = event.touches[0];
   const pos = getPointerPosition(touch);
   mouse = pos;
@@ -1631,16 +1646,34 @@ canvas.addEventListener("touchstart", (event) => {
   // 检查是否在可拖拽的热点上
   const hotspot = findHotspotAt(pos.x, pos.y);
   if (hotspot && isCurrentStepHotspot(hotspot) && !isHotspotDone(hotspot) && !hotspot.wrong) {
-    // 不立即开始拖拽，等 move 超过阈值
+    // 游戏交互：阻止默认行为，防止页面滚动
+    event.preventDefault();
+    touchIsGameInteraction = true;
     GameState.touchCandidate = hotspot;
     // 显示触摸涟漪
     touchRipple = { x: pos.x, y: pos.y, alpha: 0.6, radius: 4, maxRadius: 28 };
   } else {
-    GameState.touchCandidate = null;
+    // 检查是否在按钮上
+    const hit = buttons.find((button) => !button.disabled && button.contains(pos.x, pos.y));
+    if (hit) {
+      // 按钮点击：阻止默认行为
+      event.preventDefault();
+      touchIsGameInteraction = true;
+      GameState.touchCandidate = null;
+    } else {
+      // 空白区域：不阻止默认行为，允许浏览器滚动
+      touchIsGameInteraction = false;
+      GameState.touchCandidate = null;
+    }
   }
 }, { passive: false });
 
 canvas.addEventListener("touchmove", (event) => {
+  if (!touchIsGameInteraction) {
+    // 非游戏交互，允许浏览器处理滚动
+    return;
+  }
+
   event.preventDefault();
   const touch = event.touches[0];
   const pos = getPointerPosition(touch);
@@ -1675,7 +1708,13 @@ canvas.addEventListener("touchmove", (event) => {
 }, { passive: false });
 
 canvas.addEventListener("touchend", (event) => {
+  if (!touchIsGameInteraction) {
+    // 非游戏交互，允许浏览器处理
+    return;
+  }
+
   event.preventDefault();
+  touchIsGameInteraction = false;
   GameState.touchCandidate = null;
 
   const elapsed = Date.now() - touchStartTime;
@@ -1720,6 +1759,7 @@ canvas.addEventListener("touchend", (event) => {
 
 canvas.addEventListener("touchcancel", (event) => {
   // 触摸被打断（如来电、系统手势等）
+  touchIsGameInteraction = false;
   GameState.touchCandidate = null;
   touchRipple = null;
   if (GameState.isDragging) {
