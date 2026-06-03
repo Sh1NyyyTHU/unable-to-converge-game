@@ -2103,9 +2103,13 @@ function drawNight() {
   });
 
   const choiceKeys = Object.keys(NIGHT_EFFECTS);
-  const btnWidth = 160;
-  const startX = 58;
-  const gap = (640 - btnWidth * 4) / 3;
+  // 按钮需放置于文字面板内（面板 x=34 w=620 → 右边界 x=654）
+  const panelLeft = 46;   // 面板内左侧留白
+  const panelRight = 642; // 面板内右侧留白
+  const availWidth = panelRight - panelLeft; // 596px
+  const btnWidth = 140;
+  const gap = Math.floor((availWidth - btnWidth * 4) / 3); // 12px
+  const startX = panelLeft;
 
   choiceKeys.forEach((choice, index) => {
     const label = getCurrentNightResponse(choice).player;
@@ -2120,7 +2124,7 @@ function drawNight() {
         {
           kind: kindMap[choice] || "danger",
           multiline: true,
-          fontSize: 12,
+          fontSize: 11,
           maxLines: 3,
           subLabel: effect.hint,
         }
